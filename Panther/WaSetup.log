@@ -1,0 +1,155 @@
+Install.cmd BEGIN 
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : Monday, September 27, 2021 4:03:57 AM
+   Source = e:\$$\
+     Dest : C:\Windows\
+
+    Files : *.*
+	    
+  Options : *.* /S /E /DCOPY:DA /COPY:DAT /R:1000000 /W:30 
+
+------------------------------------------------------------------------------
+
+	                   0	e:\$$\
+	*EXTRA Dir        -1	C:\Windows\ADFS\
+	*EXTRA Dir        -1	C:\Windows\AppCompat\
+	*EXTRA Dir        -1	C:\Windows\apppatch\
+	*EXTRA Dir        -1	C:\Windows\AppReadiness\
+	*EXTRA Dir        -1	C:\Windows\assembly\
+	*EXTRA Dir        -1	C:\Windows\BitLockerDiscoveryVolumeContents\
+	*EXTRA Dir        -1	C:\Windows\Boot\
+	*EXTRA Dir        -1	C:\Windows\Branding\
+	*EXTRA Dir        -1	C:\Windows\CbsTemp\
+	*EXTRA Dir        -1	C:\Windows\Cursors\
+	*EXTRA Dir        -1	C:\Windows\debug\
+	*EXTRA Dir        -1	C:\Windows\DesktopTileResources\
+	*EXTRA Dir        -1	C:\Windows\diagnostics\
+	*EXTRA Dir        -1	C:\Windows\DigitalLocker\
+	*EXTRA Dir        -1	C:\Windows\Downloaded Program Files\
+	*EXTRA Dir        -1	C:\Windows\drivers\
+	*EXTRA Dir        -1	C:\Windows\ELAMBKUP\
+	*EXTRA Dir        -1	C:\Windows\en-US\
+	*EXTRA Dir        -1	C:\Windows\Fonts\
+	*EXTRA Dir        -1	C:\Windows\GdrPackages\
+	*EXTRA Dir        -1	C:\Windows\Globalization\
+	*EXTRA Dir        -1	C:\Windows\Help\
+	*EXTRA Dir        -1	C:\Windows\IME\
+	*EXTRA Dir        -1	C:\Windows\ImmersiveControlPanel\
+	*EXTRA Dir        -1	C:\Windows\Inf\
+	*EXTRA Dir        -1	C:\Windows\InputMethod\
+	*EXTRA Dir        -1	C:\Windows\Installer\
+	*EXTRA Dir        -1	C:\Windows\InteractiveVMWorkingDir\
+	*EXTRA Dir        -1	C:\Windows\L2Schemas\
+	*EXTRA Dir        -1	C:\Windows\LiveKernelReports\
+	*EXTRA Dir        -1	C:\Windows\Logs\
+	*EXTRA Dir        -1	C:\Windows\media\
+	*EXTRA Dir        -1	C:\Windows\Microsoft.NET\
+	*EXTRA Dir        -1	C:\Windows\Migration\
+	*EXTRA Dir        -1	C:\Windows\ModemLogs\
+	*EXTRA Dir        -1	C:\Windows\Offline Web Pages\
+	*EXTRA Dir        -1	C:\Windows\Panther\
+	*EXTRA Dir        -1	C:\Windows\PLA\
+	*EXTRA Dir        -1	C:\Windows\PolicyDefinitions\
+	*EXTRA Dir        -1	C:\Windows\Provisioning\
+	*EXTRA Dir        -1	C:\Windows\Registration\
+	*EXTRA Dir        -1	C:\Windows\RemotePackages\
+	*EXTRA Dir        -1	C:\Windows\rescache\
+	*EXTRA Dir        -1	C:\Windows\Resources\
+	*EXTRA Dir        -1	C:\Windows\SchCache\
+	*EXTRA Dir        -1	C:\Windows\schemas\
+	*EXTRA Dir        -1	C:\Windows\security\
+	*EXTRA Dir        -1	C:\Windows\ServiceProfiles\
+	*EXTRA Dir        -1	C:\Windows\servicing\
+	*EXTRA Dir        -1	C:\Windows\Speech\
+	*EXTRA Dir        -1	C:\Windows\System\
+	*EXTRA Dir        -1	C:\Windows\System32\
+	*EXTRA Dir        -1	C:\Windows\SystemResources\
+	*EXTRA Dir        -1	C:\Windows\SysWOW64\
+	*EXTRA Dir        -1	C:\Windows\TAPI\
+	*EXTRA Dir        -1	C:\Windows\Tasks\
+	*EXTRA Dir        -1	C:\Windows\Temp\
+	*EXTRA Dir        -1	C:\Windows\ToastData\
+	*EXTRA Dir        -1	C:\Windows\tracing\
+	*EXTRA Dir        -1	C:\Windows\Vss\
+	*EXTRA Dir        -1	C:\Windows\Web\
+	*EXTRA Dir        -1	C:\Windows\WinSxS\
+	  *EXTRA File 		   56832	bfsvc.exe
+	  *EXTRA File 		   67584	bootstat.dat
+	  *EXTRA File 		    4876	DtcInstall.log
+	  *EXTRA File 		   2.6 m	explorer.exe
+	  *EXTRA File 		 1001984	HelpPane.exe
+	  *EXTRA File 		   17408	hh.exe
+	  *EXTRA File 		   43131	mib.bin
+	  *EXTRA File 		    7542	PFRO.log
+	  *EXTRA File 		  154624	regedit.exe
+	  *EXTRA File 		   27640	ServerDataCenter.xml
+	  *EXTRA File 		   27640	ServerWeb.xml
+	  *EXTRA File 		   11604	setupact.log
+	  *EXTRA File 		       0	setuperr.log
+	  *EXTRA File 		  129536	splwow64.exe
+	  *EXTRA File 		     219	system.ini
+	  *EXTRA File 		   13211	vmgcoinstall.log
+	  *EXTRA File 		      92	win.ini
+	  *EXTRA File 		     670	WindowsShell.Manifest
+	  *EXTRA File 		    9728	winhlp32.exe
+	  *EXTRA File 		   11264	write.exe
+	  New Dir         25	e:\$$\OEM\
+	    New File  		   28491	AspJson.vbs  0%  100%  
+	    New File  		     902	AzureIaasReprovisioningTask.xml  0%  100%  
+	    New File  		  172424	AzureRPA.exe  0%   76%  100%  
+	    New File  		   17288	AzureRPL.exe  0%  100%  
+	    New File  		    7982	BootConfig.wsf  0%  100%  
+	    New File  		    5854	Certificates.wsf  0%  100%  
+	    New File  		     709	DATALOSS_WARNING_README.txt  0%  100%  
+	    New File  		   10677	Environment.wsf  0%  100%  
+	    New File  		     396	ErrorHandler.cmd  0%  100%  
+	    New File  		  177032	FindVolume.exe  0%   74%  100%  
+	    New File  		   59669	GuestAgent.wsf  0%  100%  
+	    New File  		    4777	GuestInterface.wsf  0%  100%  
+	    New File  		   28571	Licensing.wsf  0%  100%  
+	    New File  		   30953	OperatingSystem.wsf  0%  100%  
+	    New File  		    2074	ovf-env.xml.xslt  0%  100%  
+	    New File  		  167304	RdCryptWa.dll  0%   78%  100%  
+	    New File  		  185736	SetDiskId.exe  0%   70%  100%  
+	    New File  		      32	SetSanPolicy.txt  0%  100%  
+	    New File  		     826	SetupComplete.cmd  0%  100%  
+	    New File  		    5458	Tracing.wsf  0%  100%  
+	    New File  		  100393	Unattend.wsf  0%  100%  
+	    New File  		   26658	Utility.vbs  0%  100%  
+	    New File  		  223112	WaGuest.exe  0%   58%  100%  
+	    New File  		  144776	WaGuestLib.dll  0%   90%  100%  
+	    New File  		   62414	WireServer.wsf  0%  100%  
+	  New Dir          1	e:\$$\OEM\GuestAgent\
+	    New File  		  22.6 m	VMAgentPackage.zip  0.0%  4.4%  8.8% 13.2% 17.6% 22.1% 26.5% 30.9% 35.3% 39.8% 44.2% 48.6% 53.0% 57.5% 61.9% 66.3% 70.7% 75.1% 79.6% 84.0% 88.4% 92.8% 97.3%100%  
+	  New Dir          1	e:\$$\OEM\VmAgentPackageExtractor\
+	    New File  		  240504	PackageExtractor.exe  0%   54%  100%  
+	  New Dir          1	e:\$$\OEM\WaSecAgent\
+	    New File  		  515976	WaSecAgentProv.exe  0%   25%   50%   76%  100%  
+	                   0	e:\$$\Setup\
+	*EXTRA Dir        -1	C:\Windows\Setup\State\
+	                   2	e:\$$\Setup\Scripts\
+	  *EXTRA File 		       0	DisableCmdRequest.tag
+	    New File  		     180	ErrorHandler.cmd  0%  100%  
+	    New File  		     181	SetupComplete.cmd  0%  100%  
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         7         4         0         0         0        63
+   Files :        30        30         0         0         0        21
+   Bytes :   24.72 m   24.72 m         0         0         0    4.14 m
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+   Speed :            82304530 Bytes/sec.
+   Speed :            4709.502 MegaBytes/min.
+   Ended : Monday, September 27, 2021 4:03:57 AM
+
+Install.cmd END 
+Begin execute SetupComplete.cmd 
+End execute SetupComplete.cmd 
+Restarting machine 

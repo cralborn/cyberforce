@@ -1,0 +1,457 @@
+﻿2021-09-27 04:03:44, Info       [0x0601c1] IBS    InstallWindows:Install Path = C:\Windows\system32\oobe
+2021-09-27 04:03:44, Info       [0x0601c2] IBS    InstallWindows:Setup Phase = 4
+2021-09-27 04:03:44, Info       [0x0606cc] IBS    LogBootDeviceInfo:The firmware boot device ARC path is [multi(0)disk(0)rdisk(0)partition(1)] and NT path is [\Device\Harddisk0\Partition1].
+2021-09-27 04:03:44, Info       [0x0606cc] IBS    LogBootDeviceInfo:The system boot device ARC path is [multi(0)disk(0)rdisk(0)partition(2)] and NT path is [\Device\Harddisk0\Partition2].
+2021-09-27 04:03:44, Info                         [setup.exe] OrchestrateUpdateImageState: Updating image state from [IMAGE_STATE_GENERALIZE_RESEAL_TO_OOBE] --> [IMAGE_STATE_UNDEPLOYABLE]
+2021-09-27 04:03:44, Info       [0x0601ee] IBS    PrepareSetupForFirstBootPhase:Working directory is [C:\Windows\Panther]; we are starting an installation
+2021-09-27 04:03:44, Info                  IBS    PrepareSetupForFirstBootPhase:Passed drive-letter assignment sanity check.
+2021-09-27 04:03:44, Info       [0x0601cc] IBS    InstallWindows:Performing a new install from first boot phase. Working directory = C:\Windows\Panther
+2021-09-27 04:03:44, Info       [0x0601ce] IBS    Setup has started phase 4 at 2021-09-27 04:03:44
+2021-09-27 04:03:44, Info       [0x0601cf] IBS    Install source is C:\Windows\system32\oobe
+2021-09-27 04:03:44, Info       [0x0601d0] IBS    Build version is 6.3.9600.16384 (winblue_rtm.130821-1623)
+2021-09-27 04:03:44, Info       [0x064042] IBSLIB CreateSetupBlackboard:Creating new blackboard path is [C:\Windows\Panther\SetupInfo] Setup phase is [4]
+2021-09-27 04:03:44, Info       [0x090008] PANTHR CBlackboard::Open: C:\Windows\Panther\SetupInfo succeeded.
+2021-09-27 04:03:44, Info       [0x064043] IBSLIB CreateSetupBlackboard:Successfully created/opened Setup black board path is [C:\Windows\Panther\SetupInfo]
+2021-09-27 04:03:44, Info                  IBS    InstallWindows:No UI language from a previous boot was found on the blackboard. Using selected language [].
+2021-09-27 04:03:44, Info                  IBS    InstallWindows:Setup architecture is [x64]
+2021-09-27 04:03:44, Info       [0x0601d5] IBS    InstallWindows:Starting with Empty Queue. Setup Phase = 4
+2021-09-27 04:03:44, Info                  PANTHR InitializedCriticalSection for pExecQueue->csLock;
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module ScenarioDetect in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module Engine in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module Internal in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module ErrorHandler in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module Diagnostic in diagnostic.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module Unattend in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module ParseCommandLine in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module Ems  in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module PrepareInstallDrive in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module TempDrive in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module CopySetupFiles in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module BootPrep in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module BootEntries in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module CopyPrivates in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module ProductKey in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module ComputerName in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module License in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module DiskInformation in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module FixBBPaths in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module DiskConfig in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module CreatePageFile in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module Imaging in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module CopyImages in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module DeployImages in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module DiskSpace in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module Completion in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module MountDev in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module Cmi in cmisetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module SystemRestore in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module FirstBootCleanup in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module RestartModule in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module ExternalDrivers in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module CBS in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module SkuAssembly in cmisetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module LanguagePack in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module ConfigSet in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module UnattendImgInstall in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module CFGOfflineImage in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info                         PnPIBS: Initializing the PnP IBS Module ...
+
+2021-09-27 04:03:44, Info                         PnPIBS: Successfully initialized the PnP IBS Module.
+
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module PnP IBS module in pnpibs.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module Compliance in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module Rollback in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module Locale in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module Source media module in winsetup.dll
+2021-09-27 04:03:44, Info       [0x060359] IBS    Callback_ScenarioDetect:Setup is starting from [4] phase 
+2021-09-27 04:03:44, Info                  IBS    Callback_BootEnvironmentDetect:FirmwareType 1.
+2021-09-27 04:03:44, Info                  IBS    Callback_BootEnvironmentDetect: Detected boot environment: BIOS
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module OnlineUI in win32ui.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module OnlineProgress in spprgrss.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module OnlineSettings in winsetup.dll
+2021-09-27 04:03:44, Info                  PANTHR InitializeModule: Initializing ExecQueue->csLock;
+2021-09-27 04:03:44, Info       [0x0601a4] IBS    LoadWorkerModules:Successfully added worker module Sysprep in winsetup.dll
+2021-09-27 04:03:44, Info       [0x060004] IBS    Callback_UpdateDrivePathsOnBB:No need to update the blackboard paths.
+2021-09-27 04:03:44, Info       [0x070035] DIAG   CallBack_DiagnosticDataGeneration: Called with notification for Initialization
+2021-09-27 04:03:44, Info                  DIAG   CallBack_DiagnosticDataGeneration: Setup was started from Phase 4. Disabling Diagnostics [DiagnosticDataGeneration] in this scenario
+2021-09-27 04:03:44, Info       [0x060258] IBS    GenerateName: Failed to read the Key UserData\FullName\Value from Blackboard defaulting to WIN
+2021-09-27 04:03:44, Info       [0x060259] IBS    GenerateName: Failed to read the Key UserData\OrgName\Value from Blackboard
+2021-09-27 04:03:44, Info       [0x06025d] IBS    Callback_ComputerName_Validate:Computer name is WIN-M7K38UH644A
+2021-09-27 04:03:44, Info       [0x06025a] IBS    Callback_ComputerName_Generate:Computer name [WIN-M7K38UH644A] is valid.
+2021-09-27 04:03:44, Info                  IBS    ProcessRegistryTranslation: Computer name has been set by IMC.
+2021-09-27 04:03:44, Info                  IBS    SetComputerNameOnline: Computer name is already set offline domain join; so skipping setting it again
+2021-09-27 04:03:44, Info       [0x070035] DIAG   CallBack_DiagnosticDataGeneration: Called with notification for Initialization
+2021-09-27 04:03:44, Info                  DIAG   CallBack_DiagnosticDataGeneration: Setup was started from Phase 4. Disabling Diagnostics [DiagnosticDataGeneration] in this scenario
+2021-09-27 04:03:44, Info                  IBS    Callback_Specialize: Enter.
+2021-09-27 04:03:44, Info                  IBS    Callback_Specialize: Current State: [4]
+2021-09-27 04:03:44, Info                  IBS    Callback_Specialize: Attempting to specialize image
+2021-09-27 04:03:44, Info       [0x0f00ba] SYSPRP SysprepSession::CreateSession: Successfully created instance with mount path C:, action file C:\Windows\System32\Sysprep\ActionFiles\Specialize.xml, and mode <null>
+2021-09-27 04:03:44, Info                  SYSPRP SysprepSession::Execute: Beginning action execution from C:\Windows\System32\Sysprep\ActionFiles\Specialize.xml
+2021-09-27 04:03:44, Info                  SYSPRP ActionPlatform::GetStringValue: Getting REG_SZ value SysprepMode under key HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Setup\Sysprep
+2021-09-27 04:03:44, Info                  SYSPRP ActionPlatform::GetValue: Getting value SysprepMode under key HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Setup\Sysprep
+2021-09-27 04:03:44, Info                  SYSPRP SysprepSession::CreateXPathForSelection: Sysprep mode in registry is vm
+2021-09-27 04:03:44, Info                  SYSPRP ActionPlatform::GetStringValue: Getting REG_SZ value PROCESSOR_ARCHITECTURE under key HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment
+2021-09-27 04:03:44, Info                  SYSPRP ActionPlatform::GetValue: Getting value PROCESSOR_ARCHITECTURE under key HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment
+2021-09-27 04:03:44, Info                  SYSPRP SysprepSession::CreateXPathForSelection: Processor architecture in registry is AMD64
+2021-09-27 04:03:44, Info                  SYSPRP SysprepSession::ExecuteInternal: After sorting, providers will be excuted in this order:
+2021-09-27 04:03:44, Info                  SYSPRP SysprepSession::ExecuteInternal: name:Microsoft-Windows-Sysprep-SpOpk, order: 100d
+2021-09-27 04:03:44, Info                  SYSPRP SysprepSession::ExecuteInternal: name:Microsoft-Windows-SQMApi, order: 300d
+2021-09-27 04:03:44, Info                  SYSPRP SysprepSession::ExecuteInternal: name:Microsoft-Windows-PnpSysprep, order: 500d
+2021-09-27 04:03:44, Info                  SYSPRP SysprepSession::ExecuteInternal: name:Microsoft-Windows-Security-Security Configuration Engine Client, order: 600d
+2021-09-27 04:03:44, Info                  SYSPRP SysprepSession::ExecuteInternal: name:Microsoft-Windows-TerminalServices-RemoteConnectionManager, order: 700d
+2021-09-27 04:03:44, Info                  SYSPRP SysprepSession::ExecuteInternal: name:Microsoft-Windows-TerminalServices-LocalSessionManager, order: 800d
+2021-09-27 04:03:44, Info                  SYSPRP SysprepSession::ExecuteInternal: name:Microsoft-Windows-Setup-Component, order: 900d
+2021-09-27 04:03:44, Info                  SYSPRP SysprepSession::ExecuteInternal: name:Microsoft-Windows-TerminalServices-ClientActiveXCore, order: a00d
+2021-09-27 04:03:44, Info                  SYSPRP SysprepSession::ExecuteInternal: name:Microsoft-Windows-Shell-Setup, order: b00d
+2021-09-27 04:03:44, Info                  SYSPRP SysprepSession::ExecuteInternal: name:Microsoft-Windows-ErrorReportingCore, order: c00d
+2021-09-27 04:03:44, Info                  SYSPRP SysprepSession::ExecuteInternal: name:Microsoft-Windows-AppX-Sysprep, order: d00d
+2021-09-27 04:03:44, Info                  SYSPRP SysprepSession::ExecuteInternal: name:Microsoft-Windows-IE-Sysprep, order: f00d
+2021-09-27 04:03:44, Info                  SYSPRP SysprepSession::ExecuteInternal: name:Microsoft-Windows-AppCompat-Sysprep, order: 1000d
+2021-09-27 04:03:44, Info                  SYSPRP SysprepSession::ExecuteInternal: name:Microsoft-Windows-Cryptography, order: 1100d
+2021-09-27 04:03:44, Info                  SYSPRP SysprepSession::ExecuteInternal: name:Microsoft-Windows-Sysprep-SpBcd, order: 1200d
+2021-09-27 04:03:44, Info                  SYSPRP SysprepSession::ExecuteInternal: name:Microsoft-Windows-COM-DTC-Runtime, order: 1300d
+2021-09-27 04:03:44, Info                  SYSPRP SysprepSession::ExecuteInternal: name:Microsoft-Windows-ReliabilityAnalysisConfig, order: 1400d
+2021-09-27 04:03:44, Info                  SYSPRP SysprepSession::ExecuteInternal: name:Microsoft-Windows-WinRE-RecoveryAgent, order: 1a00d
+2021-09-27 04:03:44, Info                  SYSPRP SysprepSession::ExecuteInternal: name:Microsoft-Windows-TIScavengeTask, order: 1b00d
+2021-09-27 04:03:44, Info                  SYSPRP SysprepSession::ExecuteInternal: name:Microsoft-Windows-ServicingStack, order: 1c00d
+2021-09-27 04:03:44, Info       [0x0f00bd] SYSPRP CreateSysprepActionList: Building action list for component Microsoft-Windows-Sysprep-SpOpk
+2021-09-27 04:03:44, Info       [0x0f0080] SYSPRP ActionPlatform::LaunchModule: Found 'Sysprep_Specialize_Opk' in C:\Windows\System32\spopk.dll; executing it
+2021-09-27 04:03:44, Info       [0x0f0081] SYSPRP ActionPlatform::LaunchModule: Successfully executed 'Sysprep_Specialize_Opk' from C:\Windows\System32\spopk.dll without error
+2021-09-27 04:03:44, Info       [0x0f00bd] SYSPRP CreateSysprepActionList: Building action list for component Microsoft-Windows-SQMApi
+2021-09-27 04:03:44, Info       [0x0f0080] SYSPRP ActionPlatform::LaunchModule: Found 'SqmSysprepSpecialize' in sqmapi.dll; executing it
+2021-09-27 04:03:45, Info       [0x0f0081] SYSPRP ActionPlatform::LaunchModule: Successfully executed 'SqmSysprepSpecialize' from sqmapi.dll without error
+2021-09-27 04:03:45, Info       [0x0f00bd] SYSPRP CreateSysprepActionList: Building action list for component Microsoft-Windows-PnpSysprep
+2021-09-27 04:03:45, Info       [0x0f0080] SYSPRP ActionPlatform::LaunchModule: Found 'Sysprep_Specialize_Pnp' in C:\Windows\System32\sppnp.dll; executing it
+2021-09-27 04:03:45, Info                  SYSPRP SPPNP: Sysprep_Specialize_Pnp: Enter
+2021-09-27 04:03:45, Info                  SYSPRP SPPNP: Sysprep is running in mode "vm".
+2021-09-27 04:03:45, Info                  SYSPRP SPPNP: Created progress thread.
+2021-09-27 04:03:45, Info                  SYSPRP SPPNP: Creating device install status thread...
+2021-09-27 04:03:45, Info                  SYSPRP SPPNP: Waiting for thread to exit...
+2021-09-27 04:03:45, Info                  SYSPRP SPPNP: Status: Starting...
+2021-09-27 04:03:45, Info                  SYSPRP SPPNP: Status: Total = 0, Complete = 0, Progress = 0% (0%)
+2021-09-27 04:03:45, Info                  SYSPRP SPPNP: Waiting for device installation to start...
+2021-09-27 04:03:45, Info                  SYSPRP SPPNP: Deferring startup of system services...
+2021-09-27 04:03:45, Info                  SYSPRP SPPNP: Reinstalling devices on the system...
+2021-09-27 04:03:46, Info                  SYSPRP SPPNP: Status: Starting...
+2021-09-27 04:03:46, Info                  SYSPRP SPPNP: Status: Total = 0, Complete = 0, Progress = 0% (0%)
+2021-09-27 04:03:46, Info                  SYSPRP SPPNP: Status: Active
+2021-09-27 04:03:46, Info                  SYSPRP SPPNP: Status: Total = 1, Complete = 0, Progress = 0% (0%)
+2021-09-27 04:03:49, Info                  SYSPRP SPPNP: Status: Active
+2021-09-27 04:03:49, Info                  SYSPRP SPPNP: Status: Total = 1, Complete = 1, Progress = 100% (100%)
+2021-09-27 04:03:49, Info                  SYSPRP SPPNP: Device reinstallation completed.
+2021-09-27 04:03:49, Info                  SYSPRP SPPNP: Waiting for progress thread to exit.
+2021-09-27 04:03:49, Info                  SYSPRP SPPNP: Finished waiting for device install status...
+2021-09-27 04:03:49, Info                  SYSPRP SPPNP: Progress thread exited.
+2021-09-27 04:03:49, Info                  SYSPRP SPPNP: Sysprep_Specialize_Pnp: Exit
+2021-09-27 04:03:49, Info       [0x0f0081] SYSPRP ActionPlatform::LaunchModule: Successfully executed 'Sysprep_Specialize_Pnp' from C:\Windows\System32\sppnp.dll without error
+2021-09-27 04:03:49, Info       [0x0f00bd] SYSPRP CreateSysprepActionList: Building action list for component Microsoft-Windows-Security-Security Configuration Engine Client
+2021-09-27 04:03:49, Info       [0x0f0080] SYSPRP ActionPlatform::LaunchModule: Found 'SceSysPrep' in C:\Windows\System32\scecli.dll; executing it
+2021-09-27 04:03:49, Info       [0x0f0081] SYSPRP ActionPlatform::LaunchModule: Successfully executed 'SceSysPrep' from C:\Windows\System32\scecli.dll without error
+2021-09-27 04:03:49, Info       [0x0f00bd] SYSPRP CreateSysprepActionList: Building action list for component Microsoft-Windows-TerminalServices-RemoteConnectionManager
+2021-09-27 04:03:49, Info       [0x0f0080] SYSPRP ActionPlatform::LaunchModule: Found 'RCMSysPrepRestore' in C:\Windows\System32\setup\tssysprep.dll; executing it
+2021-09-27 04:03:49, Info                  SYSPRP Entering RCMSysPrepRestore
+
+2021-09-27 04:03:49, Info                  SYSPRP Leaving RCMSysPrepRestore
+
+2021-09-27 04:03:49, Info       [0x0f0081] SYSPRP ActionPlatform::LaunchModule: Successfully executed 'RCMSysPrepRestore' from C:\Windows\System32\setup\tssysprep.dll without error
+2021-09-27 04:03:49, Info       [0x0f00bd] SYSPRP CreateSysprepActionList: Building action list for component Microsoft-Windows-TerminalServices-LocalSessionManager
+2021-09-27 04:03:49, Info       [0x0f0080] SYSPRP ActionPlatform::LaunchModule: Found 'LSMSysPrepRestore' in C:\Windows\System32\setup\tssysprep.dll; executing it
+2021-09-27 04:03:49, Info                  SYSPRP Entering LSMSysPrepRestore
+
+2021-09-27 04:03:49, Info                  SYSPRP ResetTSRDSAppXKeys on AUINSTALLAGENT_REG_STAGINGINPROGRESS FAILED: 2
+
+2021-09-27 04:03:49, Info                  SYSPRP Leaving LSMSysPrepRestore
+
+2021-09-27 04:03:49, Info       [0x0f0081] SYSPRP ActionPlatform::LaunchModule: Successfully executed 'LSMSysPrepRestore' from C:\Windows\System32\setup\tssysprep.dll without error
+2021-09-27 04:03:49, Info       [0x0f00bd] SYSPRP CreateSysprepActionList: Building action list for component Microsoft-Windows-Setup-Component
+2021-09-27 04:03:49, Info       [0x0f0080] SYSPRP ActionPlatform::LaunchModule: Found 'SpSetupOnlineSettingsSpecialize' in C:\Windows\System32\oobe\winsetup.dll; executing it
+2021-09-27 04:03:49, Info       [0x060366] IBS    OnlineSetting_CreateBootstatDatFile: Found an existing bootstat.dat
+2021-09-27 04:03:49, Info       [0x060367] IBS    OnlineSetting_CreateBootstatDatFile: Succeeded
+2021-09-27 04:03:49, Info       [0x06035e] IBS    OnlineSetting_PatchPowerSettings: Successfully updated power settings.
+2021-09-27 04:03:49, Info       [0x0f0081] SYSPRP ActionPlatform::LaunchModule: Successfully executed 'SpSetupOnlineSettingsSpecialize' from C:\Windows\System32\oobe\winsetup.dll without error
+2021-09-27 04:03:49, Info       [0x0f00bd] SYSPRP CreateSysprepActionList: Building action list for component Microsoft-Windows-TerminalServices-ClientActiveXCore
+2021-09-27 04:03:49, Info       [0x0f0080] SYSPRP ActionPlatform::LaunchModule: Found 'RdpSysPrepRestore' in C:\Windows\System32\setup\tssysprep.dll; executing it
+2021-09-27 04:03:49, Info                  SYSPRP Entering RdpSysPrepRestore
+
+2021-09-27 04:03:49, Info                  SYSPRP Leaving RdpSysPrepRestore
+
+2021-09-27 04:03:49, Info       [0x0f0081] SYSPRP ActionPlatform::LaunchModule: Successfully executed 'RdpSysPrepRestore' from C:\Windows\System32\setup\tssysprep.dll without error
+2021-09-27 04:03:49, Info       [0x0f00bd] SYSPRP CreateSysprepActionList: Building action list for component Microsoft-Windows-Shell-Setup
+2021-09-27 04:03:49, Info       [0x0f0080] SYSPRP ActionPlatform::LaunchModule: Found 'Sysprep_Specialize_Shell' in C:\Windows\System32\shsetup.dll; executing it
+2021-09-27 04:03:49, Info       [0x0f0081] SYSPRP ActionPlatform::LaunchModule: Successfully executed 'Sysprep_Specialize_Shell' from C:\Windows\System32\shsetup.dll without error
+2021-09-27 04:03:49, Info       [0x0f00bd] SYSPRP CreateSysprepActionList: Building action list for component Microsoft-Windows-ErrorReportingCore
+2021-09-27 04:03:49, Info       [0x0f0080] SYSPRP ActionPlatform::LaunchModule: Found 'WerSysprepSpecialize' in wer.dll; executing it
+2021-09-27 04:03:49, Info       [0x0f0081] SYSPRP ActionPlatform::LaunchModule: Successfully executed 'WerSysprepSpecialize' from wer.dll without error
+2021-09-27 04:03:49, Info       [0x0f00bd] SYSPRP CreateSysprepActionList: Building action list for component Microsoft-Windows-AppX-Sysprep
+2021-09-27 04:03:49, Info       [0x0f0080] SYSPRP ActionPlatform::LaunchModule: Found 'AppxSysprepSpecialize' in C:\Windows\System32\AppxSysprep.dll; executing it
+2021-09-27 04:03:49, Info                  SYSPRP Entering AppxSysprepSpecialize.
+
+2021-09-27 04:03:49, Info                  SYSPRP Sysprep is in VM Mode - skipping AppxSysprepSpecialize.
+2021-09-27 04:03:49, Info       [0x0f0081] SYSPRP ActionPlatform::LaunchModule: Successfully executed 'AppxSysprepSpecialize' from C:\Windows\System32\AppxSysprep.dll without error
+2021-09-27 04:03:49, Info       [0x0f00bd] SYSPRP CreateSysprepActionList: Building action list for component Microsoft-Windows-IE-Sysprep
+2021-09-27 04:03:49, Info       [0x0f0080] SYSPRP ActionPlatform::LaunchModule: Found 'Sysprep_Specialize_IE' in C:\Windows\System32\iesysprep.dll; executing it
+2021-09-27 04:03:49, Info       [0x0f0081] SYSPRP ActionPlatform::LaunchModule: Successfully executed 'Sysprep_Specialize_IE' from C:\Windows\System32\iesysprep.dll without error
+2021-09-27 04:03:49, Info       [0x0f00bd] SYSPRP CreateSysprepActionList: Building action list for component Microsoft-Windows-AppCompat-Sysprep
+2021-09-27 04:03:49, Info       [0x0f0080] SYSPRP ActionPlatform::LaunchModule: Found 'Sysprep_Specialize_Compat' in C:\Windows\System32\spcompat.dll; executing it
+2021-09-27 04:03:49, Info                  SYSPRP Starting compatibility specialization.
+2021-09-27 04:03:49, Info       [0x0f0081] SYSPRP ActionPlatform::LaunchModule: Successfully executed 'Sysprep_Specialize_Compat' from C:\Windows\System32\spcompat.dll without error
+2021-09-27 04:03:49, Info       [0x0f00bd] SYSPRP CreateSysprepActionList: Building action list for component Microsoft-Windows-Cryptography
+2021-09-27 04:03:49, Info       [0x0f0080] SYSPRP ActionPlatform::LaunchModule: Found 'CryptoSysPrep_Specialize' in C:\Windows\system32\capisp.dll; executing it
+2021-09-27 04:03:49, Info                         capisp.dll::CheckIFCryptoSysPrepSpecialized: returning 0
+2021-09-27 04:03:50, Info                         capisp.dll::CryptoSysPrep_Specialize: assigned CAPI machine guid "4f882bc7-109a-4fae-b30d-43fe4dcc4d62"
+2021-09-27 04:03:50, Info                         capisp.dll::CryptoSysPrep_Specialize: returning 0
+2021-09-27 04:03:50, Info       [0x0f0081] SYSPRP ActionPlatform::LaunchModule: Successfully executed 'CryptoSysPrep_Specialize' from C:\Windows\system32\capisp.dll without error
+2021-09-27 04:03:50, Info       [0x0f00bd] SYSPRP CreateSysprepActionList: Building action list for component Microsoft-Windows-Sysprep-SpBcd
+2021-09-27 04:03:50, Info       [0x0f0080] SYSPRP ActionPlatform::LaunchModule: Found 'Sysprep_Specialize_Bcd' in C:\Windows\System32\spbcd.dll; executing it
+2021-09-27 04:03:50, Info                  TOOL   GeneralizeBcdStore: Found the memory tester object.
+2021-09-27 04:03:50, Info                  TOOL   SpecializeBcdStore: Found the resume object {14a4a3bf-1485-11ec-b6e3-000d3a908260} for the OS loader.
+2021-09-27 04:03:50, Info                  TOOL   SpecializeBcdStore: Successfully specialized {9dea862c-5cdd-4e70-acc1-f32b344d4795} application device. Status = [0x0]
+2021-09-27 04:03:50, Info                  TOOL   SpecializeBcdStore: Successfully specialized {b2721d73-1db4-4c62-bf78-c548a880142d} application device. Status = [0x0]
+2021-09-27 04:03:50, Info                  TOOL   SpecializeBcdStore: Successfully specialized {fa926493-6f1c-4193-a414-58f0b2456d1e} application device. Status = [0x0]
+2021-09-27 04:03:50, Info                  TOOL   SpecializeBcdStore: Successfully set the {fa926493-6f1c-4193-a414-58f0b2456d1e} OS device to the boot partition. Status = [0x0]
+2021-09-27 04:03:50, Warning               TOOL   SpecializeBcdStore: The /detecthal switch could not be removed because it was not found.
+2021-09-27 04:03:50, Info                  TOOL   SpecializeBcdStore: Successfully specialized {14a4a3bf-1485-11ec-b6e3-000d3a908260} application device. Status = [0x0]
+2021-09-27 04:03:50, Info                  TOOL   SpecializeBcdStore: Successfully set the {14a4a3bf-1485-11ec-b6e3-000d3a908260} hiberfile device to the boot partition. Status = [0x0]
+2021-09-27 04:03:50, Info                  TOOL   Sysprep_Specialize_Bcd: Successfully specialized the bcd store. Status=[0x0]
+2021-09-27 04:03:50, Info       [0x0f0081] SYSPRP ActionPlatform::LaunchModule: Successfully executed 'Sysprep_Specialize_Bcd' from C:\Windows\System32\spbcd.dll without error
+2021-09-27 04:03:50, Info       [0x0f00bd] SYSPRP CreateSysprepActionList: Building action list for component Microsoft-Windows-COM-DTC-Runtime
+2021-09-27 04:03:50, Info       [0x0f0080] SYSPRP ActionPlatform::LaunchModule: Found 'SysPrepDtcSpecialize' in C:\Windows\system32\msdtcprx.dll; executing it
+2021-09-27 04:03:50, Info       [0x0f0081] SYSPRP ActionPlatform::LaunchModule: Successfully executed 'SysPrepDtcSpecialize' from C:\Windows\system32\msdtcprx.dll without error
+2021-09-27 04:03:50, Info       [0x0f00bd] SYSPRP CreateSysprepActionList: Building action list for component Microsoft-Windows-ReliabilityAnalysisConfig
+2021-09-27 04:03:50, Info       [0x0f0080] SYSPRP ActionPlatform::LaunchModule: Found 'RacSysprepSpecialize' in RacEngn.dll; executing it
+2021-09-27 04:03:50, Info       [0x0f0081] SYSPRP ActionPlatform::LaunchModule: Successfully executed 'RacSysprepSpecialize' from RacEngn.dll without error
+2021-09-27 04:03:50, Info       [0x0f00bd] SYSPRP CreateSysprepActionList: Building action list for component Microsoft-Windows-WinRE-RecoveryAgent
+2021-09-27 04:03:50, Info       [0x0f0080] SYSPRP ActionPlatform::LaunchModule: Found 'WinRE_Specialize' in C:\Windows\System32\reagent.dll; executing it
+2021-09-27 04:03:50, Info                         [setup.exe] WinReInstallOnTargetOS Beginning WinRE installation.
+2021-09-27 04:03:50, Info                         [setup.exe] winreCheckRegKeyTest hook (S) present or enabled
+2021-09-27 04:03:50, Info                         [setup.exe] WinReInstallOnTargetOS System setup is in progress.
+2021-09-27 04:03:50, Warning                      [setup.exe] WofEnumWimEntries failed: 0x80070001.
+2021-09-27 04:03:50, Info                         [setup.exe] WinReInstallOnTargetOS Checking for downlevel WinRE installation.
+2021-09-27 04:03:50, Info                         [setup.exe] WinReInstallOnTargetOS Getting current WinRE configuration.
+2021-09-27 04:03:50, Info                         [setup.exe] WinReInstallOnTargetOS Disabling extra ReAgentConfig BCD checks for legacy setup.
+2021-09-27 04:03:50, Info                         [setup.exe] WinReInstallOnTargetOS No source winre.wim was specified.  Checking for a staged winre.wim.
+2021-09-27 04:03:50, Info                         [setup.exe] WinReInstallOnTargetOS Searching for OEM Winre.wim
+2021-09-27 04:03:50, Info                         [setup.exe] WinReInstallOnTargetOS Error 0X2 while searching for OEM winre.wim
+2021-09-27 04:03:50, Warning                      [setup.exe] WinReInstallOnTargetOS (WinRE)WinREInstall()  returning FALSE, gle = 0x64E
+2021-09-27 04:03:50, Warning               SYSPRP  Reagent.dll!WinRE_Specialize returned with: 64E
+2021-09-27 04:03:50, Info       [0x0f0081] SYSPRP ActionPlatform::LaunchModule: Successfully executed 'WinRE_Specialize' from C:\Windows\System32\reagent.dll without error
+2021-09-27 04:03:50, Info       [0x0f00bd] SYSPRP CreateSysprepActionList: Building action list for component Microsoft-Windows-TIScavengeTask
+2021-09-27 04:03:50, Info       [0x0f00c6] SYSPRP ActionPlatform::DeleteValue: Deleting registry value LastScavengingStarvationSQMReport under key HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\SideBySide
+2021-09-27 04:03:50, Info       [0x0f00bd] SYSPRP CreateSysprepActionList: Building action list for component Microsoft-Windows-ServicingStack
+2021-09-27 04:03:50, Info       [0x0f00c6] SYSPRP ActionPlatform::DeleteValue: Deleting registry value DecompressOverride under key HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\SideBySide
+2021-09-27 04:03:50, Warning               SYSPRP ActionPlatform::DeleteValue: Registry value DecompressOverride to be deleted does not exist under key HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\SideBySide
+2021-09-27 04:03:50, Info       [0x0f00b8] SYSPRP SysprepSession::Execute: Sysprep mode was not specified, deleting it from registry
+2021-09-27 04:03:50, Info       [0x0f00c6] SYSPRP ActionPlatform::DeleteValue: Deleting registry value SysprepMode under key HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Setup\Sysprep
+2021-09-27 04:03:50, Info                  IBS    Callback_Specialize: Internal Providers Specialized Succeeded 
+2021-09-27 04:03:50, Info       [0x0f008a] SYSPRP RunRegistryDlls:Retrieved section name for this phase as Specialize
+2021-09-27 04:03:50, Warning    [0x0f008f] SYSPRP RunRegistryDlls:Registry key is either empty or malformed: SOFTWARE\Microsoft\Windows\CurrentVersion\Setup\SysPrepExternal\Specialize
+2021-09-27 04:03:50, Info                  IBS    Callback_Specialize: External Providers Specialized Succeeded 
+2021-09-27 04:03:50, Info                         [setup.exe] OrchestrateUpdateImageState: Updating image state from [IMAGE_STATE_UNDEPLOYABLE] --> [IMAGE_STATE_SPECIALIZE_RESEAL_TO_OOBE]
+2021-09-27 04:03:50, Info                  IBS    Callback_Specialize: Specialize return: [0]
+2021-09-27 04:03:50, Info                  IBS    Callback_Specialize: Exit.
+2021-09-27 04:03:50, Info       [0x030023] CMI    Callback_CMI_ConfigInstall: Entry.
+2021-09-27 04:03:50, Info                  CMI    Callback_CMI_ConfigInstall: Online component configuration has already run; re-run CBS startup processing.
+2021-09-27 04:03:50, Info                  CMI    CBS_Core_Initialize: Loading CBS core from: C:\Windows\winsxs\amd64_microsoft-windows-servicingstack_31bf3856ad364e35_6.3.9600.19991_none_fa0fb7959b4c8c91\CbsCore.dll
+2021-09-27 04:03:50, Info                  CMI    CBS_Core_Initialize:Loaded cbscore.dll
+2021-09-27 04:03:50, Info                  CMI    CBS_Core_Initialize:Fetched entrypoints
+2021-09-27 04:03:50, Info                  CMI    CBS_Core_Initialize:Got malloc
+2021-09-27 04:03:50, Info                  CBS    Universal Time is: 2021-09-27 11:03:50.426
+2021-09-27 04:03:50, Info                  CBS    Loaded Servicing Stack v6.3.9600.19991 with Core: C:\Windows\winsxs\amd64_microsoft-windows-servicingstack_31bf3856ad364e35_6.3.9600.19991_none_fa0fb7959b4c8c91\CbsCore.dll
+2021-09-27 04:03:50, Info                  CSI    00000001@2021/9/27:11:03:50.426 WcpInitialize (wcp.dll version 0.0.0.6) called (stack @0x7ffe78827f69 @0x7ffe78b03fe4 @0x7ffe78b035eb @0x7ffe7a2db393 @0x7ffe7a2db772 @0x7ffe7a2da80d)
+2021-09-27 04:03:50, Info                  CBS    Could not load SrClient DLL from path: SrClient.dll.  Continuing without system restore points.
+2021-09-27 04:03:50, Info                  CMI    CBS_Core_Initialize:CbsCorInitialize succeeded
+2021-09-27 04:03:50, Info                  CMI    SecurityTemplateDoOnlineInstall:Skipping securityTemplate install - already completed online assembly.
+2021-09-27 04:03:50, Info                  CMI    Callback_CBS_Do_OnlineInstall:Calling startup processing
+2021-09-27 04:03:50, Info                  CBS    Retrieved original failure status: 0x00000000, last forward execute state: CbsExecuteStateStageDrivers
+2021-09-27 04:03:50, Info                  CBS    SetProgressMessage: progressMessageStage: 0, ExecuteState: ExecuteStateNone, SubStage: 0
+2021-09-27 04:03:50, Info                  CBS    Setting ExecuteState key to: CbsExecuteStateStageDrivers
+2021-09-27 04:03:50, Info                  CBS    Setting RollbackFailed flag to 0
+2021-09-27 04:03:50, Info                  CBS    Clearing HangDetect value
+2021-09-27 04:03:50, Info                  CBS    Saved last global progress. Current: 0, Limit: 1, ExecuteState: ExecuteStateNone
+2021-09-27 04:03:50, Info                  CBS    Execute state was not set.  Assuming ExecuteStateStart.
+2021-09-27 04:03:50, Info                  CBS    Startup: current ExecuteState is CbsExecuteStateStageDrivers
+2021-09-27 04:03:50, Info                  CBS    SetProgressMessage: progressMessageStage: 0, ExecuteState: CbsExecuteStateStageDrivers, SubStage: 0
+2021-09-27 04:03:50, Info                  CBS    Disabling LKG boot option
+2021-09-27 04:03:50, Info                  CBS    Startup: Initializing driver operations queue.
+2021-09-27 04:03:50, Info                  CBS    Startup: Initializing advanced operation queue.
+2021-09-27 04:03:52, Info                  CSI    00000002 CSI Store 97876501184 (0x00000016c9e4e2c0) initialized
+2021-09-27 04:03:52, Info                  CBS    Startup: Running under setup, skipping wait for SC autostart event
+2021-09-27 04:03:52, Info                  CBS    Failed reading PoqexecCmdline registry key [HRESULT = 0x80070002 - ERROR_FILE_NOT_FOUND]
+2021-09-27 04:03:52, Info                  CBS    Failed to get poqexec cmdline from Components\Configuration. [HRESULT = 0x80070002 - ERROR_FILE_NOT_FOUND]
+2021-09-27 04:03:52, Info                  CBS    Setting ExecuteState key to: CbsExecuteStateResolvePending
+2021-09-27 04:03:52, Info                  CBS    SetProgressMessage: progressMessageStage: -1, ExecuteState: CbsExecuteStateResolvePending, SubStage: 0
+2021-09-27 04:03:52, Info                  CBS    Startup: Processing advanced operation queue, startupPhase: 0
+2021-09-27 04:03:52, Info                  CSI    00000003 IAdvancedInstallerAwareStore_ResolvePendingTransactions (call 1) (flags = 0000000a, progress = NULL, phase = 0, pdwDisposition = @0x16c9ccd440
+2021-09-27 04:03:52, Info                  CSI    00000004 Creating NT transaction (seq 1), objectname [6]"(null)"
+2021-09-27 04:03:52, Info                  CSI    00000005 Created NT transaction (seq 1) result 0x00000000, handle @0x3c8
+2021-09-27 04:03:52, Info                  CSI    00000006 Poqexec successfully registered in [ml:26{13},l:24{12}]"SetupExecute"
+2021-09-27 04:03:52, Info                  CSI    00000007@2021/9/27:11:03:52.391 Beginning NT transaction commit...
+2021-09-27 04:03:52, Info                  CSI    00000008@2021/9/27:11:03:52.391 CSI perf trace:
+CSIPERF:TXCOMMIT;1736
+2021-09-27 04:03:52, Info                  CBS    Setting ExecuteState key to: CbsExecuteStateComplete
+2021-09-27 04:03:52, Info                  CBS    SetProgressMessage: progressMessageStage: -1, ExecuteState: CbsExecuteStateComplete, SubStage: 0
+2021-09-27 04:03:52, Info                  CBS    Clearing HangDetect value
+2021-09-27 04:03:52, Info                  CBS    Saved last global progress. Current: 1, Limit: 1, ExecuteState: CbsExecuteStateComplete
+2021-09-27 04:03:52, Info                  CBS    No pending packages, why was store asked to process pending packages?
+2021-09-27 04:03:52, Info                  CBS    Clearing original failure status: 0x00000000
+2021-09-27 04:03:52, Info                  CBS    Setting ExecuteState key to: ExecuteStateNone
+2021-09-27 04:03:52, Info                  CBS    Setting RollbackFailed flag to 0
+2021-09-27 04:03:52, Info                  CBS    Clearing HangDetect value
+2021-09-27 04:03:52, Info                  CBS    Saved last global progress. Current: 0, Limit: 1, ExecuteState: ExecuteStateNone
+2021-09-27 04:03:52, Info                  CBS    Startup: Retrying failed packages.
+2021-09-27 04:03:52, Info                  CBS    Startup: Processing complete. [HRESULT = 0x00000000 - S_OK]
+2021-09-27 04:03:52, Info                  CBS    Enabling LKG boot option
+2021-09-27 04:03:52, Info                  CMI    Callback_CBS_Do_OnlineInstall:Calling startup processing succeeded
+2021-09-27 04:03:52, Info                  CMI    Callback_CBS_Do_OnlineInstall:Calling PnP Online Install
+2021-09-27 04:03:52, Info                  CMI    Callback_CBS_Do_OnlineInstall:Calling PnP Online Install succeeded
+2021-09-27 04:03:52, Info                  CMI    CBS_Core_Finalize:Calling cbs core finalize
+2021-09-27 04:03:56, Info                  CMI    CBS_Core_Finalize:Calling cbs core finalize complete
+2021-09-27 04:03:56, Info                  CMI    Callback_CMI_ConfigInstall: CBS startup processing re-run complete.
+2021-09-27 04:03:56, Info       [0x030023] CMI    Callback_CMI_ConfigInstall: Exit.
+2021-09-27 04:03:56, Info                         [setup.exe] UnattendSearchExplicitPath: Found unattend file at [E:\unattend.xml]; examining for applicability.
+2021-09-27 04:03:56, Info                         [setup.exe] UnattendSearchExplicitPath: Found usable unattend file for pass [specialize] at [E:\unattend.xml].
+2021-09-27 04:03:56, Info                  IBS    Callback_Unattend_InitEngine:Using unattend file found at [E:\unattend.xml].
+2021-09-27 04:03:56, Info                         [setup.exe] ValidateSMIPass: serialized settings stream; status 0x00000000
+2021-09-27 04:03:56, Info                         [setup.exe] ValidateSMIPass: construct settings context; status 0x00000000
+2021-09-27 04:03:56, Info                         [setup.exe] ValidateSMIPass: load SMI settings; status 0x00000000
+2021-09-27 04:03:56, Info       [0x0600c0] IBS    Callback_Unattend_InitEngine:Successfully deserialized and validated unattend file [E:\unattend.xml].
+2021-09-27 04:03:56, Info       [0x0604d4] IBS    Callback_ConfigSetProcessUnattend: UseConfigurationSet is false.
+2021-09-27 04:03:56, Info                  DIAG   Callback_Diagnostic_Unattend: Setup was started from Phase 4. Disabling Diagnostics [ ProcessUnattend ] in this scenario
+2021-09-27 04:03:56, Info       [0x064047] IBSLIB MarkUnattendSettingAsProcessed: Marking unattend setting [ProductKey\ProductKey] as processed.
+2021-09-27 04:03:56, Info       [0x064047] IBSLIB MarkUnattendSettingAsProcessed: Marking unattend setting [UserData\ComputerName] as processed.
+2021-09-27 04:03:56, Info       [0x064047] IBSLIB MarkUnattendSettingAsProcessed: Marking unattend setting [SetupUI\SkipEula] as processed.
+2021-09-27 04:03:56, Info       [0x064047] IBSLIB MarkUnattendSettingAsProcessed: Marking unattend setting [PrepareDisks] as processed.
+2021-09-27 04:03:56, Info       [0x064047] IBSLIB MarkUnattendSettingAsProcessed: Marking unattend setting [LangPacks] as processed.
+2021-09-27 04:03:56, Info       [0x060590] IBS    CallBack_LanguagePacks_Unattend:Unattend already processed.
+2021-09-27 04:03:56, Info                         PnPIBS: Entering PnP callback to validate unattend.xml settings for component Microsoft-Windows-PnPCustomizationsWinPE ...
+
+2021-09-27 04:03:56, Info                         PnPIBS: Unattend settings need not be processed. Nothing more to be done here!
+
+2021-09-27 04:03:56, Info       [0x064047] IBSLIB MarkUnattendSettingAsProcessed: Marking unattend setting [SetupComplianceCheck] as processed.
+2021-09-27 04:03:56, Info       [0x064047] IBSLIB MarkUnattendSettingAsProcessed: Marking unattend setting [RegionalSettings] as processed.
+2021-09-27 04:03:56, Info       [0x0605fb] IBS    Callback_Locale_ProcessUnattendSettings: Layered Driver from downlevel system [1]
+2021-09-27 04:03:56, Info                  IBS    CallBack_Unattend_InitiatePass: Initiating unattend settings pass [specialize]
+2021-09-27 04:03:56, Info                         [setup.exe] Current pass status for [specialize] is [0x0]
+2021-09-27 04:03:56, Info                         [setup.exe] Applying data-only settings overrides using SMI...
+2021-09-27 04:03:56, Info                  CSI    00000001@2021/9/27:11:03:56.906 WcpInitialize (wcp.dll version 0.0.0.6) called (stack @0x7ffe78417f69 @0x7ffe789fceee @0x7ffe78a14e47 @0x7ffe789e9358 @0x7ffe789e82fb @0x7ffe7b49e1b3)
+2021-09-27 04:03:56, Info                         [setup.exe] Successfully applied data-only settings overrides.
+2021-09-27 04:03:56, Info                         [setup.exe] Calling into RunSMIActionPass to execute unattend GCs for pass [specialize]
+2021-09-27 04:03:56, Info                         [setup.exe] [Action Queue] : GenerateActionQueue begin
+2021-09-27 04:03:56, Info                         [setup.exe] [Action Queue] : Processing pass = specialize
+2021-09-27 04:03:56, Info                         [setup.exe] [Action Queue] : Generating queue file to C:\Windows\panther\actionqueue\specialize.uaq
+2021-09-27 04:03:56, Info                         [setup.exe] [Action Queue] : Identity 0: Microsoft-Windows-Shell-Setup, Culture=neutral, Version=6.3.9600.19468, PublicKeyToken=31bf3856ad364e35, ProcessorArchitecture=amd64, versionScope=NonSxS
+2021-09-27 04:03:56, Info                         [setup.exe] [Action Queue] : Identity 1: Microsoft-Windows-Deployment, Culture=neutral, Version=6.3.9600.17415, PublicKeyToken=31bf3856ad364e35, ProcessorArchitecture=amd64, versionScope=NonSxS
+2021-09-27 04:03:56, Info                         [setup.exe] [Action Queue] : Identity 2: Microsoft-Windows-TerminalServices-LocalSessionManager, Culture=neutral, Version=6.3.9600.17690, PublicKeyToken=31bf3856ad364e35, ProcessorArchitecture=amd64, versionScope=NonSxS
+2021-09-27 04:03:56, Info                         [setup.exe] [Action Queue] : Identity 3: Networking-MPSSVC-Svc, Culture=neutral, Version=6.3.9600.19122, PublicKeyToken=31bf3856ad364e35, ProcessorArchitecture=amd64, versionScope=NonSxS
+2021-09-27 04:03:56, Info                         [setup.exe] [Action Queue] : Using component order file C:\Windows\winsxs\amd64_microsoft-windows-servicingstack_31bf3856ad364e35_6.3.9600.19991_none_fa0fb7959b4c8c91\GlobalInstallOrder.xml
+2021-09-27 04:03:56, Info                  CSI    00000001@2021/9/27:11:03:56.937 WcpInitialize (wcp.dll version 0.0.0.6) called (stack @0x7ffe78417f69 @0x7ffe78fdff4d @0x7ffe78fdef24 @0x7ffe78fded34 @0x7ffe7b49db00 @0x7ffe7b49d2f6)
+2021-09-27 04:03:57, Info                         [setup.exe] [Action Queue] : Found manifest file C:\Windows\Winsxs\Manifests\amd64_microsoft-windows-t..localsessionmanager_31bf3856ad364e35_6.3.9600.17690_none_95f44aa1de8d7dac.manifest
+2021-09-27 04:03:57, Info                         [setup.exe] [Action Queue] : Found manifest file C:\Windows\Winsxs\Manifests\amd64_networking-mpssvc-svc_31bf3856ad364e35_6.3.9600.19122_none_8b1132539ba53c4e.manifest
+2021-09-27 04:03:57, Info                         [setup.exe] [Action Queue] : Found manifest file C:\Windows\Winsxs\Manifests\amd64_microsoft-windows-deployment_31bf3856ad364e35_6.3.9600.17415_none_ecf9f1b1c10b751f.manifest
+2021-09-27 04:03:57, Info                         [setup.exe] [Action Queue] : Found manifest file C:\Windows\Winsxs\Manifests\amd64_microsoft-windows-shell-setup_31bf3856ad364e35_6.3.9600.19468_none_c3329144bd83ac94.manifest
+2021-09-27 04:03:57, Info                         [setup.exe] [Action Queue] : GenerateActionQueue finish (hr = 0x0)
+2021-09-27 04:03:57, Info                         [setup.exe] [Action Queue] : ProcessActionQueue start
+2021-09-27 04:03:57, Info                         [setup.exe] [Action Queue] : ProcessActionQueue using queue file C:\Windows\panther\actionqueue\specialize.uaq
+2021-09-27 04:03:57, Info                         [setup.exe] [Action Queue] : Command Line = C:\WINDOWS\SYSTEM32\RUNDLL32.EXE / arguments = cmifw.dll,unattend / pass = specialize / manifest path = C:\Windows\Winsxs\Manifests\amd64_networking-mpssvc-svc_31bf3856ad364e35_6.3.9600.19122_none_8b1132539ba53c4e.manifest
+2021-09-27 04:03:57, Info                         [setup.exe] [Action Queue] : Command Line = C:\WINDOWS\SYSTEM32\SETUPUGC.EXE / arguments =  / pass = specialize / manifest path = C:\Windows\Winsxs\Manifests\amd64_microsoft-windows-deployment_31bf3856ad364e35_6.3.9600.17415_none_ecf9f1b1c10b751f.manifest
+2021-09-27 04:03:57, Info                         [setup.exe] [Action Queue] : Command Line = C:\WINDOWS\SYSTEM32\RUNDLL32.EXE / arguments = shsetup.dll,SHUnattendedSetup / pass = specialize / manifest path = C:\Windows\Winsxs\Manifests\amd64_microsoft-windows-shell-setup_31bf3856ad364e35_6.3.9600.19468_none_c3329144bd83ac94.manifest
+2021-09-27 04:03:57, Info                         [setup.exe] [Action Queue] : Executing command "C:\WINDOWS\SYSTEM32\RUNDLL32.EXE" cmifw.dll,unattend specialize
+2021-09-27 04:03:57, Info                         [setup.exe] [Action Queue] : process exit code = 0
+2021-09-27 04:03:57, Info                         [setup.exe] [Action Queue] : Unattend action returned operation complete.
+2021-09-27 04:03:57, Info                         [setup.exe] [Action Queue] : Executing command "C:\WINDOWS\SYSTEM32\SETUPUGC.EXE"  specialize
+2021-09-27 04:03:58, Info                         [setup.exe] [Action Queue] : process exit code = 0
+2021-09-27 04:03:58, Info                         [setup.exe] [Action Queue] : Unattend action returned operation complete.
+2021-09-27 04:03:58, Info                         [setup.exe] [Action Queue] : Executing command "C:\WINDOWS\SYSTEM32\RUNDLL32.EXE" shsetup.dll,SHUnattendedSetup specialize
+2021-09-27 04:03:58, Info                         [setup.exe] [Action Queue] : process exit code = 0
+2021-09-27 04:03:58, Info                         [setup.exe] [Action Queue] : Unattend action returned operation complete.
+2021-09-27 04:03:58, Info                         [setup.exe] [Action Queue] : ProcessActionQueue finish (hr = 0x0)
+2021-09-27 04:03:58, Info                         [setup.exe] Successfully completed execution of GC queue
+2021-09-27 04:03:58, Info       [0x0606cc] IBS    Flushing registry to disk...
+2021-09-27 04:03:58, Info       [0x0606cc] IBS    Flush took 46 ms.
+2021-09-27 04:03:58, Warning    [0x06036c] IBS    Callback_SystemRestore: Failed to set System Restore state. GLE is [126]
+2021-09-27 04:03:58, Info       [0x0606cc] IBS    GetSystemPartitionNTPath: Found system partition at [\Device\HarddiskVolume1].
+2021-09-27 04:03:58, Warning    [0x0606cc] IBS    GetSystemPartitionPath: Unable to find DOS drive path for system partition [\Device\HarddiskVolume1].
+2021-09-27 04:03:58, Info       [0x0606cc] IBS    GetSystemPartitionNTPath: Found system partition at [\Device\HarddiskVolume1].
+2021-09-27 04:03:58, Warning    [0x0606cc] IBS    GetSystemPartitionPath: Unable to find DOS drive path for system partition [\Device\HarddiskVolume1].
+2021-09-27 04:03:58, Warning               IBSLIB ModifyBootEntriesLegacy: There was an error getting the path to the boot.ini or ntldr. dwRetCode=[0x1F]
+2021-09-27 04:03:58, Warning               IBSLIB ModifyBootEntriesLegacy: We did not successfully complete ModifyBootEntriesLegacy.  This is non-fatal, continuing setup. dwRetCode[0x1F]
+2021-09-27 04:03:58, Info                  IBSLIB ModifyBootEntriesBCD:Setup phase is [4]
+2021-09-27 04:03:58, Info       [0x060215] IBS    CallBack_MungeBootEntries:Successfully modified boot entries
+2021-09-27 04:03:58, Info       [0x0605f3] IBS    Callback_Locale_InstallLayerDriver:Target layer driver is [1].  Friendly name: [PC/AT Enhanced Keyboard (101/102-Key)]
+2021-09-27 04:03:58, Info       [0x0605f4] IBS    Callback_Locale_InstallLayerDriver:Successfully set layer driver information
+2021-09-27 04:03:58, Info       [0x060366] IBS    OnlineSetting_CreateBootstatDatFile: Found an existing bootstat.dat
+2021-09-27 04:03:58, Info       [0x060367] IBS    OnlineSetting_CreateBootstatDatFile: Succeeded
+2021-09-27 04:03:58, Info       [0x06035e] IBS    OnlineSetting_PatchPowerSettings: Successfully updated power settings.
+2021-09-27 04:03:58, Info       [0x06035e] IBS    Callback_OnlineSettings: Successfully updated system legacy online settings
+2021-09-27 04:03:58, Info       [0x0600b6] IBS    Callback_Unattend_Serialize:Unattend file path is C:\Windows\Panther\unattend.xml
+2021-09-27 04:03:58, Info                  IBS    Callback_CleanupSensitiveBBData: Replacing entries under blackboard; entering new OS.
+2021-09-27 04:03:58, Info                  IBS    Callback_CleanupSensitiveBBData: Finished clearing data; 0 items cleared.
+2021-09-27 04:03:58, Info       [0x090093] PANTHR WdsEnableExit called!  When group #105 is empty, execution will stop, and the queue will be saved.
+2021-09-27 04:03:58, Info       [0x070042] DIAG   CallBack_DiagnosticDataSend: Called with notification for SetupPhaseDone published by Engine
+2021-09-27 04:03:58, Info                  DIAG   CallBack_DiagnosticDataSend: Setup was started from Phase 4. Disabling Diagnostics [DiagnosticDataSend] in this scenario
+2021-09-27 04:03:58, Info       [0x090092] PANTHR WdsEnableExit already called
+2021-09-27 04:03:58, Info                  UI     CallbackShowFinishOnline: Enter
+2021-09-27 04:03:58, Info                  UI     CallbackShowFinishOnline: Exit
+2021-09-27 04:03:58, Info       [0x09008e] PANTHR SeqExecute -- stopping, since termination group reached
+2021-09-27 04:03:58, Info       [0x090086] PANTHR pWorkerThreadFunc -- Stopping
+2021-09-27 04:03:58, Info       [0x090086] PANTHR pWorkerThreadFunc -- Stopping
+2021-09-27 04:03:58, Info       [0x090086] PANTHR pWorkerThreadFunc -- Stopping
+2021-09-27 04:03:58, Info       [0x0900c7] PANTHR SEQ EVENT_SERIALIZE_BEFORE_EXIT Received.  Will only save modules with persistent subscriptions!
+2021-09-27 04:03:58, Info       [0x0900b7] PANTHR SerializeToFile: C:\Windows\Panther\MainQueueOnline0.que
+2021-09-27 04:03:58, Info       [0x0900b8] PANTHR Saving Main Event Queue
+2021-09-27 04:03:58, Info       [0x0900b9] PANTHR Saving Permanent Event Queue
+2021-09-27 04:03:58, Info       [0x0900c5] PANTHR Queue Serialization Succeeded
+2021-09-27 04:03:58, Info                  PANTHR DeleteCriticalSection for pExecQueue->csLock;
+2021-09-27 04:03:58, Info       [0x0605a6] IBS    Requested UI to hide the language and locale selection pages.
+2021-09-27 04:03:58, Info       [0x090081] PANTHR Destroying any unreferenced modules! (SEQ6)
+2021-09-27 04:03:58, Info       [0x0601dc] IBS    Setup has completed phase 4 at 2021-09-27 04:03:58
+2021-09-27 04:03:58, Info                  IBS    Successfully logged OS information onto event viewer system channel
+2021-09-27 04:03:58, Info       [0x0601e1] IBS    InstallWindows:First boot phase of setup done!!!!
+2021-09-27 04:03:58, Info       [0x090009] PANTHR CBlackboard::Close: c:\windows\panther\setupinfo.

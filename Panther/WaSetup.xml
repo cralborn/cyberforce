@@ -1,0 +1,504 @@
+<Event time="2021-09-27T11:03:58.239Z" category="INFO" source="Unattend"><UnattendStart><Parameters ConfigurationPass="specialize"/></UnattendStart></Event>
+<Event time="2021-09-27T11:03:58.286Z" category="INFO" source="Unattend"><UnhandledError><Message>DeleteRegistry: Failed to delete key 'HKEY_LOCAL_MACHINE\SYSTEM\Setup\AzureProvisioning\'.</Message><Number>-2147024894</Number><Description>Unable to remove registry key "HKEY_LOCAL_MACHINE\SYSTEM\Setup\AzureProvisioning\".</Description><Source>WshShell.RegDelete</Source></UnhandledError></Event>
+<Event time="2021-09-27T11:03:58.286Z" category="INFO" source="Unattend"><DeleteRestartFlag RestartTagFilePresent="0" RestartTagFileDeleted="0"/></Event>
+<Event time="2021-09-27T11:03:58.286Z" category="INFO" source="Unattend"><SetKvpRegistry><specialize_PA_StartTime Message="2021-09-27T11:03:58.286Z"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:03:58.286Z" category="INFO" source="Unattend"><GetRegistryValue>key: HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\MediaIdentifier, value: BuildGUID, data: c697d014-864d-ee0f-edb9-a510d44f467f</GetRegistryValue></Event>
+<Event time="2021-09-27T11:03:58.286Z" category="INFO" source="Unattend"><SetKvpRegistry><provisioning_PA_MediaIdentifier Message="c697d014-864d-ee0f-edb9-a510d44f467f"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:03:58.286Z" category="INFO" source="Unattend"><SetKvpRegistry><specialize_PA_Version Message="1.0.9.98"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:03:58.286Z" category="INFO" source="Unattend"><GetRegistryValue>Failed to find registry value HKEY_LOCAL_MACHINE\SYSTEM\Setup\AzureProvisioning\ConfigurationDrive</GetRegistryValue></Event>
+<Event time="2021-09-27T11:03:58.286Z" category="INFO" source="Unattend"><ExecuteAndTraceWithResults><ExecutingCommand>%SystemRoot%\OEM\WaGuest.exe /cdrom</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:03:58.318Z" category="INFO" source="Unattend"><ExecuteAndTraceWithResults ExitCode="0"><Output>E</Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:03:58.318Z" category="INFO" source="Unattend"><SetRegistryValue>key: HKEY_LOCAL_MACHINE\SYSTEM\Setup\AzureProvisioning, value: ConfigurationDrive, type: REG_SZ, data: E</SetRegistryValue></Event>
+<Event time="2021-09-27T11:03:58.318Z" category="INFO" source="Environment"><Initialize>ovf-env.xml loaded from E:\ovf-env.xml</Initialize></Event>
+<Event time="2021-09-27T11:03:58.349Z" category="INFO" source="Environment"><WindowsProvisioningConfigurationSet><ComputerName>pps-vm-01000000</ComputerName><AdminPassword>*SENSITIVE*DATA*DELETED*</AdminPassword><ResetPasswordOnFirstLogon>false</ResetPasswordOnFirstLogon></WindowsProvisioningConfigurationSet></Event>
+<Event time="2021-09-27T11:03:58.349Z" category="INFO" source="Unattend"><IsPreprovisionPass>-1</IsPreprovisionPass></Event>
+<Event time="2021-09-27T11:03:58.365Z" category="INFO" source="Unattend"><SetKvpRegistry><specialize_PA_Preprovision Message="True"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:03:58.365Z" category="INFO" source="Unattend"><GetRegistryValue>key: HKEY_LOCAL_MACHINE\SYSTEM\Setup, value: AzureProvisioningOfflinedTag, data: </GetRegistryValue></Event>
+<Event time="2021-09-27T11:03:58.365Z" category="INFO" source="Unattend"><GetRegistryValue>key: HKEY_LOCAL_MACHINE\SYSTEM\Setup, value: AzureProvisioningOfflinedFlags, data: 255</GetRegistryValue></Event>
+<Event time="2021-09-27T11:03:58.365Z" category="INFO" source="Unattend"><SetKvpRegistry><specialize_PA_OfflinedFlags Message="255"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:03:58.365Z" category="INFO" source="Unattend"><SetKvpRegistry><specialize_PA_OfflinedTag Message=""/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:03:58.365Z" category="INFO" source="Unattend"><SetKvpRegistry><specialize_PA_EffectiveOfflinedFlags Message="16383"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:03:58.365Z" category="INFO" source="Unattend"><GetRegistryValue>key: HKLM\SYSTEM\CurrentControlSet\Control\InitialMachineConfig, value: Sequence, data: 15</GetRegistryValue></Event>
+<Event time="2021-09-27T11:03:58.365Z" category="INFO" source="Unattend"><SetKvpRegistry><provisioning_PA_ProvisionState Message="Provisioning"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:03:58.365Z" category="INFO" source="Environment"><WindowsProvisioningConfigurationSet><ComputerName>pps-vm-01000000</ComputerName><AdminPassword>*SENSITIVE*DATA*DELETED*</AdminPassword><ResetPasswordOnFirstLogon>false</ResetPasswordOnFirstLogon></WindowsProvisioningConfigurationSet></Event>
+<Event time="2021-09-27T11:03:58.365Z" category="INFO" source="Unattend"><ConfigurePageFile><EnvironmentSettings Path="" Size=""/></ConfigurePageFile></Event>
+<Event time="2021-09-27T11:03:58.365Z" category="INFO" source="OperatingSystem"><GetRegistryValue>key: HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management, value: PagingFiles, data: D:\pagefile.sys 0 0</GetRegistryValue></Event>
+<Event time="2021-09-27T11:03:58.365Z" category="INFO" source="Unattend"><ExecuteAndTraceWithResults><ExecutingCommand>REG ADD "HKEY_LOCAL_MACHINE\SYSTEM\Setup\AzureProvisioning" /v "OriginalPageFileSettings" /t REG_MULTI_SZ /d "D:\pagefile.sys 0 0" /f</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:03:58.381Z" category="INFO" source="Unattend"><ExecuteAndTraceWithResults ExitCode="0"><Output>The operation completed successfully.
+
+</Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:03:58.381Z" category="INFO" source="Unattend"><SetRegistryValue>key: HKEY_LOCAL_MACHINE\SYSTEM\Setup\AzureProvisioning, value: OriginalPageFileSettings, type: REG_MULTI_SZ, data: D:\pagefile.sys 0 0</SetRegistryValue></Event>
+<Event time="2021-09-27T11:03:58.381Z" category="INFO" source="OperatingSystem"><GetRegistryValue>Failed to find registry value HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\TempPageFile</GetRegistryValue></Event>
+<Event time="2021-09-27T11:03:58.381Z" category="INFO" source="Unattend"><GetRegistryValue>Failed to find registry value HKEY_LOCAL_MACHINE\SYSTEM\Setup\AzureProvisioning\ResourceDrive</GetRegistryValue></Event>
+<Event time="2021-09-27T11:03:58.381Z" category="INFO" source="Unattend"><ExecuteAndTraceWithResults><ExecutingCommand>%SystemRoot%\OEM\FindVolume.exe /path \device\Harddisk1\Partition1</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:03:58.400Z" category="INFO" source="Unattend"><ExecuteAndTraceWithResults ExitCode="0"><Output>D:</Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:03:58.400Z" category="INFO" source="Unattend"><SetRegistryValue>key: HKEY_LOCAL_MACHINE\SYSTEM\Setup\AzureProvisioning, value: ResourceDrive, type: REG_SZ, data: D:</SetRegistryValue></Event>
+<Event time="2021-09-27T11:03:58.400Z" category="INFO" source="OperatingSystem"><GetRegistryValue>key: HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management, value: PagingFiles, data: D:\pagefile.sys 0 0</GetRegistryValue></Event>
+<Event time="2021-09-27T11:03:58.400Z" category="INFO" source="OperatingSystem"><ConfigurePageFile>Page file already exists on the specified path with given size.</ConfigurePageFile></Event>
+<Event time="2021-09-27T11:03:58.400Z" category="INFO" source="Unattend"><ConfigurePageFile><Settings Path="D:\pagefile.sys" Size="0" RebootRequired="False"/></ConfigurePageFile></Event>
+<Event time="2021-09-27T11:03:58.400Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_specialize_1_ConfigurePageFile Message="Called=2021-09-27T11:03:58.365Z;Returned=2021-09-27T11:03:58.400Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:03:58.400Z" category="INFO" source="Unattend"><SetKvpRegistry><provisioning_PA_PageFileChanged Message="0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:03:58.400Z" category="INFO" source="Unattend"><ProcedureOfflined Procedure="ConfigureBootStatusPolicy" Flag="1"/></Event>
+<Event time="2021-09-27T11:03:58.400Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_specialize_2_ConfigureBootStatusPolicy Message="Called=2021-09-27T11:03:58.400Z;Returned=2021-09-27T11:03:58.400Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:03:58.400Z" category="INFO" source="Unattend"><ProcedureOfflined Procedure="ConfigureTimeSettings" Flag="4"/></Event>
+<Event time="2021-09-27T11:03:58.400Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_specialize_3_ConfigureTimeSettings Message="Called=2021-09-27T11:03:58.400Z;Returned=2021-09-27T11:03:58.400Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:03:58.400Z" category="INFO" source="Unattend"><ProcedureOfflined Procedure="ConfigureSanPolicy" Flag="8"/></Event>
+<Event time="2021-09-27T11:03:58.400Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_specialize_4_ConfigureSanPolicy Message="Called=2021-09-27T11:03:58.400Z;Returned=2021-09-27T11:03:58.400Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:03:58.400Z" category="INFO" source="Unattend"><SetKvpRegistry><provisioning_PA_SanPolicyChanged Message="0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:03:58.400Z" category="INFO" source="Unattend"><ProcedureOfflined Procedure="ConfigureRdpKeepAlive" Flag="16"/></Event>
+<Event time="2021-09-27T11:03:58.400Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_specialize_5_ConfigureRdpKeepAlive Message="Called=2021-09-27T11:03:58.400Z;Returned=2021-09-27T11:03:58.400Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:03:58.400Z" category="INFO" source="Unattend"><ProcedureOfflined Procedure="CopyCustomData" Flag="256"/></Event>
+<Event time="2021-09-27T11:03:58.400Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_specialize_6_CopyCustomData Message="Called=2021-09-27T11:03:58.400Z;Returned=2021-09-27T11:03:58.400Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:03:58.400Z" category="INFO" source="Unattend"><GetRegistryValue>key: HKEY_LOCAL_MACHINE\SYSTEM\Setup\AzureProvisioning, value: ConfigurationDrive, data: E</GetRegistryValue></Event>
+<Event time="2021-09-27T11:03:58.400Z" category="INFO" source="Unattend"><CopyTempDriveWarningReadme>configSetDrive: E:\, sourcePath: E:\$$\OEM\, sourceFile: E:\$$\OEM\DATALOSS_WARNING_README.txt</CopyTempDriveWarningReadme></Event>
+<Event time="2021-09-27T11:03:58.400Z" category="INFO" source="Unattend"><GetRegistryValue>key: HKEY_LOCAL_MACHINE\SYSTEM\Setup\AzureProvisioning, value: ResourceDrive, data: D:</GetRegistryValue></Event>
+<Event time="2021-09-27T11:03:58.400Z" category="INFO" source="Unattend"><CopyTempDriveWarningReadme>resourceDrive: D:\, destFile: </CopyTempDriveWarningReadme></Event>
+<Event time="2021-09-27T11:03:58.400Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_specialize_7_CopyTempDriveWarningReadme Message="Called=2021-09-27T11:03:58.400Z;Returned=2021-09-27T11:03:58.400Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:03:58.400Z" category="INFO" source="Unattend"><ProcedureOfflined Procedure="ConfigureWinRmPrep" Flag="2048"/></Event>
+<Event time="2021-09-27T11:03:58.400Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_specialize_8_ConfigureWinRmPrep Message="Called=2021-09-27T11:03:58.400Z;Returned=2021-09-27T11:03:58.400Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:03:58.400Z" category="INFO" source="Unattend"><ExecuteAndTraceWithResults><ExecutingCommand>%SystemRoot%\OEM\WaGuest.exe /ejectiso</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:03:58.616Z" category="INFO" source="Unattend"><ExecuteAndTraceWithResults ExitCode="0"><Output></Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:03:58.616Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_specialize_9_EjectIso Message="Called=2021-09-27T11:03:58.400Z;Returned=2021-09-27T11:03:58.616Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:03:58.616Z" category="INFO" source="Unattend"><ExecuteAndTraceWithResults><ExecutingCommand>%SystemRoot%\OEM\WaGuest.exe /timeinfo</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:03:58.634Z" category="INFO" source="Unattend"><ExecuteAndTraceWithResults ExitCode="0"><Output>35296 2021-09-27T11:03:58.619Z</Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:03:58.634Z" category="INFO" source="Unattend"><SetKvpRegistry><specialize_PA_TickCount Message="35296"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:03:58.634Z" category="INFO" source="Unattend"><SetKvpRegistry><specialize_PA_CompletionTime Message="2021-09-27T11:03:58.619Z"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:03:58.634Z" category="INFO" source="Unattend"><UnattendEnd ExitCode="0"/></Event>
+<Event time="2021-09-27T11:04:03.413Z" category="INFO" source="Unattend"><UnattendStart><Parameters ConfigurationPass="oobeSystem"/></UnattendStart></Event>
+<Event time="2021-09-27T11:04:03.413Z" category="INFO" source="Unattend"><SetKvpRegistry><oobeSystem_PA_StartTime Message="2021-09-27T11:04:03.413Z"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:03.413Z" category="ERROR" source="Unattend"><GetRegistryValue>Failed to find registry value HKLM\Software\Microsoft\Virtual Machine\Guest\Parameters\VirtualMachineName</GetRegistryValue></Event>
+<Event time="2021-09-27T11:04:03.429Z" category="ERROR" source="Unattend"><UnhandledError><Message>SetKvpRegistry: Set registry oobeSystem_PA_ContainerId failed. Registry value should be: </Message><Number>13</Number><Description>Type mismatch</Description><Source>Microsoft VBScript runtime error</Source></UnhandledError></Event>
+<Event time="2021-09-27T11:04:03.429Z" category="INFO" source="Unattend"><SetKvpRegistry><oobeSystem_PA_OSVersion Message="Windows Server 2012 R2 Datacenter 9600.20111.amd64fre.winblue_ltsb_escrow.210812-0920"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:03.429Z" category="INFO" source="Unattend"><GetRegistryValue>key: HKEY_LOCAL_MACHINE\SYSTEM\Setup\AzureProvisioning, value: ConfigurationDrive, data: E</GetRegistryValue></Event>
+<Event time="2021-09-27T11:04:03.429Z" category="INFO" source="Environment"><Initialize>ovf-env.xml loaded from C:\Windows\Panther\ovf-env.xml</Initialize></Event>
+<Event time="2021-09-27T11:04:03.429Z" category="INFO" source="Unattend"><IsPreprovisionPass>-1</IsPreprovisionPass></Event>
+<Event time="2021-09-27T11:04:03.429Z" category="INFO" source="Unattend"><SetKvpRegistry><oobeSystem_PA_Preprovision Message="True"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:03.429Z" category="INFO" source="Unattend"><GetRegistryValue>key: HKEY_LOCAL_MACHINE\SYSTEM\Setup, value: AzureProvisioningOfflinedTag, data: </GetRegistryValue></Event>
+<Event time="2021-09-27T11:04:03.429Z" category="INFO" source="Unattend"><GetRegistryValue>key: HKEY_LOCAL_MACHINE\SYSTEM\Setup, value: AzureProvisioningOfflinedFlags, data: 255</GetRegistryValue></Event>
+<Event time="2021-09-27T11:04:03.429Z" category="INFO" source="Unattend"><SetKvpRegistry><oobeSystem_PA_OfflinedFlags Message="255"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:03.429Z" category="INFO" source="Unattend"><SetKvpRegistry><oobeSystem_PA_OfflinedTag Message=""/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:03.429Z" category="INFO" source="Unattend"><SetKvpRegistry><oobeSystem_PA_EffectiveOfflinedFlags Message="16383"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:03.429Z" category="INFO" source="Environment"><WindowsProvisioningConfigurationSet><ComputerName>pps-vm-01000000</ComputerName><AdminPassword>*SENSITIVE*DATA*DELETED*</AdminPassword><ResetPasswordOnFirstLogon>false</ResetPasswordOnFirstLogon></WindowsProvisioningConfigurationSet></Event>
+<Event time="2021-09-27T11:04:03.429Z" category="INFO" source="OperatingSystem"><ExecuteAndTraceWithResults><ExecutingCommand>%SystemRoot%\OEM\WaGuest.exe /renameadmin "azureppsadmin"</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:04:03.507Z" category="INFO" source="OperatingSystem"><ExecuteAndTraceWithResults ExitCode="0"><Output></Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:04:03.429Z" category="INFO" source="OperatingSystem"><RenameDefaultAdministratorAccount new="azureppsadmin"/></Event>
+<Event time="2021-09-27T11:04:03.507Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_oobeSystem_0_ConfigureAdministratorUsername Message="Called=2021-09-27T11:04:03.429Z;Returned=2021-09-27T11:04:03.507Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:03.585Z" category="INFO" source="WireServer"><SetKvpRegistry><provisioning_PA_DiscoverWireServer Message="0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:03.585Z" category="INFO" source="WireServer"><HttpRequest verb="GET" url="http://168.63.129.16/?comp=Versions"/></Event>
+<Event time="2021-09-27T11:04:03.601Z" category="INFO" source="WireServer"><SendRequest>attempt=1, status=200, Err.Number=0</SendRequest></Event>
+<Event time="2021-09-27T11:04:03.601Z" category="INFO" source="WireServer"><SetKvpRegistry><PA_oobeSystem_WireServer_1_GET_Versions Message="Called=2021-09-27T11:04:03.585Z;Returned=2021-09-27T11:04:03.601Z;StatusCode=200;Attempts=1"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:03.601Z" category="INFO" source="WireServer"><ControlSystemNegotiation><Version>2015-04-05</Version></ControlSystemNegotiation></Event>
+<Event time="2021-09-27T11:04:03.601Z" category="INFO" source="WireServer"><HttpRequest verb="GET" url="http://168.63.129.16/machine?comp=goalstate"/></Event>
+<Event time="2021-09-27T11:04:03.616Z" category="INFO" source="WireServer"><HttpResponse statusCode="200"><ResponseBody><GoalState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="goalstate10.xsd">
+				<Version>2015-04-05</Version>
+				<Incarnation>1</Incarnation>
+				<Machine>
+					<ExpectedState>Started</ExpectedState>
+					<StopRolesDeadlineHint>300000</StopRolesDeadlineHint>
+					<LBProbePorts>
+						<Port>16001</Port>
+					</LBProbePorts>
+					<ExpectHealthReport>FALSE</ExpectHealthReport>
+				</Machine>
+				<Container>
+					<ContainerId>53361e4a-b15a-44b4-8571-d89c49b93941</ContainerId>
+					<RoleInstanceList>
+						<RoleInstance>
+							<InstanceId>a4b82d6e-d4eb-402e-9c6b-da4ae5e2f389._pps-vm-01_0</InstanceId>
+							<State>Started</State>
+							<Configuration>
+								<HostingEnvironmentConfig>http://168.63.129.16:80/machine/53361e4a-b15a-44b4-8571-d89c49b93941/a4b82d6e%2Dd4eb%2D402e%2D9c6b%2Dda4ae5e2f389.%5Fpps%2Dvm%2D01%5F0?comp=config&amp;type=hostingEnvironmentConfig&amp;incarnation=1</HostingEnvironmentConfig>
+								<SharedConfig>http://168.63.129.16:80/machine/53361e4a-b15a-44b4-8571-d89c49b93941/a4b82d6e%2Dd4eb%2D402e%2D9c6b%2Dda4ae5e2f389.%5Fpps%2Dvm%2D01%5F0?comp=config&amp;type=sharedConfig&amp;incarnation=1</SharedConfig>
+								<ExtensionsConfig>http://168.63.129.16:80/machine/53361e4a-b15a-44b4-8571-d89c49b93941/a4b82d6e%2Dd4eb%2D402e%2D9c6b%2Dda4ae5e2f389.%5Fpps%2Dvm%2D01%5F0?comp=config&amp;type=extensionsConfig&amp;incarnation=1</ExtensionsConfig>
+								<FullConfig>http://168.63.129.16:80/machine/53361e4a-b15a-44b4-8571-d89c49b93941/a4b82d6e%2Dd4eb%2D402e%2D9c6b%2Dda4ae5e2f389.%5Fpps%2Dvm%2D01%5F0?comp=config&amp;type=fullConfig&amp;incarnation=1</FullConfig>
+								<Certificates>http://168.63.129.16:80/machine/53361e4a-b15a-44b4-8571-d89c49b93941/a4b82d6e%2Dd4eb%2D402e%2D9c6b%2Dda4ae5e2f389.%5Fpps%2Dvm%2D01%5F0?comp=certificates&amp;incarnation=1</Certificates>
+								<ConfigName>a4b82d6e-d4eb-402e-9c6b-da4ae5e2f389.0.a4b82d6e-d4eb-402e-9c6b-da4ae5e2f389.0._pps-vm-01_0.1.xml</ConfigName>
+							</Configuration>
+						</RoleInstance>
+					</RoleInstanceList>
+				</Container>
+			</GoalState></ResponseBody></HttpResponse></Event>
+<Event time="2021-09-27T11:04:03.616Z" category="INFO" source="WireServer"><SetKvpRegistry><PA_oobeSystem_WireServer_2_GET_goalState Message="Called=2021-09-27T11:04:03.601Z;Returned=2021-09-27T11:04:03.616Z;StatusCode=200;Attempts=1"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:03.616Z" category="INFO" source="WireServer"><SetKvpRegistry><oobeSystem_PA_FirstGoodGoalStateTime Message="2021-09-27T11:04:03.616Z"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:03.616Z" category="INFO" source="WireServer"><GoalStateUpdate version="2015-04-05"><GoalState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="goalstate10.xsd">
+			<Version>2015-04-05</Version>
+			<Incarnation>1</Incarnation>
+			<Machine>
+				<ExpectedState>Started</ExpectedState>
+				<StopRolesDeadlineHint>300000</StopRolesDeadlineHint>
+				<LBProbePorts>
+					<Port>16001</Port>
+				</LBProbePorts>
+				<ExpectHealthReport>FALSE</ExpectHealthReport>
+			</Machine>
+			<Container>
+				<ContainerId>53361e4a-b15a-44b4-8571-d89c49b93941</ContainerId>
+				<RoleInstanceList>
+					<RoleInstance>
+						<InstanceId>a4b82d6e-d4eb-402e-9c6b-da4ae5e2f389._pps-vm-01_0</InstanceId>
+						<State>Started</State>
+						<Configuration>
+							<HostingEnvironmentConfig>http://168.63.129.16:80/machine/53361e4a-b15a-44b4-8571-d89c49b93941/a4b82d6e%2Dd4eb%2D402e%2D9c6b%2Dda4ae5e2f389.%5Fpps%2Dvm%2D01%5F0?comp=config&amp;type=hostingEnvironmentConfig&amp;incarnation=1</HostingEnvironmentConfig>
+							<SharedConfig>http://168.63.129.16:80/machine/53361e4a-b15a-44b4-8571-d89c49b93941/a4b82d6e%2Dd4eb%2D402e%2D9c6b%2Dda4ae5e2f389.%5Fpps%2Dvm%2D01%5F0?comp=config&amp;type=sharedConfig&amp;incarnation=1</SharedConfig>
+							<ExtensionsConfig>http://168.63.129.16:80/machine/53361e4a-b15a-44b4-8571-d89c49b93941/a4b82d6e%2Dd4eb%2D402e%2D9c6b%2Dda4ae5e2f389.%5Fpps%2Dvm%2D01%5F0?comp=config&amp;type=extensionsConfig&amp;incarnation=1</ExtensionsConfig>
+							<FullConfig>http://168.63.129.16:80/machine/53361e4a-b15a-44b4-8571-d89c49b93941/a4b82d6e%2Dd4eb%2D402e%2D9c6b%2Dda4ae5e2f389.%5Fpps%2Dvm%2D01%5F0?comp=config&amp;type=fullConfig&amp;incarnation=1</FullConfig>
+							<Certificates>http://168.63.129.16:80/machine/53361e4a-b15a-44b4-8571-d89c49b93941/a4b82d6e%2Dd4eb%2D402e%2D9c6b%2Dda4ae5e2f389.%5Fpps%2Dvm%2D01%5F0?comp=certificates&amp;incarnation=1</Certificates>
+							<ConfigName>a4b82d6e-d4eb-402e-9c6b-da4ae5e2f389.0.a4b82d6e-d4eb-402e-9c6b-da4ae5e2f389.0._pps-vm-01_0.1.xml</ConfigName>
+						</Configuration>
+					</RoleInstance>
+				</RoleInstanceList>
+			</Container>
+		</GoalState></GoalStateUpdate></Event>
+<Event time="2021-09-27T11:04:03.616Z" category="INFO" source="GuestInterface"><GoalState MachineExpectedState="Started"/></Event>
+<Event time="2021-09-27T11:04:03.647Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_oobeSystem_1_InitializeGuest Message="Called=2021-09-27T11:04:03.507Z;Returned=2021-09-27T11:04:03.647Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:03.647Z" category="INFO" source="Unattend"><ProcedureOfflined Procedure="RunAzSecAgent" Flag="512"/></Event>
+<Event time="2021-09-27T11:04:03.647Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_oobeSystem_2_RunAzSecAgent Message="Called=2021-09-27T11:04:03.647Z;Returned=2021-09-27T11:04:03.647Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:03.647Z" category="INFO" source="Unattend"><ProcedureOfflined Procedure="ConfigureCertificates" Flag="1024"/></Event>
+<Event time="2021-09-27T11:04:03.647Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_oobeSystem_3_ConfigureCertificates Message="Called=2021-09-27T11:04:03.647Z;Returned=2021-09-27T11:04:03.647Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:03.647Z" category="INFO" source="Unattend"><ProcedureOfflined Procedure="ConfigureWinRm" Flag="2048"/></Event>
+<Event time="2021-09-27T11:04:03.647Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_oobeSystem_4_ConfigureWinRm Message="Called=2021-09-27T11:04:03.647Z;Returned=2021-09-27T11:04:03.647Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:03.647Z" category="INFO" source="Unattend"><ProcedureOfflined Procedure="ConfigureBCD" Flag="64"/></Event>
+<Event time="2021-09-27T11:04:03.647Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_oobeSystem_5_ConfigureBCD Message="Called=2021-09-27T11:04:03.647Z;Returned=2021-09-27T11:04:03.647Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:03.647Z" category="INFO" source="BootConfig"><ExecuteAndTraceWithResults><ExecutingCommand>bcdedit /set {fa926493-6f1c-4193-a414-58f0b2456d1e} recoveryenabled no</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:04:03.679Z" category="INFO" source="BootConfig"><ExecuteAndTraceWithResults ExitCode="0"><Output>The operation completed successfully.
+</Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:04:03.710Z" category="INFO" source="BootConfig"><BootConfigRemediation><RecoveryEnabledFlagConfigured/></BootConfigRemediation></Event>
+<Event time="2021-09-27T11:04:03.741Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_oobeSystem_6_ConfigureRecoveryEnabled Message="Called=2021-09-27T11:04:03.647Z;Returned=2021-09-27T11:04:03.741Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:03.741Z" category="INFO" source="Unattend"><ProcedureOfflined Procedure="ConfigureTimeService" Flag="2"/></Event>
+<Event time="2021-09-27T11:04:03.741Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_oobeSystem_7_ConfigureTimeService Message="Called=2021-09-27T11:04:03.741Z;Returned=2021-09-27T11:04:03.741Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:04.335Z" category="INFO" source="SoftwareLicensing"><LicensingRemediation><CurrentProduct id="00091344-1ea4-4f37-b789-01750ba6988c" licenseFamily="ServerDatacenter" partialProductKey="Q3VJ9"><Description>Windows(R) Operating System, VOLUME_KMSCLIENT channel</Description></CurrentProduct></LicensingRemediation></Event>
+<Event time="2021-09-27T11:04:04.366Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_oobeSystem_8_ConfigureLicensing Message="Called=2021-09-27T11:04:03.741Z;Returned=2021-09-27T11:04:04.366Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:04.366Z" category="INFO" source="Unattend"><ProcedureOfflined Procedure="UpdateRDPCertificateThumbprint" Flag="8192"/></Event>
+<Event time="2021-09-27T11:04:04.366Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_oobeSystem_9_UpdateRDPCertificateThumbprint Message="Called=2021-09-27T11:04:04.366Z;Returned=2021-09-27T11:04:04.366Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:04.366Z" category="INFO" source="Unattend"><ProcedureOfflined Procedure="ConfigureAutomaticUpdates" Flag="4096"/></Event>
+<Event time="2021-09-27T11:04:04.366Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_oobeSystem_10_ConfigureAutomaticUpdates Message="Called=2021-09-27T11:04:04.366Z;Returned=2021-09-27T11:04:04.366Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:04.382Z" category="INFO" source="Unattend"><ProcedureOfflined Procedure="SetScreenAlwaysOn" Flag="32"/></Event>
+<Event time="2021-09-27T11:04:04.382Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_oobeSystem_11_SetScreenAlwaysOn Message="Called=2021-09-27T11:04:04.382Z;Returned=2021-09-27T11:04:04.382Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:04.382Z" category="INFO" source="Unattend"><DeleteRegistry>path: HKEY_LOCAL_MACHINE\SYSTEM\Setup, key name: AzureProvisioningOfflinedTag</DeleteRegistry></Event>
+<Event time="2021-09-27T11:04:04.382Z" category="INFO" source="Unattend"><DeleteRegistry>path: HKEY_LOCAL_MACHINE\SYSTEM\Setup, key name: AzureProvisioningOfflinedFlags</DeleteRegistry></Event>
+<Event time="2021-09-27T11:04:04.382Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_oobeSystem_12_DeleteOfflinedFlags Message="Called=2021-09-27T11:04:04.382Z;Returned=2021-09-27T11:04:04.382Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:04.382Z" category="INFO" source="OperatingSystem"><ExecuteAndTraceWithResults><ExecutingCommand>%SystemRoot%\System32\schtasks.exe /create /tn \Microsoft\AzureIaasReprovisioningTask /xml %SystemRoot%\OEM\AzureIaasReprovisioningTask.xml</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:04:04.491Z" category="INFO" source="OperatingSystem"><ExecuteAndTraceWithResults ExitCode="0"><Output>SUCCESS: The scheduled task "\Microsoft\AzureIaasReprovisioningTask" has successfully been created.
+</Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:04:04.491Z" category="INFO" source="OperatingSystem"><CreateScheduledTask task="\Microsoft\AzureIaasReprovisioningTask"/></Event>
+<Event time="2021-09-27T11:04:04.491Z" category="INFO" source="Unattend"><GetRegistryValue>key: HKLM\System\CurrentControlSet\Control\Session Manager, value: SetupExecute, data: </GetRegistryValue></Event>
+<Event time="2021-09-27T11:04:04.491Z" category="INFO" source="Unattend"><ExecuteAndTraceWithResults><ExecutingCommand>REG ADD "HKLM\System\CurrentControlSet\Control\Session Manager" /v "SetupExecute" /t REG_MULTI_SZ /d "AzureRPA" /f</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:04:04.507Z" category="INFO" source="Unattend"><ExecuteAndTraceWithResults ExitCode="0"><Output>The operation completed successfully.
+
+</Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:04:04.507Z" category="INFO" source="Unattend"><SetRegistryValue>key: HKLM\System\CurrentControlSet\Control\Session Manager, value: SetupExecute, type: REG_MULTI_SZ, data: AzureRPA</SetRegistryValue></Event>
+<Event time="2021-09-27T11:04:04.507Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_oobeSystem_13_ConfigureReprovisioning Message="Called=2021-09-27T11:04:04.382Z;Returned=2021-09-27T11:04:04.507Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:04.507Z" category="INFO" source="Unattend"><ExecuteAndTraceWithResults><ExecutingCommand>%SystemRoot%\OEM\WaGuest.exe /timeinfo</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:04:04.522Z" category="INFO" source="Unattend"><ExecuteAndTraceWithResults ExitCode="0"><Output>40890 2021-09-27T11:04:04.507Z</Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:04:04.522Z" category="INFO" source="Unattend"><SetKvpRegistry><provisioning_PA_TickCount Message="40890"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:04.522Z" category="INFO" source="Unattend"><SetKvpRegistry><provisioning_PA_CompletionTime Message="2021-09-27T11:04:04.507Z"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:04.522Z" category="INFO" source="Unattend"><SetKvpRegistry><provisioning_PA_ProvisionState Message="Preprovisioned"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:04.522Z" category="INFO" source="WireServer"><HttpRequest verb="POST" url="http://168.63.129.16/machine?comp=health"/></Event>
+<Event time="2021-09-27T11:04:04.522Z" category="INFO" source="WireServer"><SendRequest>attempt=1, status=200, Err.Number=0</SendRequest></Event>
+<Event time="2021-09-27T11:04:04.522Z" category="INFO" source="WireServer"><SetKvpRegistry><PA_oobeSystem_WireServer_3_POST_health Message="Called=2021-09-27T11:04:04.522Z;Returned=2021-09-27T11:04:04.522Z;StatusCode=200;Attempts=1"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:04.522Z" category="INFO" source="WireServer"><HealthUpdate version="2015-04-05"><Health><GoalStateIncarnation>1</GoalStateIncarnation><Container><ContainerId>53361e4a-b15a-44b4-8571-d89c49b93941</ContainerId><RoleInstanceList><Role><InstanceId>a4b82d6e-d4eb-402e-9c6b-da4ae5e2f389._pps-vm-01_0</InstanceId><Health><State>Ready</State></Health></Role></RoleInstanceList></Container></Health></HealthUpdate></Event>
+<Event time="2021-09-27T11:04:04.522Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_oobeSystem_14_ReportPreprovisioned Message="Called=2021-09-27T11:04:04.522Z;Returned=2021-09-27T11:04:04.522Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:04.538Z" category="INFO" source="GuestAgent"><VerifyOsRequirements OsMajorVersion="6" OsMinorVersion="3"/></Event>
+<Event time="2021-09-27T11:04:04.538Z" category="INFO" source="GuestAgent"><SetKvpRegistry><PA_oobeSystem_95_ConfigureGuestAgentService_0_VerifyOsRequirements Message="Called=2021-09-27T11:04:04.538Z;Returned=2021-09-27T11:04:04.538Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:04.538Z" category="INFO" source="GuestAgent"><ExecuteAndTraceWithResults><ExecutingCommand>%SystemRoot%\OEM\WaGuest.exe /isserviceinstalled "RdAgent"</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:04:04.554Z" category="INFO" source="GuestAgent"><ExecuteAndTraceWithResults ExitCode="0"><Output>false</Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:04:04.554Z" category="INFO" source="GuestAgent"><SetKvpRegistry><PA_oobeSystem_95_ConfigureGuestAgentService_1_CheckServiceInstalled Message="Called=2021-09-27T11:04:04.538Z;Returned=2021-09-27T11:04:04.554Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:04.554Z" category="INFO" source="GuestAgent"><StopServiceWait ServiceName="RdAgent"/></Event>
+<Event time="2021-09-27T11:04:04.906Z" category="INFO" source="GuestAgent"><StopProcessWait ProcessName="WaAppAgent.exe"/></Event>
+<Event time="2021-09-27T11:04:04.926Z" category="INFO" source="GuestAgent"><StopProcessWait StoppedProcess="WaAppAgent.exe"/></Event>
+<Event time="2021-09-27T11:04:04.973Z" category="INFO" source="GuestAgent"><SetKvpRegistry><PA_oobeSystem_95_ConfigureGuestAgentService_3_StopServiceWait-RdAgent Message="Called=2021-09-27T11:04:04.554Z;Returned=2021-09-27T11:04:04.973Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:04.973Z" category="INFO" source="GuestAgent"><StopServiceWait ServiceName="WindowsAzureGuestAgent"/></Event>
+<Event time="2021-09-27T11:04:05.020Z" category="INFO" source="GuestAgent"><StopProcessWait ProcessName="WindowsAzureGuestAgent.exe"/></Event>
+<Event time="2021-09-27T11:04:05.036Z" category="INFO" source="GuestAgent"><StopProcessWait StoppedProcess="WindowsAzureGuestAgent.exe"/></Event>
+<Event time="2021-09-27T11:04:05.082Z" category="INFO" source="GuestAgent"><SetKvpRegistry><PA_oobeSystem_95_ConfigureGuestAgentService_4_StopServiceWait-WindowsAzureGuestAgent Message="Called=2021-09-27T11:04:04.973Z;Returned=2021-09-27T11:04:05.082Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:05.082Z" category="INFO" source="GuestAgent"><StopServiceWait ServiceName="WindowsAzureTelemetryService"/></Event>
+<Event time="2021-09-27T11:04:05.129Z" category="INFO" source="GuestAgent"><StopProcessWait ProcessName="WindowsAzureTelemetryService.exe"/></Event>
+<Event time="2021-09-27T11:04:05.145Z" category="INFO" source="GuestAgent"><StopProcessWait StoppedProcess="WindowsAzureTelemetryService.exe"/></Event>
+<Event time="2021-09-27T11:04:05.192Z" category="INFO" source="GuestAgent"><SetKvpRegistry><PA_oobeSystem_95_ConfigureGuestAgentService_5_StopServiceWait-WindowsAzureTelemetryService Message="Called=2021-09-27T11:04:05.082Z;Returned=2021-09-27T11:04:05.192Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:05.192Z" category="INFO" source="GuestAgent"><StopEventTrace StopGAEvents="True"/></Event>
+<Event time="2021-09-27T11:04:05.192Z" category="INFO" source="GuestAgent"><ExecuteAndTraceWithResults><ExecutingCommand>%SystemRoot%\System32\logman.exe stop GAEvents</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:04:05.223Z" category="ERROR" source="GuestAgent"><ExecuteAndTraceWithResults ExitCode="-2144337918"><Output>
+Error:
+Data Collector Set was not found.
+</Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:04:05.223Z" category="INFO" source="GuestAgent"><StopEventTrace StopRTEvents="True"/></Event>
+<Event time="2021-09-27T11:04:05.223Z" category="INFO" source="GuestAgent"><ExecuteAndTraceWithResults><ExecutingCommand>%SystemRoot%\System32\logman.exe stop RTEvents</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:04:05.239Z" category="ERROR" source="GuestAgent"><ExecuteAndTraceWithResults ExitCode="-2144337918"><Output>
+Error:
+Data Collector Set was not found.
+</Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:04:05.239Z" category="INFO" source="GuestAgent"><StopEventTrace StopMetricEvents="True"/></Event>
+<Event time="2021-09-27T11:04:05.239Z" category="INFO" source="GuestAgent"><ExecuteAndTraceWithResults><ExecutingCommand>%SystemRoot%\System32\logman.exe -ets stop WindowsAzure-GuestAgent-Metrics</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:04:05.270Z" category="ERROR" source="GuestAgent"><ExecuteAndTraceWithResults ExitCode="-2144337918"><Output>
+Error:
+Data Collector Set was not found.
+</Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:04:05.270Z" category="INFO" source="GuestAgent"><StopEventTrace StopDiagnosticsEvents="True"/></Event>
+<Event time="2021-09-27T11:04:05.270Z" category="INFO" source="GuestAgent"><ExecuteAndTraceWithResults><ExecutingCommand>%SystemRoot%\System32\logman.exe -ets stop WindowsAzure-GuestAgent-Diagnostic</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:04:05.286Z" category="ERROR" source="GuestAgent"><ExecuteAndTraceWithResults ExitCode="-2144337918"><Output>
+Error:
+Data Collector Set was not found.
+</Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:04:05.286Z" category="INFO" source="GuestAgent"><SetKvpRegistry><PA_oobeSystem_95_ConfigureGuestAgentService_6_StopEventTrace Message="Called=2021-09-27T11:04:05.192Z;Returned=2021-09-27T11:04:05.286Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:05.286Z" category="INFO" source="GuestAgent"><DeleteEventTrace DeleteGAEvents="True"/></Event>
+<Event time="2021-09-27T11:04:05.286Z" category="INFO" source="GuestAgent"><ExecuteAndTraceWithResults><ExecutingCommand>%SystemRoot%\System32\logman.exe delete GAEvents</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:04:05.301Z" category="ERROR" source="GuestAgent"><ExecuteAndTraceWithResults ExitCode="-2144337918"><Output>
+Error:
+Data Collector Set was not found.
+</Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:04:05.301Z" category="INFO" source="GuestAgent"><DeleteEventTrace DeleteRTEvents="True"/></Event>
+<Event time="2021-09-27T11:04:05.301Z" category="INFO" source="GuestAgent"><ExecuteAndTraceWithResults><ExecutingCommand>%SystemRoot%\System32\logman.exe delete RTEvents</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:04:05.319Z" category="ERROR" source="GuestAgent"><ExecuteAndTraceWithResults ExitCode="-2144337918"><Output>
+Error:
+Data Collector Set was not found.
+</Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:04:05.319Z" category="INFO" source="GuestAgent"><SetKvpRegistry><PA_oobeSystem_95_ConfigureGuestAgentService_7_DeleteEventTrace Message="Called=2021-09-27T11:04:05.286Z;Returned=2021-09-27T11:04:05.319Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:05.319Z" category="INFO" source="GuestAgent"><ExecuteAndTraceWithResults><ExecutingCommand>C:\Windows\OEM\VmAgentPackageExtractor\PackageExtractor.exe "C:\Windows\OEM\GuestAgent\VMAgentPackage.zip " "C:\WindowsAzure\Packages\ "</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:04:06.072Z" category="INFO" source="GuestAgent"><ExecuteAndTraceWithResults ExitCode="0"><Output>Extracting package 'C:\Windows\OEM\GuestAgent\VMAgentPackage.zip ' to 'C:\WindowsAzure\Packages\ '
+Package extraction succeeded!
+</Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:04:06.072Z" category="INFO" source="GuestAgent"><UnzipGuestAgentPackage ZipLocation="C:\Windows\OEM\GuestAgent\VMAgentPackage.zip" ExtractionLocation="C:\WindowsAzure\Packages\"/></Event>
+<Event time="2021-09-27T11:04:06.072Z" category="INFO" source="GuestAgent"><SetKvpRegistry><PA_oobeSystem_95_ConfigureGuestAgentService_8_UnzipGuestAgentPackage Message="Called=2021-09-27T11:04:05.319Z;Returned=2021-09-27T11:04:06.072Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:06.072Z" category="INFO" source="GuestAgent"><ConfigureRdAgentService CreateService="0" StartMode="Disabled"/></Event>
+<Event time="2021-09-27T11:04:06.072Z" category="INFO" source="GuestAgent"><SetKvpRegistry><PA_oobeSystem_95_ConfigureGuestAgentService_9_ConfigureRdAgentService Message="Called=2021-09-27T11:04:06.072Z;Returned=2021-09-27T11:04:06.072Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:06.103Z" category="INFO" source="GuestAgent"><SetVmTypeInRegistry VMType="IAAS"/></Event>
+<Event time="2021-09-27T11:04:06.103Z" category="INFO" source="GuestAgent"><SetKvpRegistry><PA_oobeSystem_95_ConfigureGuestAgentService_10_SetVmTypeInRegistry Message="Called=2021-09-27T11:04:06.072Z;Returned=2021-09-27T11:04:06.103Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:06.103Z" category="INFO" source="GuestAgent"><SetGAParamsInRegistry BasePath="C:\WindowsAzure\Packages\" ServicePath="C:\WindowsAzure\Packages\TransparentInstaller.dll" FileVersion="2.7.41491.1024"/></Event>
+<Event time="2021-09-27T11:04:06.103Z" category="INFO" source="GuestAgent"><SetGAParamsInRegistry Incarnation="2.7.41491.1024" ManifestTimeStamp=""/></Event>
+<Event time="2021-09-27T11:04:06.103Z" category="INFO" source="GuestAgent"><SetKvpRegistry><PA_oobeSystem_95_ConfigureGuestAgentService_11_SetGAParamsInRegistry Message="Called=2021-09-27T11:04:06.103Z;Returned=2021-09-27T11:04:06.103Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:06.103Z" category="INFO" source="GuestAgent"><GetRegistryValue>key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full, value: Install, data: 1</GetRegistryValue></Event>
+<Event time="2021-09-27T11:04:06.103Z" category="INFO" source="GuestAgent"><ValidDotNetVersionExists dwValueReturned="1"/></Event>
+<Event time="2021-09-27T11:04:06.103Z" category="INFO" source="GuestAgent"><ValidDotNetVersionExists ValidDotNetVersionExists="True"/></Event>
+<Event time="2021-09-27T11:04:06.103Z" category="INFO" source="GuestAgent"><SetKvpRegistry><PA_oobeSystem_95_ConfigureGuestAgentService_12_ValidDotNetVersionExists Message="Called=2021-09-27T11:04:06.103Z;Returned=2021-09-27T11:04:06.103Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:06.103Z" category="INFO" source="Unattend"><ConfigureGuestAgentService ConfigureGuestAgentReturnValue="0"/></Event>
+<Event time="2021-09-27T11:04:06.103Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_oobeSystem_95_ConfigureGuestAgentService Message="Called=2021-09-27T11:04:04.522Z;Returned=2021-09-27T11:04:06.103Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:06.103Z" category="INFO" source="Unattend"><ExecuteAndTraceWithResults><ExecutingCommand>%SystemRoot%\OEM\WaGuest.exe /parsesetuptrace "C:\Windows\Panther\setup.etl"</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:04:06.181Z" category="INFO" source="Unattend"><ExecuteAndTraceWithResults ExitCode="0"><Output>2;SetupCl;0;2021-09-27T11:03:30.716Z;2021-09-27T11:03:32.343Z 2;WinDeploy;0;2021-09-27T11:03:44.441Z; 2;Setup;0;2021-09-27T11:03:44.672Z;2021-09-27T04:03:58.836Z 1;TimeShift;0;2021-09-27T11:03:58.684Z;2021-09-27T11:03:58.684Z 1;TimeShift;1;2021-09-27T04:03:58.684Z;2021-09-27T11:03:58.687Z 2;OobeLdr;0;2021-09-27T04:03:58.868Z; 1;TimeShift;2;2021-09-27T11:04:03.285Z;2021-09-27T04:04:02.961Z </Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:04:06.181Z" category="INFO" source="Unattend"><SetKvpRegistry><provisioning_PA_SetupEtl Message="2;SetupCl;0;2021-09-27T11:03:30.716Z;2021-09-27T11:03:32.343Z 2;WinDeploy;0;2021-09-27T11:03:44.441Z; 2;Setup;0;2021-09-27T11:03:44.672Z;2021-09-27T04:03:58.836Z 1;TimeShift;0;2021-09-27T11:03:58.684Z;2021-09-27T11:03:58.684Z 1;TimeShift;1;2021-09-27T04:03:58.684Z;2021-09-27T11:03:58.687Z 2;OobeLdr;0;2021-09-27T04:03:58.868Z; 1;TimeShift;2;2021-09-27T11:04:03.285Z;2021-09-27T04:04:02.961Z"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:06.181Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_oobeSystem_96_LogSetupTraceEvents Message="Called=2021-09-27T11:04:06.103Z;Returned=2021-09-27T11:04:06.181Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:06.181Z" category="INFO" source="Unattend"><ExecuteAndTraceWithResults><ExecutingCommand>%SystemRoot%\OEM\WaGuest.exe /timeinfo</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:04:06.200Z" category="INFO" source="Unattend"><ExecuteAndTraceWithResults ExitCode="0"><Output>42562 2021-09-27T11:04:06.184Z</Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:04:06.200Z" category="INFO" source="Unattend"><SetKvpRegistry><oobeSystem_PA_TickCount Message="42562"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:06.200Z" category="INFO" source="Unattend"><SetKvpRegistry><oobeSystem_PA_CompletionTime Message="2021-09-27T11:04:06.184Z"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:06.200Z" category="INFO" source="WireServer"><GetRegistryValue>key: HKLM\Software\Microsoft\Virtual Machine\Guest\Parameters, value: VirtualMachineName, data: 53361e4a-b15a-44b4-8571-d89c49b93941</GetRegistryValue></Event>
+<Event time="2021-09-27T11:04:06.200Z" category="INFO" source="WireServer"><ExecuteAndTraceWithResults><ExecutingCommand>%SystemRoot%\OEM\WaGuest.exe /ram</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:04:06.231Z" category="INFO" source="WireServer"><ExecuteAndTraceWithResults ExitCode="0"><Output>4096</Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T11:04:06.233Z" category="INFO" source="WireServer"><TelemetryData ExecutionMode="IAAS" OSVersion="Windows:Windows Server 2012 R2 Datacenter-6.3.9600" GAVersion="2.7.41491.1024" RAM="4096" Processors="2" OpcodeName="" KeywordName="" TenantName="" RoleName="" RoleInstanceName="" ContainerId="53361e4a-b15a-44b4-8571-d89c49b93941" Name="WindowsProvisioningAgent" Version="1.0.9.98" IsInternal="False" Operation="OnPluginPreprovisionEnd" OperationSuccess="True" ExtensionType="WindowsProvisioningAgent" Duration="1632740646200" EventPid="" EventTid="" TaskName="" SubscriptionId="" ResourceGroupName="" VMId="" ImageOrigin="">{"specialize":{"TickCount":35296,"StartTime":"2021-09-27T11:03:58.286Z","EndTime":"2021-09-27T11:03:58.619Z"},"oobeSystem":{"TickCount":42562,"StartTime":"2021-09-27T11:04:03.413Z","EndTime":"2021-09-27T11:04:06.184Z"},"SetupCl":{"StartTime":"2021-09-27T11:03:30.716Z","EndTime":"2021-09-27T11:03:32.343Z"},"WinDeploy":{"StartTime":"2021-09-27T11:03:44.441Z"},"Setup":{"StartTime":"2021-09-27T11:03:44.672Z","EndTime":"2021-09-27T04:03:58.836Z"},"OobeLdr":{"StartTime":"2021-09-27T04:03:58.868Z"},"provisioning":{"TickCount":40890,"StartTime":"2021-09-27T11:03:30.716Z","EndTime":"2021-09-27T11:04:04.507Z"}}</TelemetryData></Event>
+<Event time="2021-09-27T11:04:06.233Z" category="INFO" source="WireServer"><HttpRequest verb="POST" url="http://168.63.129.16/machine?comp=telemetrydata"/></Event>
+<Event time="2021-09-27T11:04:06.237Z" category="INFO" source="WireServer"><SendRequest>attempt=1, status=200, Err.Number=0</SendRequest></Event>
+<Event time="2021-09-27T11:04:06.237Z" category="INFO" source="WireServer"><SetKvpRegistry><PA_oobeSystem_WireServer_4_POST_telemetrydata Message="Called=2021-09-27T11:04:06.233Z;Returned=2021-09-27T11:04:06.237Z;StatusCode=200;Attempts=1"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:06.237Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_oobeSystem_97_SendOnPluginProvisionEnd Message="Called=2021-09-27T11:04:06.200Z;Returned=2021-09-27T11:04:06.237Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:06.237Z" category="INFO" source="Unattend"><RestartMachine RestartingMachine="True"/></Event>
+<Event time="2021-09-27T11:04:06.237Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_oobeSystem_99_RestartMachine Message="Called=2021-09-27T11:04:06.237Z;Returned=2021-09-27T11:04:06.237Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T11:04:06.237Z" category="INFO" source="Unattend"><UnattendEnd ExitCode="0"/></Event>
+<Event time="2021-09-27T14:21:40.122Z" category="INFO" source="Unattend"><UnattendStart><Parameters ConfigurationPass="reprovision"/></UnattendStart></Event>
+<Event time="2021-09-27T14:21:40.185Z" category="INFO" source="Unattend"><SetKvpRegistry><reprovision_PA_StartTime Message="2021-09-27T14:21:40.122Z"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:40.185Z" category="ERROR" source="Unattend"><GetRegistryValue>Failed to find registry value HKLM\Software\Microsoft\Virtual Machine\Guest\Parameters\VirtualMachineName</GetRegistryValue></Event>
+<Event time="2021-09-27T14:21:40.185Z" category="ERROR" source="Unattend"><UnhandledError><Message>SetKvpRegistry: Set registry reprovision_PA_ContainerId failed. Registry value should be: </Message><Number>13</Number><Description>Type mismatch</Description><Source>Microsoft VBScript runtime error</Source></UnhandledError></Event>
+<Event time="2021-09-27T14:21:40.185Z" category="INFO" source="Unattend"><GetRegistryValue>key: HKEY_LOCAL_MACHINE\SYSTEM\Setup\AzureProvisioning, value: ConfigurationDrive, data: E</GetRegistryValue></Event>
+<Event time="2021-09-27T14:21:40.120Z" category="INFO" source="Environment"><Initialize>ovf-env.xml loaded from E:\ovf-env.xml</Initialize></Event>
+<Event time="2021-09-27T14:21:40.245Z" category="INFO" source="Environment"><WindowsProvisioningConfigurationSet><ComputerName>Windows2012Web</ComputerName><AdminPassword>*SENSITIVE*DATA*DELETED*</AdminPassword><ResetPasswordOnFirstLogon>false</ResetPasswordOnFirstLogon></WindowsProvisioningConfigurationSet></Event>
+<Event time="2021-09-27T14:21:40.245Z" category="INFO" source="Unattend"><GetRegistryValue>Failed to find registry value HKEY_LOCAL_MACHINE\SYSTEM\Setup\AzureProvisioningOfflinedTag</GetRegistryValue></Event>
+<Event time="2021-09-27T14:21:40.245Z" category="INFO" source="Unattend"><GetRegistryValue>Failed to find registry value HKEY_LOCAL_MACHINE\SYSTEM\Setup\AzureProvisioningOfflinedFlags</GetRegistryValue></Event>
+<Event time="2021-09-27T14:21:40.245Z" category="INFO" source="Unattend"><SetKvpRegistry><reprovision_PA_OfflinedFlags Message="0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:40.245Z" category="INFO" source="Unattend"><SetKvpRegistry><reprovision_PA_OfflinedTag Message=""/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:40.245Z" category="INFO" source="Unattend"><SetKvpRegistry><reprovision_PA_EffectiveOfflinedFlags Message="16384"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:40.245Z" category="INFO" source="Unattend"><SetKvpRegistry><provisioning_PA_ProvisionState Message="Provisioning"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:40.245Z" category="INFO" source="OperatingSystem"><ExecuteAndTraceWithResults><ExecutingCommand>%SystemRoot%\OEM\WaGuest.exe /setadminuser "E:\ovf-env.xml"</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T14:21:40.500Z" category="INFO" source="OperatingSystem"><ExecuteAndTraceWithResults ExitCode="0"><Output></Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T14:21:40.245Z" category="INFO" source="OperatingSystem"><ResetDefaultAdministratorUser/></Event>
+<Event time="2021-09-27T14:21:40.500Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_reprovision_0_ConfigureAdministratorUser Message="Called=2021-09-27T14:21:40.245Z;Returned=2021-09-27T14:21:40.500Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:40.500Z" category="INFO" source="WireServer"><SetKvpRegistry><provisioning_PA_DiscoverWireServer Message="0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:40.547Z" category="INFO" source="WireServer"><HttpRequest verb="GET" url="http://168.63.129.16/?comp=Versions"/></Event>
+<Event time="2021-09-27T14:21:40.563Z" category="INFO" source="WireServer"><SendRequest>attempt=1, status=200, Err.Number=0</SendRequest></Event>
+<Event time="2021-09-27T14:21:40.563Z" category="INFO" source="WireServer"><SetKvpRegistry><PA_reprovision_WireServer_1_GET_Versions Message="Called=2021-09-27T14:21:40.547Z;Returned=2021-09-27T14:21:40.563Z;StatusCode=200;Attempts=1"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:40.563Z" category="INFO" source="WireServer"><ControlSystemNegotiation><Version>2015-04-05</Version></ControlSystemNegotiation></Event>
+<Event time="2021-09-27T14:21:40.563Z" category="INFO" source="WireServer"><HttpRequest verb="GET" url="http://168.63.129.16/machine?comp=goalstate"/></Event>
+<Event time="2021-09-27T14:21:40.578Z" category="INFO" source="WireServer"><HttpResponse statusCode="200"><ResponseBody><GoalState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="goalstate10.xsd">
+				<Version>2015-04-05</Version>
+				<Incarnation>1</Incarnation>
+				<Machine>
+					<ExpectedState>Started</ExpectedState>
+					<StopRolesDeadlineHint>300000</StopRolesDeadlineHint>
+					<LBProbePorts>
+						<Port>16001</Port>
+					</LBProbePorts>
+					<ExpectHealthReport>FALSE</ExpectHealthReport>
+				</Machine>
+				<Container>
+					<ContainerId>53361e4a-b15a-44b4-8571-d89c49b93941</ContainerId>
+					<RoleInstanceList>
+						<RoleInstance>
+							<InstanceId>1311e846-460e-4f07-9baf-54d44e10dffd._Windows2012Web</InstanceId>
+							<State>Started</State>
+							<Configuration>
+								<HostingEnvironmentConfig>http://168.63.129.16:80/machine/53361e4a-b15a-44b4-8571-d89c49b93941/1311e846%2D460e%2D4f07%2D9baf%2D54d44e10dffd.%5FWindows2012Web?comp=config&amp;type=hostingEnvironmentConfig&amp;incarnation=1</HostingEnvironmentConfig>
+								<SharedConfig>http://168.63.129.16:80/machine/53361e4a-b15a-44b4-8571-d89c49b93941/1311e846%2D460e%2D4f07%2D9baf%2D54d44e10dffd.%5FWindows2012Web?comp=config&amp;type=sharedConfig&amp;incarnation=1</SharedConfig>
+								<ExtensionsConfig>http://168.63.129.16:80/machine/53361e4a-b15a-44b4-8571-d89c49b93941/1311e846%2D460e%2D4f07%2D9baf%2D54d44e10dffd.%5FWindows2012Web?comp=config&amp;type=extensionsConfig&amp;incarnation=1</ExtensionsConfig>
+								<FullConfig>http://168.63.129.16:80/machine/53361e4a-b15a-44b4-8571-d89c49b93941/1311e846%2D460e%2D4f07%2D9baf%2D54d44e10dffd.%5FWindows2012Web?comp=config&amp;type=fullConfig&amp;incarnation=1</FullConfig>
+								<Certificates>http://168.63.129.16:80/machine/53361e4a-b15a-44b4-8571-d89c49b93941/1311e846%2D460e%2D4f07%2D9baf%2D54d44e10dffd.%5FWindows2012Web?comp=certificates&amp;incarnation=1</Certificates>
+								<ConfigName>1311e846-460e-4f07-9baf-54d44e10dffd.0.1311e846-460e-4f07-9baf-54d44e10dffd.0._Windows2012Web.1.xml</ConfigName>
+							</Configuration>
+						</RoleInstance>
+					</RoleInstanceList>
+				</Container>
+			</GoalState></ResponseBody></HttpResponse></Event>
+<Event time="2021-09-27T14:21:40.578Z" category="INFO" source="WireServer"><SetKvpRegistry><PA_reprovision_WireServer_2_GET_goalState Message="Called=2021-09-27T14:21:40.563Z;Returned=2021-09-27T14:21:40.578Z;StatusCode=200;Attempts=1"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:40.578Z" category="INFO" source="WireServer"><SetKvpRegistry><reprovision_PA_FirstGoodGoalStateTime Message="2021-09-27T14:21:40.578Z"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:40.578Z" category="INFO" source="WireServer"><GoalStateUpdate version="2015-04-05"><GoalState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="goalstate10.xsd">
+			<Version>2015-04-05</Version>
+			<Incarnation>1</Incarnation>
+			<Machine>
+				<ExpectedState>Started</ExpectedState>
+				<StopRolesDeadlineHint>300000</StopRolesDeadlineHint>
+				<LBProbePorts>
+					<Port>16001</Port>
+				</LBProbePorts>
+				<ExpectHealthReport>FALSE</ExpectHealthReport>
+			</Machine>
+			<Container>
+				<ContainerId>53361e4a-b15a-44b4-8571-d89c49b93941</ContainerId>
+				<RoleInstanceList>
+					<RoleInstance>
+						<InstanceId>1311e846-460e-4f07-9baf-54d44e10dffd._Windows2012Web</InstanceId>
+						<State>Started</State>
+						<Configuration>
+							<HostingEnvironmentConfig>http://168.63.129.16:80/machine/53361e4a-b15a-44b4-8571-d89c49b93941/1311e846%2D460e%2D4f07%2D9baf%2D54d44e10dffd.%5FWindows2012Web?comp=config&amp;type=hostingEnvironmentConfig&amp;incarnation=1</HostingEnvironmentConfig>
+							<SharedConfig>http://168.63.129.16:80/machine/53361e4a-b15a-44b4-8571-d89c49b93941/1311e846%2D460e%2D4f07%2D9baf%2D54d44e10dffd.%5FWindows2012Web?comp=config&amp;type=sharedConfig&amp;incarnation=1</SharedConfig>
+							<ExtensionsConfig>http://168.63.129.16:80/machine/53361e4a-b15a-44b4-8571-d89c49b93941/1311e846%2D460e%2D4f07%2D9baf%2D54d44e10dffd.%5FWindows2012Web?comp=config&amp;type=extensionsConfig&amp;incarnation=1</ExtensionsConfig>
+							<FullConfig>http://168.63.129.16:80/machine/53361e4a-b15a-44b4-8571-d89c49b93941/1311e846%2D460e%2D4f07%2D9baf%2D54d44e10dffd.%5FWindows2012Web?comp=config&amp;type=fullConfig&amp;incarnation=1</FullConfig>
+							<Certificates>http://168.63.129.16:80/machine/53361e4a-b15a-44b4-8571-d89c49b93941/1311e846%2D460e%2D4f07%2D9baf%2D54d44e10dffd.%5FWindows2012Web?comp=certificates&amp;incarnation=1</Certificates>
+							<ConfigName>1311e846-460e-4f07-9baf-54d44e10dffd.0.1311e846-460e-4f07-9baf-54d44e10dffd.0._Windows2012Web.1.xml</ConfigName>
+						</Configuration>
+					</RoleInstance>
+				</RoleInstanceList>
+			</Container>
+		</GoalState></GoalStateUpdate></Event>
+<Event time="2021-09-27T14:21:40.578Z" category="INFO" source="GuestInterface"><GoalState MachineExpectedState="Started"/></Event>
+<Event time="2021-09-27T14:21:40.578Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_reprovision_1_InitializeGuest Message="Called=2021-09-27T14:21:40.500Z;Returned=2021-09-27T14:21:40.578Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:40.578Z" category="INFO" source="Unattend"><GetRegistryValue>key: HKEY_LOCAL_MACHINE\SYSTEM\Setup\AzureProvisioning, value: ConfigurationDrive, data: E</GetRegistryValue></Event>
+<Event time="2021-09-27T14:21:40.578Z" category="INFO" source="Environment"><WindowsProvisioningConfigurationSet><ComputerName>Windows2012Web</ComputerName><AdminPassword>*SENSITIVE*DATA*DELETED*</AdminPassword><ResetPasswordOnFirstLogon>false</ResetPasswordOnFirstLogon></WindowsProvisioningConfigurationSet></Event>
+<Event time="2021-09-27T14:21:40.578Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_reprovision_2_CopyCustomData Message="Called=2021-09-27T14:21:40.578Z;Returned=2021-09-27T14:21:40.578Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:40.578Z" category="INFO" source="Unattend"><ExecuteAndTraceWithResults><ExecutingCommand>C:\Windows\OEM\WaSecAgent\WaSecAgentProv.exe -installCACerts C:\Windows\Panther 168.63.129.16</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T14:21:40.672Z" category="INFO" source="Unattend"><ExecuteAndTraceWithResults ExitCode="0"><Output></Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T14:21:40.672Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_reprovision_3_RunAzSecAgent Message="Called=2021-09-27T14:21:40.578Z;Returned=2021-09-27T14:21:40.672Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:40.688Z" category="INFO" source="WireServer"><HttpRequest verb="GET" url="http://168.63.129.16:80/machine/53361e4a-b15a-44b4-8571-d89c49b93941/1311e846%2D460e%2D4f07%2D9baf%2D54d44e10dffd.%5FWindows2012Web?comp=config&amp;type=hostingEnvironmentConfig&amp;incarnation=1"/></Event>
+<Event time="2021-09-27T14:21:40.688Z" category="INFO" source="WireServer"><SendRequest>attempt=1, status=200, Err.Number=0</SendRequest></Event>
+<Event time="2021-09-27T14:21:40.688Z" category="INFO" source="WireServer"><SetKvpRegistry><PA_reprovision_WireServer_3_GET_config Message="Called=2021-09-27T14:21:40.688Z;Returned=2021-09-27T14:21:40.688Z;StatusCode=200;Attempts=1"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:40.688Z" category="INFO" source="WireServer"><ExecuteAndTraceWithResults><ExecutingCommand>%SystemRoot%\OEM\WaGuest.exe /transportcert "53361e4a-b15a-44b4-8571-d89c49b93941"</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T14:21:40.781Z" category="INFO" source="WireServer"><ExecuteAndTraceWithResults ExitCode="0"><Output>MIIDOjCCAiKgAwIBAgIQAr8AKAAVAA4AGwABAAkH5TANBgkqhkiG9w0BAQUFADAvMS0wKwYDVQQDEyQ1MzM2MWU0YS1iMTVhLTQ0YjQtODU3MS1kODljNDliOTM5NDEwHhcNMjAwOTI3MTIwMDAwWhcNMzAwOTI1MTIwMDAwWjAvMS0wKwYDVQQDEyQ1MzM2MWU0YS1iMTVhLTQ0YjQtODU3MS1kODljNDliOTM5NDEwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCp+WBljqKi3pZ6MxYcYdZ5+3Rdy8rtO4+1Y3SSNc2eqGOtX9o/yEu8NldCZ28FD9Zvl2245xaotkPO4xMOqFagNq1P5PKDbNBHYc8lERuI7CwS3m18Q4cnmmJT0ctCl4xV6lZvaPd7+ir3BaKRWasVoDAclOzJmC+LXtjDff3n3riuY2UKRP1YxOE5YT6HgmAzCOiNpPoIUiSzzJUUJbGLvmmVHZfwaF0pwsiEXi1I1bgg/WF3V9wGfGTbZgORr41BcwQykuk//BxL28xzZpGuBw5H1GxiA2cIzI1tIRq4iXbAMsagqmwF3K9Lisk25jlWa2rBEOugfZ8Uh/4ONexRAgMBAAGjUjBQMB0GA1UdDgQWBBStroQVZHBCbdZMnFe4v08s7hi33DALBgNVHQ8EBAMCAbYwEwYDVR0lBAwwCgYIKwYBBQUHAwEwDQYDVR0KBAYwBAMCB4AwDQYJKoZIhvcNAQEFBQADggEBAJ5MZRasQdapX9l5Irlk4T/GZV7O+UAOYWIF3qPz+b8MT/Hdqn33VjITkRpu9p9cA7CBkRPvlklX0l0QTEZ02CAORC23olv+59Lo4ZGR+ttQRKsVWr7h/Owzj5KK+J/palkV+VaWI4duuAPi3vE6rglvxVx4sR2LydScBmDjuSorfYPPOTBwkqZRHKOIt/YGXlGCpigV5Ayp5CNv+MujSgStgoayuQJTf1UHZmmbl4u6oOlq8mntwbNdpvScMOuW7HzLlr8DHTJ2Lo/4zKjL0UBvwZZ+LFKv3DirJqZtC/EI1IfPuERnwAEE6cepjhkBzczOgsg+0QJTnWFUAy3odMk=</Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T14:21:40.781Z" category="INFO" source="WireServer"><HttpRequest verb="GET" url="http://168.63.129.16:80/machine/53361e4a-b15a-44b4-8571-d89c49b93941/1311e846%2D460e%2D4f07%2D9baf%2D54d44e10dffd.%5FWindows2012Web?comp=certificates&amp;incarnation=1"/></Event>
+<Event time="2021-09-27T14:21:40.781Z" category="INFO" source="WireServer"><SendRequest>attempt=1, status=200, Err.Number=0</SendRequest></Event>
+<Event time="2021-09-27T14:21:40.781Z" category="INFO" source="WireServer"><SetKvpRegistry><PA_reprovision_WireServer_4_GET_certificates Message="Called=2021-09-27T14:21:40.781Z;Returned=2021-09-27T14:21:40.781Z;StatusCode=200;Attempts=1"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:40.781Z" category="INFO" source="WireServer"><RoleCertificates version="2015-04-05"><CertificateFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="certificates10.xsd">
+			<Version>2015-04-05</Version>
+			<Incarnation>1</Incarnation>
+			<Format>Pkcs7BlobWithPfxContents</Format>
+			<Data>*SENSITIVE*DATA*DELETED*</Data>
+		</CertificateFile></RoleCertificates></Event>
+<Event time="2021-09-27T14:21:40.781Z" category="INFO" source="Certificates"><ExecuteAndTraceWithResults><ExecutingCommand>%SystemRoot%\OEM\WaGuest.exe /importcert "C:\Windows\Temp\radA46AE.tmp" "" "7F5A2F684AD457E0262CFE1A0F71258697FA6C41" "LocalMachine" "My"</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T14:21:40.828Z" category="INFO" source="Certificates"><ExecuteAndTraceWithResults ExitCode="0"><Output></Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T14:21:40.828Z" category="INFO" source="Certificates"><InstalledCertificate certId="sha1:7F5A2F684AD457E0262CFE1A0F71258697FA6C41" certName="TenantEncryptionCert" certStore="My"/></Event>
+<Event time="2021-09-27T14:21:40.828Z" category="INFO" source="Certificates"><AllCertificatesInstalled count="1"/></Event>
+<Event time="2021-09-27T14:21:40.828Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_reprovision_4_ConfigureCertificates Message="Called=2021-09-27T14:21:40.672Z;Returned=2021-09-27T14:21:40.828Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:40.828Z" category="INFO" source="Environment"><WindowsProvisioningConfigurationSet><ComputerName>Windows2012Web</ComputerName><AdminPassword>*SENSITIVE*DATA*DELETED*</AdminPassword><ResetPasswordOnFirstLogon>false</ResetPasswordOnFirstLogon></WindowsProvisioningConfigurationSet></Event>
+<Event time="2021-09-27T14:21:40.828Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_reprovision_5_ConfigureWinRmPrep Message="Called=2021-09-27T14:21:40.828Z;Returned=2021-09-27T14:21:40.828Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:40.828Z" category="INFO" source="Environment"><WindowsProvisioningConfigurationSet><ComputerName>Windows2012Web</ComputerName><AdminPassword>*SENSITIVE*DATA*DELETED*</AdminPassword><ResetPasswordOnFirstLogon>false</ResetPasswordOnFirstLogon></WindowsProvisioningConfigurationSet></Event>
+<Event time="2021-09-27T14:21:40.828Z" category="INFO" source="Unattend"><ConfigureWinRm>WinRM node was not found in configuration</ConfigureWinRm></Event>
+<Event time="2021-09-27T14:21:40.828Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_reprovision_6_ConfigureWinRm Message="Called=2021-09-27T14:21:40.828Z;Returned=2021-09-27T14:21:40.828Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:40.860Z" category="INFO" source="OperatingSystem"><GetRdpCertificateThumbprint CertThumbprint="AEDF00D844C787E3DB8ADBD2B9BCA73E66E5FFD6"/></Event>
+<Event time="2021-09-27T14:21:40.860Z" category="INFO" source="WireServer"><HttpRequest verb="POST" url="http://168.63.129.16/machine?comp=roleProperties"/></Event>
+<Event time="2021-09-27T14:21:40.860Z" category="INFO" source="WireServer"><SendRequest>attempt=1, status=202, Err.Number=0</SendRequest></Event>
+<Event time="2021-09-27T14:21:40.860Z" category="INFO" source="WireServer"><SetKvpRegistry><PA_reprovision_WireServer_5_POST_roleProperties Message="Called=2021-09-27T14:21:40.860Z;Returned=2021-09-27T14:21:40.860Z;StatusCode=202;Attempts=1"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:40.860Z" category="INFO" source="WireServer"><RolePropertiesUpdate version="2015-04-05"><RoleProperties><Container><ContainerId>53361e4a-b15a-44b4-8571-d89c49b93941</ContainerId><RoleInstances><RoleInstance><Id>1311e846-460e-4f07-9baf-54d44e10dffd._Windows2012Web</Id><Properties><Property name="CertificateThumbprint" value="AEDF00D844C787E3DB8ADBD2B9BCA73E66E5FFD6"/></Properties></RoleInstance></RoleInstances></Container></RoleProperties>
+	</RolePropertiesUpdate></Event>
+<Event time="2021-09-27T14:21:40.860Z" category="INFO" source="Unattend"><SetKvpRegistry><reprovision_PA_CertAquisition Message="[2021-09-27T14:21:40.860Z]: [GetRdpCertificateThumbprint] Cert thumprint is: AEDF00D844C787E3DB8ADBD2B9BCA73E66E5FFD6"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:40.860Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_reprovision_7_UpdateRDPCertificateThumbprint Message="Called=2021-09-27T14:21:40.828Z;Returned=2021-09-27T14:21:40.860Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:40.860Z" category="INFO" source="Environment"><WindowsProvisioningConfigurationSet><ComputerName>Windows2012Web</ComputerName><AdminPassword>*SENSITIVE*DATA*DELETED*</AdminPassword><ResetPasswordOnFirstLogon>false</ResetPasswordOnFirstLogon></WindowsProvisioningConfigurationSet></Event>
+<Event time="2021-09-27T14:21:41.391Z" category="INFO" source="OperatingSystem"><ExecuteAndTraceWithResults><ExecutingCommand>%SystemRoot%\OEM\WaGuest.exe /setwin8updateinstalltime "2013-01-01T04:00:00"</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T14:21:41.422Z" category="INFO" source="OperatingSystem"><ExecuteAndTraceWithResults ExitCode="0"><Output></Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T14:21:41.422Z" category="INFO" source="OperatingSystem"><ConfigureAutomaticUpdates enabled="-1" scheduledInstallationTime="4"/></Event>
+<Event time="2021-09-27T14:21:41.422Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_reprovision_8_ConfigureAutomaticUpdates Message="Called=2021-09-27T14:21:40.860Z;Returned=2021-09-27T14:21:41.422Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:41.422Z" category="INFO" source="Unattend"><GetRegistryValue>key: HKEY_LOCAL_MACHINE\SYSTEM\Setup\AzureProvisioning, value: UpdateTickCount, data: 11842171</GetRegistryValue></Event>
+<Event time="2021-09-27T14:21:41.422Z" category="INFO" source="Unattend"><SetKvpRegistry><provisioning_AzureRPA_TickCount Message="11842171"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:41.422Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_reprovision_9_SetReprovisioningAgentKvps Message="Called=2021-09-27T14:21:41.422Z;Returned=2021-09-27T14:21:41.422Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:41.422Z" category="INFO" source="Unattend"><GetRegistryValue>key: HKLM\System\CurrentControlSet\Control\Session Manager, value: SetupExecute, data: AzureRPA</GetRegistryValue></Event>
+<Event time="2021-09-27T14:21:41.422Z" category="INFO" source="Unattend"><ExecuteAndTraceWithResults><ExecutingCommand>REG ADD "HKLM\System\CurrentControlSet\Control\Session Manager" /v "SetupExecute" /t REG_MULTI_SZ /d "" /f</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T14:21:41.453Z" category="INFO" source="Unattend"><ExecuteAndTraceWithResults ExitCode="0"><Output>The operation completed successfully.
+
+</Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T14:21:41.453Z" category="INFO" source="Unattend"><SetRegistryValue>key: HKLM\System\CurrentControlSet\Control\Session Manager, value: SetupExecute, type: REG_MULTI_SZ, data: </SetRegistryValue></Event>
+<Event time="2021-09-27T14:21:41.453Z" category="INFO" source="OperatingSystem"><ExecuteAndTraceWithResults><ExecutingCommand>%SystemRoot%\System32\schtasks.exe /delete /tn \Microsoft\AzureIaasReprovisioningTask /f</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T14:21:41.563Z" category="INFO" source="OperatingSystem"><ExecuteAndTraceWithResults ExitCode="0"><Output>SUCCESS: The scheduled task "\Microsoft\AzureIaasReprovisioningTask" was successfully deleted.
+</Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T14:21:41.563Z" category="INFO" source="OperatingSystem"><DeleteScheduledTask task="\Microsoft\AzureIaasReprovisioningTask"/></Event>
+<Event time="2021-09-27T14:21:41.563Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_reprovision_10_DeleteReprovisioningTasks Message="Called=2021-09-27T14:21:41.422Z;Returned=2021-09-27T14:21:41.563Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:41.563Z" category="INFO" source="Unattend"><ExecuteAndTraceWithResults><ExecutingCommand>%SystemRoot%\OEM\WaGuest.exe /ejectiso</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T14:21:41.594Z" category="INFO" source="Unattend"><ExecuteAndTraceWithResults ExitCode="0"><Output></Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T14:21:41.594Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_reprovision_11_EjectIso Message="Called=2021-09-27T14:21:41.563Z;Returned=2021-09-27T14:21:41.594Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:41.594Z" category="INFO" source="Unattend"><ExecuteAndTraceWithResults><ExecutingCommand>%SystemRoot%\OEM\WaGuest.exe /timeinfo</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T14:21:41.610Z" category="INFO" source="Unattend"><ExecuteAndTraceWithResults ExitCode="0"><Output>11846328 2021-09-27T14:21:41.594Z</Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T14:21:41.610Z" category="INFO" source="Unattend"><SetKvpRegistry><provisioning_PA_TickCount Message="11846328"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:41.610Z" category="INFO" source="Unattend"><SetKvpRegistry><provisioning_PA_CompletionTime Message="2021-09-27T14:21:41.594Z"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:41.610Z" category="INFO" source="Unattend"><SetKvpRegistry><provisioning_PA_ProvisionState Message="Provisioned"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:41.610Z" category="INFO" source="WireServer"><HttpRequest verb="POST" url="http://168.63.129.16/machine?comp=health"/></Event>
+<Event time="2021-09-27T14:21:42.125Z" category="INFO" source="WireServer"><SendRequest>attempt=1, status=200, Err.Number=0</SendRequest></Event>
+<Event time="2021-09-27T14:21:42.125Z" category="INFO" source="WireServer"><SetKvpRegistry><PA_reprovision_WireServer_6_POST_health Message="Called=2021-09-27T14:21:41.610Z;Returned=2021-09-27T14:21:42.125Z;StatusCode=200;Attempts=1"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:42.125Z" category="INFO" source="WireServer"><HealthUpdate version="2015-04-05"><Health><GoalStateIncarnation>1</GoalStateIncarnation><Container><ContainerId>53361e4a-b15a-44b4-8571-d89c49b93941</ContainerId><RoleInstanceList><Role><InstanceId>1311e846-460e-4f07-9baf-54d44e10dffd._Windows2012Web</InstanceId><Health><State>Ready</State></Health></Role></RoleInstanceList></Container></Health></HealthUpdate></Event>
+<Event time="2021-09-27T14:21:42.125Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_reprovision_12_ReportReady Message="Called=2021-09-27T14:21:41.610Z;Returned=2021-09-27T14:21:42.125Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:42.125Z" category="INFO" source="Unattend"><DeleteReprovisioningFile ReprovisioningFilePresent="True" ReprovisioningFileDeleted="True"/></Event>
+<Event time="2021-09-27T14:21:42.125Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_reprovision_94_DeleteReprovisioningFile Message="Called=2021-09-27T14:21:42.125Z;Returned=2021-09-27T14:21:42.125Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:42.172Z" category="INFO" source="GuestAgent"><SetGAParamsInRegistryOfflined VmProvisionedAt="9/27/2021 2:21:42 PM"/></Event>
+<Event time="2021-09-27T14:21:42.172Z" category="INFO" source="GuestAgent"><SetKvpRegistry><PA_reprovision_95_ConfigureGuestAgentService_0_SetGAParamsInRegistryOfflined Message="Called=2021-09-27T14:21:42.141Z;Returned=2021-09-27T14:21:42.172Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:42.172Z" category="INFO" source="GuestAgent"><GetRegistryValue>key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full, value: Install, data: 1</GetRegistryValue></Event>
+<Event time="2021-09-27T14:21:42.172Z" category="INFO" source="GuestAgent"><ValidDotNetVersionExists dwValueReturned="1"/></Event>
+<Event time="2021-09-27T14:21:42.172Z" category="INFO" source="GuestAgent"><ValidDotNetVersionExists ValidDotNetVersionExists="True"/></Event>
+<Event time="2021-09-27T14:21:42.172Z" category="INFO" source="GuestAgent"><SetKvpRegistry><PA_reprovision_95_ConfigureGuestAgentService_1_ValidDotNetVersionExists Message="Called=2021-09-27T14:21:42.172Z;Returned=2021-09-27T14:21:42.172Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:42.172Z" category="INFO" source="GuestAgent"><EnableService ServiceName="RdAgent"/></Event>
+<Event time="2021-09-27T14:21:42.172Z" category="INFO" source="GuestAgent"><ExecuteAndTraceWithResults><ExecutingCommand>%SystemRoot%\OEM\WaGuest.exe /configureservicestartmode "RdAgent" "Automatic" 1</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T14:21:42.205Z" category="INFO" source="GuestAgent"><ExecuteAndTraceWithResults ExitCode="0"><Output></Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T14:21:42.205Z" category="INFO" source="GuestAgent"><SetKvpRegistry><PA_reprovision_95_ConfigureGuestAgentService_2_EnableServiceOfflined-RdAgent Message="Called=2021-09-27T14:21:42.172Z;Returned=2021-09-27T14:21:42.205Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:42.205Z" category="INFO" source="GuestAgent"><EnableService ServiceName="WindowsAzureGuestAgent"/></Event>
+<Event time="2021-09-27T14:21:42.205Z" category="INFO" source="GuestAgent"><ExecuteAndTraceWithResults><ExecutingCommand>%SystemRoot%\OEM\WaGuest.exe /configureservicestartmode "WindowsAzureGuestAgent" "Automatic" 1</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T14:21:42.220Z" category="INFO" source="GuestAgent"><ExecuteAndTraceWithResults ExitCode="0"><Output>WindowsAzureGuestAgent is not installed, skipping start mode configuration</Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T14:21:42.220Z" category="INFO" source="GuestAgent"><SetKvpRegistry><PA_reprovision_95_ConfigureGuestAgentService_3_EnableServiceOfflined-WindowsAzureGuestAgent Message="Called=2021-09-27T14:21:42.205Z;Returned=2021-09-27T14:21:42.220Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:42.220Z" category="INFO" source="GuestAgent"><EnableService ServiceName="WindowsAzureTelemetryService"/></Event>
+<Event time="2021-09-27T14:21:42.220Z" category="INFO" source="GuestAgent"><ExecuteAndTraceWithResults><ExecutingCommand>%SystemRoot%\OEM\WaGuest.exe /configureservicestartmode "WindowsAzureTelemetryService" "Automatic" 1</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T14:21:42.236Z" category="INFO" source="GuestAgent"><ExecuteAndTraceWithResults ExitCode="0"><Output>WindowsAzureTelemetryService is not installed, skipping start mode configuration</Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T14:21:42.236Z" category="INFO" source="GuestAgent"><SetKvpRegistry><PA_reprovision_95_ConfigureGuestAgentService_4_EnableServiceOfflined-WindowsAzureTelemetryService Message="Called=2021-09-27T14:21:42.220Z;Returned=2021-09-27T14:21:42.236Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:42.236Z" category="INFO" source="GuestAgent"><ExecuteAndTraceWithResults><ExecutingCommand>%SystemRoot%\OEM\WaGuest.exe /startservice RdAgent</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T14:21:42.560Z" category="INFO" source="GuestAgent"><ExecuteAndTraceWithResults ExitCode="0"><Output></Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T14:21:42.560Z" category="INFO" source="GuestAgent"><SetKvpRegistry><PA_reprovision_95_ConfigureGuestAgentService_5_StartRdAgentServiceOfflined Message="Called=2021-09-27T14:21:42.236Z;Returned=2021-09-27T14:21:42.560Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:42.560Z" category="INFO" source="Unattend"><ConfigureGuestAgentServiceOfflined ConfigureGuestAgentOfflinedReturnValue="0"/></Event>
+<Event time="2021-09-27T14:21:42.560Z" category="INFO" source="Unattend"><ProcedureOfflined Procedure="ConfigureGuestAgentService" Flag="16384"/></Event>
+<Event time="2021-09-27T14:21:42.560Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_reprovision_95_ConfigureGuestAgentService Message="Called=2021-09-27T14:21:42.125Z;Returned=2021-09-27T14:21:42.560Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:42.560Z" category="INFO" source="Unattend"><ExecuteAndTraceWithResults><ExecutingCommand>%SystemRoot%\OEM\WaGuest.exe /timeinfo</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T14:21:42.576Z" category="INFO" source="Unattend"><ExecuteAndTraceWithResults ExitCode="0"><Output>11847296 2021-09-27T14:21:42.560Z</Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T14:21:42.576Z" category="INFO" source="Unattend"><SetKvpRegistry><reprovision_PA_TickCount Message="11847296"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:42.576Z" category="INFO" source="Unattend"><SetKvpRegistry><reprovision_PA_CompletionTime Message="2021-09-27T14:21:42.560Z"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:42.582Z" category="INFO" source="WireServer"><GetRegistryValue>key: HKLM\Software\Microsoft\Virtual Machine\Guest\Parameters, value: VirtualMachineName, data: 53361e4a-b15a-44b4-8571-d89c49b93941</GetRegistryValue></Event>
+<Event time="2021-09-27T14:21:42.582Z" category="INFO" source="WireServer"><ExecuteAndTraceWithResults><ExecutingCommand>%SystemRoot%\OEM\WaGuest.exe /ram</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T14:21:42.598Z" category="INFO" source="WireServer"><ExecuteAndTraceWithResults ExitCode="0"><Output>4096</Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T14:21:42.598Z" category="INFO" source="WireServer"><TelemetryData ExecutionMode="IAAS" OSVersion="Windows:Windows Server 2012 R2 Datacenter-6.3.9600" GAVersion="2.7.41491.1024" RAM="4096" Processors="2" OpcodeName="" KeywordName="" TenantName="" RoleName="" RoleInstanceName="" ContainerId="53361e4a-b15a-44b4-8571-d89c49b93941" Name="WindowsProvisioningAgent" Version="1.0.9.98" IsInternal="False" Operation="OnPluginReprovisionEnd" OperationSuccess="True" ExtensionType="WindowsProvisioningAgent" Duration="2458" EventPid="" EventTid="" TaskName="" SubscriptionId="" ResourceGroupName="" VMId="" ImageOrigin="">{"specialize":{"TickCount":35296,"StartTime":"2021-09-27T11:03:58.286Z","EndTime":"2021-09-27T11:03:58.619Z"},"oobeSystem":{"TickCount":42562,"StartTime":"2021-09-27T11:04:03.413Z","EndTime":"2021-09-27T11:04:06.184Z"},"reprovision":{"TickCount":11847296,"StartTime":"2021-09-27T14:21:40.122Z","EndTime":"2021-09-27T14:21:42.560Z"},"provisioning":{"TickCount":4157,"StartTime":"2021-09-27T11:04:14.298Z","EndTime":"2021-09-27T14:21:41.594Z"}}</TelemetryData></Event>
+<Event time="2021-09-27T14:21:42.598Z" category="INFO" source="WireServer"><HttpRequest verb="POST" url="http://168.63.129.16/machine?comp=telemetrydata"/></Event>
+<Event time="2021-09-27T14:21:42.598Z" category="INFO" source="WireServer"><SendRequest>attempt=1, status=200, Err.Number=0</SendRequest></Event>
+<Event time="2021-09-27T14:21:42.598Z" category="INFO" source="WireServer"><SetKvpRegistry><PA_reprovision_WireServer_7_POST_telemetrydata Message="Called=2021-09-27T14:21:42.598Z;Returned=2021-09-27T14:21:42.598Z;StatusCode=200;Attempts=1"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:42.598Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_reprovision_97_SendOnPluginProvisionEnd Message="Called=2021-09-27T14:21:42.576Z;Returned=2021-09-27T14:21:42.598Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:42.598Z" category="INFO" source="Unattend"><GetRegistryValue>key: HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\MediaIdentifier, value: BuildGUID, data: c697d014-864d-ee0f-edb9-a510d44f467f</GetRegistryValue></Event>
+<Event time="2021-09-27T14:21:42.598Z" category="INFO" source="Unattend"><GetRegistryValue>key: HKLM\SYSTEM\CurrentControlSet\Control\InitialMachineConfig, value: Sequence, data: 15</GetRegistryValue></Event>
+<Event time="2021-09-27T14:21:42.598Z" category="INFO" source="Unattend"><GetRegistryValue>key: HKEY_LOCAL_MACHINE\SYSTEM\Setup\AzureProvisioning, value: ResourceDrive, data: D:</GetRegistryValue></Event>
+<Event time="2021-09-27T14:21:42.598Z" category="INFO" source="Environment"><WindowsProvisioningConfigurationSet><ComputerName>Windows2012Web</ComputerName><AdminPassword>*SENSITIVE*DATA*DELETED*</AdminPassword><ResetPasswordOnFirstLogon>false</ResetPasswordOnFirstLogon></WindowsProvisioningConfigurationSet></Event>
+<Event time="2021-09-27T14:21:42.598Z" category="INFO" source="Unattend"><GetRegistryValue>key: HKEY_LOCAL_MACHINE\SYSTEM\Setup\AzureProvisioning, value: OriginalPageFileSettings, data: D:\pagefile.sys 0 0</GetRegistryValue></Event>
+<Event time="2021-09-27T14:21:42.598Z" category="INFO" source="OperatingSystem"><GetRegistryValue>key: HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management, value: PagingFiles, data: D:\pagefile.sys 0 0</GetRegistryValue></Event>
+<Event time="2021-09-27T14:21:42.598Z" category="INFO" source="Unattend"><GetRegistryValue>key: HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Setup\OOBE, value: SysprepSetVMMode, data: 1</GetRegistryValue></Event>
+<Event time="2021-09-27T14:21:42.598Z" category="INFO" source="WireServer"><GetRegistryValue>key: HKLM\Software\Microsoft\Virtual Machine\Guest\Parameters, value: VirtualMachineName, data: 53361e4a-b15a-44b4-8571-d89c49b93941</GetRegistryValue></Event>
+<Event time="2021-09-27T14:21:42.598Z" category="INFO" source="WireServer"><ExecuteAndTraceWithResults><ExecutingCommand>%SystemRoot%\OEM\WaGuest.exe /ram</ExecutingCommand></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T14:21:42.629Z" category="INFO" source="WireServer"><ExecuteAndTraceWithResults ExitCode="0"><Output>4096</Output><ErrorOutput></ErrorOutput></ExecuteAndTraceWithResults></Event>
+<Event time="2021-09-27T14:21:42.629Z" category="INFO" source="WireServer"><TelemetryData ExecutionMode="IAAS" OSVersion="Windows:Windows Server 2012 R2 Datacenter-6.3.9600" GAVersion="2.7.41491.1024" RAM="4096" Processors="2" OpcodeName="" KeywordName="" TenantName="" RoleName="" RoleInstanceName="" ContainerId="53361e4a-b15a-44b4-8571-d89c49b93941" Name="WindowsProvisioningAgent" Version="1.0.9.98" IsInternal="False" Operation="ProvisioningDiagnostics" OperationSuccess="True" ExtensionType="WindowsProvisioningAgent" Duration="0" EventPid="" EventTid="" TaskName="" SubscriptionId="" ResourceGroupName="" VMId="" ImageOrigin="">{"DiscoverWireServerUsed":false,"MediaIdentifier":"c697d014-864d-ee0f-edb9-a510d44f467f","ImcSequence":15,"ResourceDrive":"D:","SanPolicyChanged":false,"PageFile":{"Changed":false,"OriginalSettings":["D:\\pagefile.sys 0 0"],"CurrentSettings":["D:\\pagefile.sys 0 0"],"ConfigurationPath":null,"ConfigurationSize":null},"SysprepSetVmMode":true}</TelemetryData></Event>
+<Event time="2021-09-27T14:21:42.629Z" category="INFO" source="WireServer"><HttpRequest verb="POST" url="http://168.63.129.16/machine?comp=telemetrydata"/></Event>
+<Event time="2021-09-27T14:21:42.629Z" category="INFO" source="WireServer"><SendRequest>attempt=1, status=200, Err.Number=0</SendRequest></Event>
+<Event time="2021-09-27T14:21:42.629Z" category="INFO" source="WireServer"><SetKvpRegistry><PA_reprovision_WireServer_8_POST_telemetrydata Message="Called=2021-09-27T14:21:42.629Z;Returned=2021-09-27T14:21:42.629Z;StatusCode=200;Attempts=1"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:42.629Z" category="INFO" source="Unattend"><SetKvpRegistry><PA_reprovision_98_SendProvisioningDiagnostics Message="Called=2021-09-27T14:21:42.598Z;Returned=2021-09-27T14:21:42.629Z;ErrorCode=0"/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:42.629Z" category="INFO" source="Unattend"><SetKvpRegistry><FirstBootComplete Message=""/></SetKvpRegistry></Event>
+<Event time="2021-09-27T14:21:42.629Z" category="INFO" source="Unattend"><DeleteRegistry>path: HKEY_LOCAL_MACHINE\SYSTEM\Setup\AzureProvisioning, key name: </DeleteRegistry></Event>
+<Event time="2021-09-27T14:21:42.629Z" category="INFO" source="Unattend"><UnattendEnd ExitCode="0"/></Event>

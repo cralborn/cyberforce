@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<actions>
+    <action index="0"
+            command="C:\Windows\SYSTEM32\RUNDLL32.EXE"
+            arguments="cmifw.dll,unattend"
+            identity="Networking-MPSSVC-Svc, Culture=neutral, Version=6.3.9600.19122, PublicKeyToken=31bf3856ad364e35, ProcessorArchitecture=amd64, versionScope=NonSxS"
+            manifestPath="C:\Windows\Winsxs\Manifests\amd64_networking-mpssvc-svc_31bf3856ad364e35_6.3.9600.19122_none_8b1132539ba53c4e.manifest"
+            pass="specialize"/>
+    <action index="1"
+            command="C:\Windows\SYSTEM32\SETUPUGC.EXE"
+            arguments=""
+            identity="Microsoft-Windows-Deployment, Culture=neutral, Version=6.3.9600.17415, PublicKeyToken=31bf3856ad364e35, ProcessorArchitecture=amd64, versionScope=NonSxS"
+            manifestPath="C:\Windows\Winsxs\Manifests\amd64_microsoft-windows-deployment_31bf3856ad364e35_6.3.9600.17415_none_ecf9f1b1c10b751f.manifest"
+            pass="specialize"/>
+    <action index="2"
+            command="C:\Windows\SYSTEM32\RUNDLL32.EXE"
+            arguments="shsetup.dll,SHUnattendedSetup"
+            identity="Microsoft-Windows-Shell-Setup, Culture=neutral, Version=6.3.9600.19468, PublicKeyToken=31bf3856ad364e35, ProcessorArchitecture=amd64, versionScope=NonSxS"
+            manifestPath="C:\Windows\Winsxs\Manifests\amd64_microsoft-windows-shell-setup_31bf3856ad364e35_6.3.9600.19468_none_c3329144bd83ac94.manifest"
+            pass="specialize"/>
+</actions>

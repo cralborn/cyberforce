@@ -1,0 +1,241 @@
+﻿2021-09-27 04:03:44, Info                         [windeploy.exe] ------------------------------------------------
+2021-09-27 04:03:44, Info                         [windeploy.exe] WinDeploy.exe launched with command-line []...
+2021-09-27 04:03:44, Info                         [windeploy.exe] LogBootDeviceInfo:The firmware boot device ARC path is [multi(0)disk(0)rdisk(0)partition(1)] and NT path is [\Device\Harddisk0\Partition1].
+2021-09-27 04:03:44, Info                         [windeploy.exe] LogBootDeviceInfo:The system boot device ARC path is [multi(0)disk(0)rdisk(0)partition(2)] and NT path is [\Device\Harddisk0\Partition2].
+2021-09-27 04:03:44, Error                        [windeploy.exe] CFirstUXWnd::OpenExisting failed with error 80070490
+2021-09-27 04:03:44, Info                         [windeploy.exe] Windeploy: Sysprep mode is [0x1]; setting SQM data for the same.
+2021-09-27 04:03:44, Info                         [windeploy.exe] Windeploy: Executing PreSysprep commands
+2021-09-27 04:03:44, Info                         [windeploy.exe] Found generalization state [0x4], setup.exe completion flag [False] --> launching setup.exe.
+2021-09-27 04:03:44, Info                         [windeploy.exe] Launching [C:\Windows\system32\oobe\setup.exe]...
+2021-09-27 04:03:57, Info                         [SETUPUGC.EXE] SetupUGC launched with command line [specialize]
+2021-09-27 04:03:57, Info                         [SETUPUGC.EXE] SetupUGC running to process unattend settings for pass [specialize]
+2021-09-27 04:03:57, Info                         [SETUPUGC.EXE] Processing any RunSynchronous setting...
+2021-09-27 04:03:57, Info                         [SETUPUGC.EXE] Running commands is not yet in progress
+2021-09-27 04:03:57, Info       [0x090008] PANTHR CBlackboard::Open: C:\Windows\panther\commandexec\CommandExec succeeded.
+2021-09-27 04:03:57, Info                         [SETUPUGC.EXE] Found run command in registry: description = [Execute Install.cmd]
+2021-09-27 04:03:57, Info                         [SETUPUGC.EXE] Found run command in registry: credentials = { domain is not specified, username is not specified, password info not logged }
+2021-09-27 04:03:57, Info                         [SETUPUGC.EXE] Found run command in registry: will observe the exit code's implied request after execution
+2021-09-27 04:03:57, Info                         [SETUPUGC.EXE] Found run command in registry: path = [cmd.exe /c "(for %1 in (z y x w v u t s r q p o n m l k j i h g f e d c b a) do @(DIR %1:\ 1>NUL 2>&1 && if exist %1:\E6DA6616-8EC4-48E0-BE93-58CE6ACE3CFB.tag (%1:\Install.cmd & exit))) & exit 3"]
+2021-09-27 04:03:57, Info                         [SETUPUGC.EXE] Found RunSynchronous command: [cmd.exe /c "(for %1 in (z y x w v u t s r q p o n m l k j i h g f e d c b a) do @(DIR %1:\ 1>NUL 2>&1 && if exist %1:\E6DA6616-8EC4-48E0-BE93-58CE6ACE3CFB.tag (%1:\Install.cmd & exit))) & exit 3"]
+2021-09-27 04:03:57, Info                         [SETUPUGC.EXE] Found run command in registry: description = [Execute the Provisioning Agent]
+2021-09-27 04:03:57, Info                         [SETUPUGC.EXE] Found run command in registry: credentials = { domain is not specified, username is not specified, password info not logged }
+2021-09-27 04:03:57, Info                         [SETUPUGC.EXE] Found run command in registry: will observe the exit code's implied request after execution
+2021-09-27 04:03:57, Info                         [SETUPUGC.EXE] Found run command in registry: path = [cmd.exe /c "if exist %SystemRoot%\OEM\Unattend.wsf ( cscript %SystemRoot%\OEM\Unattend.wsf //Job:setup //NoLogo //B /ConfigurationPass:specialize ) else ( %SystemRoot%\OEM\provision.cmd >>%SystemRoot%\Panther\WaSetup.log 2>&1 )"]
+2021-09-27 04:03:57, Info                         [SETUPUGC.EXE] Found RunSynchronous command: [cmd.exe /c "if exist %SystemRoot%\OEM\Unattend.wsf ( cscript %SystemRoot%\OEM\Unattend.wsf //Job:setup //NoLogo //B /ConfigurationPass:specialize ) else ( %SystemRoot%\OEM\provision.cmd >>%SystemRoot%\Panther\WaSetup.log 2>&1 )"]
+2021-09-27 04:03:57, Info                         [SETUPUGC.EXE] Finished executing [cmd.exe /c "(for %1 in (z y x w v u t s r q p o n m l k j i h g f e d c b a) do @(DIR %1:\ 1>NUL 2>&1 && if exist %1:\E6DA6616-8EC4-48E0-BE93-58CE6ACE3CFB.tag (%1:\Install.cmd & exit))) & exit 3"] synchronously
+2021-09-27 04:03:57, Info                         [SETUPUGC.EXE] Process returned with exit code 0x0
+2021-09-27 04:03:58, Info                         [SETUPUGC.EXE] Finished executing [cmd.exe /c "if exist %SystemRoot%\OEM\Unattend.wsf ( cscript %SystemRoot%\OEM\Unattend.wsf //Job:setup //NoLogo //B /ConfigurationPass:specialize ) else ( %SystemRoot%\OEM\provision.cmd >>%SystemRoot%\Panther\WaSetup.log 2>&1 )"] synchronously
+2021-09-27 04:03:58, Info                         [SETUPUGC.EXE] Process returned with exit code 0x0
+2021-09-27 04:03:58, Info       [0x090009] PANTHR CBlackboard::Close: c:\windows\panther\commandexec\commandexec.
+2021-09-27 04:03:58, Info                         [SETUPUGC.EXE] Processing any RunAsynchronous setting...
+2021-09-27 04:03:58, Info                         [SETUPUGC.EXE] Running commands is not yet in progress
+2021-09-27 04:03:58, Info       [0x090008] PANTHR CBlackboard::Open: C:\Windows\panther\commandexec\CommandExec succeeded.
+2021-09-27 04:03:58, Info       [0x090009] PANTHR CBlackboard::Close: c:\windows\panther\commandexec\commandexec.
+2021-09-27 04:03:58, Info                         [SETUPUGC.EXE] Processing ExtendOSPartition setting (if present)...
+2021-09-27 04:03:58, Info                         [SETUPUGC.EXE] SetupUGC returning with exit code [0]
+2021-09-27 04:03:58, Info                         [Shell Unattend] Running 'specialize' pass
+2021-09-27 04:03:58, Info                         [Shell Unattend] UnattendSetComputerName key found. ComputerName was set by previous unattend action.
+2021-09-27 04:03:58, Info                         [Shell Unattend] ComputerName in unattend [pps-vm-01000000] matches the current ComputerName [pps-vm-01000000] 
+2021-09-27 04:03:58, Info                         [Shell Unattend] Skipping setting the same ComputerName
+2021-09-27 04:03:58, Info                         [Shell Unattend] TimeZone: Time zone set to 'UTC' 
+2021-09-27 04:03:58, Info                         [Shell Unattend] Exiting 'specialize' pass with status 0x00000000
+2021-09-27 04:03:58, Info                         [windeploy.exe] Process exited with exit code [0x0]
+2021-09-27 04:03:58, Info                         [windeploy.exe] Windeploy: Executing PostSysprep commands
+2021-09-27 04:03:58, Info                         [windeploy.exe] pOrchestrateEnumServices: Dumping all active service names; 9 in total
+2021-09-27 04:03:58, Info                         [windeploy.exe] pOrchestrateEnumServices:       DcomLaunch
+2021-09-27 04:03:58, Info                         [windeploy.exe] pOrchestrateEnumServices:       DeviceInstall
+2021-09-27 04:03:58, Info                         [windeploy.exe] pOrchestrateEnumServices:       LSM
+2021-09-27 04:03:58, Info                         [windeploy.exe] pOrchestrateEnumServices:       PlugPlay
+2021-09-27 04:03:58, Info                         [windeploy.exe] pOrchestrateEnumServices:       Power
+2021-09-27 04:03:58, Info                         [windeploy.exe] pOrchestrateEnumServices:       RpcEptMapper
+2021-09-27 04:03:58, Info                         [windeploy.exe] pOrchestrateEnumServices:       RpcSs
+2021-09-27 04:03:58, Info                         [windeploy.exe] pOrchestrateEnumServices:       sppsvc
+2021-09-27 04:03:58, Info                         [windeploy.exe] pOrchestrateEnumServices:       SystemEventsBroker
+2021-09-27 04:03:58, Info                         [windeploy.exe] Transitioning to OOBE after setup.exe and PostSysprep commands, without reboot.
+2021-09-27 04:03:58, Info                         [windeploy.exe] Making sure that SystemSetupInProgress is cleared.
+2021-09-27 04:03:58, Info                         [windeploy.exe] UnattendSearchExplicitPath: Found unattend file at [C:\Windows\Panther\unattend.xml]; examining for applicability.
+2021-09-27 04:03:58, Info                         [windeploy.exe] UnattendSearchExplicitPath: Found usable unattend file for pass [oobeSystem] at [C:\Windows\Panther\unattend.xml].
+2021-09-27 04:03:58, Info                         [windeploy.exe] Found unattend file: [C:\Windows\Panther\unattend.xml]
+2021-09-27 04:03:58, Info                         [windeploy.exe] This is supposed to be an OOBE boot; checking for <Reseal> setting override in unattend file [C:\Windows\Panther\unattend.xml]...
+2021-09-27 04:03:58, Info                         [windeploy.exe] Windeploy: Executing PreOOBE commands
+2021-09-27 04:03:58, Info                         [windeploy.exe] Restoring system default power request
+2021-09-27 04:03:58, Info                         [windeploy.exe] Launching [C:\Windows\system32\oobe\oobeldr.exe /system]...
+2021-09-27 04:03:58, Info                         [oobeldr.exe] OOBELdr.exe launched with command-line [/system]...
+2021-09-27 04:03:58, Info                         [oobeldr.exe] OrchestrateUpdateImageState: Updating image state from [IMAGE_STATE_SPECIALIZE_RESEAL_TO_OOBE] --> [IMAGE_STATE_UNDEPLOYABLE]
+2021-09-27 04:03:58, Info                         [oobeldr.exe] Parsing command line arguments...
+2021-09-27 04:03:58, Info                         [oobeldr.exe] Parsing the following command line: [/system]
+2021-09-27 04:03:58, Info                         [oobeldr.exe] Status for unattend pass [oobeSystem] = 0x0
+2021-09-27 04:03:58, Info                         [oobeldr.exe] UnattendSearchExplicitPath: Found unattend file at [C:\Windows\Panther\unattend.xml]; examining for applicability.
+2021-09-27 04:03:58, Info                         [oobeldr.exe] UnattendSearchExplicitPath: Found usable unattend file for pass [oobeSystem] at [C:\Windows\Panther\unattend.xml].
+2021-09-27 04:03:58, Info                         [oobeldr.exe] Running oobeSystem pass with discovered unattend file [C:\Windows\Panther\unattend.xml]...
+2021-09-27 04:03:58, Info                         [oobeldr.exe] Caching copy of unattend file: [C:\Windows\Panther\unattend.xml] -- cached at --> [C:\Windows\panther\unattend.xml]
+2021-09-27 04:03:58, Info                         [oobeldr.exe] Source and destination paths are identical; skipping file copy.
+2021-09-27 04:03:58, Info                         [oobeldr.exe] Cached unattend file, returned: [%windir%\panther\unattend.xml]
+2021-09-27 04:03:58, Info                         [oobeldr.exe] Current pass status for [oobeSystem] is [0x0]
+2021-09-27 04:03:58, Info                         [oobeldr.exe] Applying data-only settings overrides using SMI...
+2021-09-27 04:03:59, Info                  CSI    00000001@2021/9/27:04:03:59.133 WcpInitialize (wcp.dll version 0.0.0.6) called (stack @0x7ffe7a9a7f69 @0x7ffe7b46ceee @0x7ffe7b484e47 @0x7ffe7b459358 @0x7ffe7b4582fb @0x7ff6f8e4a34b)
+2021-09-27 04:03:59, Info                         [oobeldr.exe] Successfully applied data-only settings overrides.
+2021-09-27 04:03:59, Info                         [oobeldr.exe] Calling into RunSMIActionPass to execute unattend GCs for pass [oobeSystem]
+2021-09-27 04:03:59, Info                         [oobeldr.exe] [Action Queue] : GenerateActionQueue begin
+2021-09-27 04:03:59, Info                         [oobeldr.exe] [Action Queue] : Processing pass = oobeSystem
+2021-09-27 04:03:59, Info                         [oobeldr.exe] [Action Queue] : Generating queue file to C:\Windows\panther\actionqueue\oobeSystem.uaq
+2021-09-27 04:03:59, Info                         [oobeldr.exe] [Action Queue] : Identity 0: Microsoft-Windows-Shell-Setup, Culture=neutral, Version=6.3.9600.19468, PublicKeyToken=31bf3856ad364e35, ProcessorArchitecture=amd64, versionScope=NonSxS
+2021-09-27 04:03:59, Info                         [oobeldr.exe] [Action Queue] : Using component order file C:\Windows\winsxs\amd64_microsoft-windows-servicingstack_31bf3856ad364e35_6.3.9600.19991_none_fa0fb7959b4c8c91\GlobalInstallOrder.xml
+2021-09-27 04:03:59, Info                  CSI    00000001@2021/9/27:04:03:59.550 WcpInitialize (wcp.dll version 0.0.0.6) called (stack @0x7ffe7a9a7f69 @0x7ffe7b5aff4d @0x7ffe7b5aef24 @0x7ffe7b5aed34 @0x7ff6f8e49d0e @0x7ff6f8e49762)
+2021-09-27 04:03:59, Info                         [oobeldr.exe] [Action Queue] : Found manifest file C:\Windows\Winsxs\Manifests\amd64_microsoft-windows-shell-setup_31bf3856ad364e35_6.3.9600.19468_none_c3329144bd83ac94.manifest
+2021-09-27 04:03:59, Info                         [oobeldr.exe] [Action Queue] : GenerateActionQueue finish (hr = 0x0)
+2021-09-27 04:03:59, Info                         [oobeldr.exe] [Action Queue] : ProcessActionQueue start
+2021-09-27 04:03:59, Info                         [oobeldr.exe] [Action Queue] : ProcessActionQueue using queue file C:\Windows\panther\actionqueue\oobeSystem.uaq
+2021-09-27 04:03:59, Info                         [oobeldr.exe] [Action Queue] : Command Line = C:\WINDOWS\SYSTEM32\RUNDLL32.EXE / arguments = shsetup.dll,SHUnattendedSetup / pass = oobeSystem / manifest path = C:\Windows\Winsxs\Manifests\amd64_microsoft-windows-shell-setup_31bf3856ad364e35_6.3.9600.19468_none_c3329144bd83ac94.manifest
+2021-09-27 04:03:59, Info                         [oobeldr.exe] [Action Queue] : Executing command "C:\WINDOWS\SYSTEM32\RUNDLL32.EXE" shsetup.dll,SHUnattendedSetup oobeSystem
+2021-09-27 04:03:59, Info                         [Shell Unattend] Running 'oobeSystem' pass
+2021-09-27 04:03:59, Info                         [Shell Unattend] Decoded password
+2021-09-27 04:03:59, Info                         [Shell Unattend] UserAccounts: Password set for 'Administrator' 
+2021-09-27 04:03:59, Info                         [Shell Unattend] Exiting 'oobeSystem' pass with status 0x00000000
+2021-09-27 04:03:59, Info                         [oobeldr.exe] [Action Queue] : process exit code = 0
+2021-09-27 04:03:59, Info                         [oobeldr.exe] [Action Queue] : Unattend action returned operation complete.
+2021-09-27 04:03:59, Info                         [oobeldr.exe] [Action Queue] : ProcessActionQueue finish (hr = 0x0)
+2021-09-27 04:03:59, Info                         [oobeldr.exe] Successfully completed execution of GC queue
+2021-09-27 04:03:59, Info                         [oobeldr.exe] Flushing registry to disk...
+2021-09-27 04:03:59, Info                         [oobeldr.exe] Flush took 31 ms.
+2021-09-27 04:03:59, Info                         [oobeldr.exe] Successfully completed RunSMIPass for oobeSystem.
+2021-09-27 04:03:59, Info                         [oobeldr.exe] No reboot has been requested for oobeSystem unattend.
+2021-09-27 04:03:59, Info                         [oobeldr.exe] Successfully ran oobeSystem pass.
+2021-09-27 04:03:59, Info                         [oobeldr.exe] Launching [C:\Windows\system32\oobe\msoobe.exe]...
+2021-09-27 04:04:01, Info                         [msoobe.exe] ----------------------------------------------------------
+2021-09-27 04:04:01, Info                         [msoobe.exe] Starting OOBE
+2021-09-27 04:04:01, Info                         [msoobe.exe] Calculated OOBE STARTUP FLAGS: [0x0000000E]
+2021-09-27 04:04:01, Info                         [msoobe.exe] Successfully created first boot reg key
+2021-09-27 04:04:01, Info                         [msoobe.exe] Cleared previous OOBE Stats Registry Key
+2021-09-27 04:04:01, Info                         [msoobe.exe] Loading OOBE plugin ComputerName Plugin
+2021-09-27 04:04:01, Info                         [msoobe.exe] Loading OOBE plugin ConnectedUser Plugin
+2021-09-27 04:04:01, Info                         [msoobe.exe] Plugin ConnectedUser Plugin should not run
+2021-09-27 04:04:01, Info                         [msoobe.exe] Loading OOBE plugin End Plugin
+2021-09-27 04:04:01, Info                         [msoobe.exe] Loading OOBE plugin Eula Plugin
+2021-09-27 04:04:01, Info                         [msoobe.exe] Loading EULA file for language [en-US], channel [Volume], edition [ServerDatacenter]
+2021-09-27 04:04:01, Info                         [msoobe.exe] Successfully retrieved EULA path [C:\Windows\System32\en-US\Licenses\Volume\ServerDatacenter\license.rtf]
+2021-09-27 04:04:01, Info                         [msoobe.exe] No OEM Eula specified.
+2021-09-27 04:04:01, Info                         [msoobe.exe] Loading OOBE plugin HidPairing Plugin
+2021-09-27 04:04:01, Info                         [msoobe.exe] Plugin HidPairing Plugin should not run
+2021-09-27 04:04:01, Info                         [msoobe.exe] Loading OOBE plugin HomeGroup Plugin
+2021-09-27 04:04:01, Info                         [msoobe.exe] Plugin HomeGroup Plugin should not run
+2021-09-27 04:04:01, Info                         [msoobe.exe] Loading OOBE plugin Language Plugin
+2021-09-27 04:04:01, Info                         [msoobe.exe] Found [1] UI languages
+2021-09-27 04:04:01, Info                         [msoobe.exe] Successfully added language English (United States)
+2021-09-27 04:04:01, Info                         [msoobe.exe] Posted cache change notification for setting UI_SUPPORTED_LANGIDS.
+2021-09-27 04:04:01, Info                         [msoobe.exe] Posted cache change notification for setting LANGUAGE.
+2021-09-27 04:04:01, Info                         [msoobe.exe] Posted cache change notification for setting LANGISO639.
+2021-09-27 04:04:01, Info                         [msoobe.exe] Plugin Language Plugin should not run
+2021-09-27 04:04:01, Info                         [msoobe.exe] Loading OOBE plugin LocalUser Plugin
+2021-09-27 04:04:01, Info                         [msoobe.exe] Found existing password on built in admin account
+2021-09-27 04:04:01, Info                         [msoobe.exe] Plugin LocalUser Plugin should not run
+2021-09-27 04:04:01, Info                         [msoobe.exe] Loading OOBE plugin Misc Plugin
+2021-09-27 04:04:01, Info                         [msoobe.exe] Added IOOBEGlobalSettingsCacheListener Misc Plugin
+2021-09-27 04:04:01, Info                         [msoobe.exe] Loading OOBE plugin NLA Plugin
+2021-09-27 04:04:01, Info                         [msoobe.exe] NLA Plugin will not run - install is Server.
+2021-09-27 04:04:01, Info                         [msoobe.exe] Plugin NLA Plugin should not run
+2021-09-27 04:04:01, Info                         [msoobe.exe] Loading OOBE plugin OEMRegistration Plugin
+2021-09-27 04:04:01, Info                         [msoobe.exe] Plugin OEMRegistration Plugin should not run
+2021-09-27 04:04:01, Info                         [msoobe.exe] Loading OOBE plugin PID Plugin
+2021-09-27 04:04:01, Info                         [msoobe.exe] Added IOOBEGlobalSettingsCacheListener PID Plugin
+2021-09-27 04:04:01, Info                         [msoobe.exe] Loading OOBE plugin ProtectPC Plugin
+2021-09-27 04:04:01, Info                         [msoobe.exe] Posted cache change notification for setting WUCONFIG.
+2021-09-27 04:04:01, Info                         [msoobe.exe] Loading OOBE plugin Proxy Configuration Plugin
+2021-09-27 04:04:01, Info                         [msoobe.exe] Loading OOBE plugin RecommendedSettings Plugin
+2021-09-27 04:04:01, Info                         [msoobe.exe] Plugin RecommendedSettings Plugin should not run
+2021-09-27 04:04:01, Info                         [msoobe.exe] Loading OOBE plugin Region Plugin
+2021-09-27 04:04:01, Info                         [msoobe.exe] Loading OOBE plugin TimeDate Plugin
+2021-09-27 04:04:01, Info                         [msoobe.exe] Added IOOBEGlobalSettingsCacheListener TimeDate Plugin
+2021-09-27 04:04:01, Info                         [msoobe.exe] Loading OOBE plugin ZDP Plugin
+2021-09-27 04:04:01, Info                         [msoobe.exe] Plugin ZDP Plugin should not run
+2021-09-27 04:04:01, Info                         [msoobe.exe] Parsing oobe.xml files...
+2021-09-27 04:04:01, Info                         [msoobe.exe] Failed to load oobe.xml file at C:\Windows\system32\oobe\info\oobe.xml with hr=0x80070003
+2021-09-27 04:04:01, Info                         [msoobe.exe] Failed to load oobe.xml file at C:\Windows\system32\oobe\info\default\oobe.xml with hr=0x80070003
+2021-09-27 04:04:01, Info                         [msoobe.exe] Failed to load oobe.xml file at C:\Windows\system32\oobe\info\244\oobe.xml with hr=0x80070003
+2021-09-27 04:04:01, Info                         [msoobe.exe] Failed to load oobe.xml file at C:\Windows\system32\oobe\info\default\1033\oobe.xml with hr=0x80070003
+2021-09-27 04:04:01, Info                         [msoobe.exe] Failed to load oobe.xml file at C:\Windows\system32\oobe\info\244\1033\oobe.xml with hr=0x80070003
+2021-09-27 04:04:01, Info                         [msoobe.exe] Loading EULA file for language [en-US], channel [Volume], edition [ServerDatacenter]
+2021-09-27 04:04:01, Info                         [msoobe.exe] Successfully retrieved EULA path [C:\Windows\System32\en-US\Licenses\Volume\ServerDatacenter\license.rtf]
+2021-09-27 04:04:01, Info                         [msoobe.exe] No OEM Eula specified.
+2021-09-27 04:04:01, Info                         [msoobe.exe] ExecuteInitialMandatoryTasks not implemented for plugin Proxy Configuration Plugin
+2021-09-27 04:04:01, Info                         [msoobe.exe] Processing cache change notification for setting UI_SUPPORTED_LANGIDS.
+2021-09-27 04:04:01, Info                         [msoobe.exe] Processing cache change notification for setting LANGUAGE.
+2021-09-27 04:04:01, Info                         [msoobe.exe] Processing cache change notification for setting LANGISO639.
+2021-09-27 04:04:01, Info                         [msoobe.exe] Processing cache change notification for setting WUCONFIG.
+2021-09-27 04:04:01, Info                         [msoobe.exe] TASK: Begin running task SaveEnabledInputMethods...
+2021-09-27 04:04:02, Info                         [msoobe.exe] TASK: End successfully running task SaveEnabledInputMethods
+2021-09-27 04:04:02, Info                         [msoobe.exe] Successfully executed initial mandatory task for plugin Region Plugin
+2021-09-27 04:04:02, Info                         [msoobe.exe] TASK: Begin running task WaitForService...
+2021-09-27 04:04:02, Info                         [msoobe.exe] Beginning wait for service w32time (initial state SERVICE_START_PENDING, desired state SERVICE_START_PENDING)
+2021-09-27 04:04:02, Info                         [msoobe.exe] Service w32time successfully reports in state SERVICE_START_PENDING
+2021-09-27 04:04:02, Info                         [msoobe.exe] Successfully signalled SCM event to start up services
+2021-09-27 04:04:02, Info                         [msoobe.exe] Posted cache change notification for setting COMPUTERNAME.
+2021-09-27 04:04:02, Info                         [msoobe.exe] Successfully executed initial mandatory task for plugin ComputerName Plugin
+2021-09-27 04:04:02, Info                         [msoobe.exe] Posted cache change notification for setting PRODUCTKEYSTATUS.
+2021-09-27 04:04:02, Info                         [msoobe.exe] Launched background PID install task from plugin's Initial Mandatory Tasks
+2021-09-27 04:04:02, Info                         [msoobe.exe] Posted cache change notification for setting PRODUCTKEYSTATUS.
+2021-09-27 04:04:02, Info                         [msoobe.exe] Successfully executed initial mandatory task for plugin PID Plugin
+2021-09-27 04:04:02, Info                         [msoobe.exe] ExecuteInitialMandatoryTasks not implemented for plugin Eula Plugin
+2021-09-27 04:04:02, Info                         [msoobe.exe] Successfully executed initial mandatory task for plugin ProtectPC Plugin
+2021-09-27 04:04:02, Info                         [msoobe.exe] Posted cache change notification for setting TIMESYNCSTATUS.
+2021-09-27 04:04:02, Info                         [msoobe.exe] Successfully executed initial mandatory task for plugin TimeDate Plugin
+2021-09-27 04:04:02, Info                         [msoobe.exe] Successfully executed initial mandatory task for plugin Misc Plugin
+2021-09-27 04:04:02, Info                         [msoobe.exe] ExecuteInitialMandatoryTasks not implemented for plugin End Plugin
+2021-09-27 04:04:02, Info                         [msoobe.exe] Found SkipMachineOOBE unattend setting.  Not showing wizard.
+2021-09-27 04:04:02, Info                         [msoobe.exe] Successfully executed final mandatory task for plugin Proxy Configuration Plugin
+2021-09-27 04:04:02, Info                         [msoobe.exe] TASK: Begin running task InstallPid...
+2021-09-27 04:04:02, Info                         [msoobe.exe] TASK: Begin running task CreateDirectoryJunctions...
+2021-09-27 04:04:02, Info                         [msoobe.exe] Creating directory junctions
+2021-09-27 04:04:02, Info                         [msoobe.exe] Region Plugin successfully set default Dvd region
+2021-09-27 04:04:02, Info                         [msoobe.exe] Successfully executed final mandatory task for plugin Region Plugin
+2021-09-27 04:04:02, Info                         [msoobe.exe] ExecuteFinalMandatoryTasks not implemented for plugin ComputerName Plugin
+2021-09-27 04:04:02, Info                         [msoobe.exe] Processing cache change notification for setting COMPUTERNAME.
+2021-09-27 04:04:02, Info                         [msoobe.exe] Processing cache change notification for setting PRODUCTKEYSTATUS.
+2021-09-27 04:04:02, Info                         [msoobe.exe] Processing cache change notification for setting PRODUCTKEYSTATUS.
+2021-09-27 04:04:02, Info                         [msoobe.exe] Processing cache change notification for setting TIMESYNCSTATUS.
+2021-09-27 04:04:02, Info                         [msoobe.exe] TASK: Begin running task QueueArsSystemTasksTask...
+2021-09-27 04:04:02, Info                         [msoobe.exe] TASK: End successfully running task CreateDirectoryJunctions
+2021-09-27 04:04:02, Info                         [msoobe.exe] Installed product key ((null))
+2021-09-27 04:04:02, Info                         [msoobe.exe] Processing cache change notification for setting PRODUCTKEYSTATUS.
+2021-09-27 04:04:02, Info                         [msoobe.exe] Posted cache change notification for setting PRODUCTKEYSTATUS.
+2021-09-27 04:04:02, Info                         [msoobe.exe] TASK: End successfully running task InstallPid
+2021-09-27 04:04:02, Info                         [msoobe.exe] Successfully executed final mandatory task for plugin PID Plugin
+2021-09-27 04:04:02, Info                         [msoobe.exe] ExecuteFinalMandatoryTasks not implemented for plugin Eula Plugin
+2021-09-27 04:04:02, Info                         [msoobe.exe] ExecuteFinalMandatoryTasks not implemented for plugin ProtectPC Plugin
+2021-09-27 04:04:02, Info                         [msoobe.exe] Successfully executed final mandatory task for plugin TimeDate Plugin
+2021-09-27 04:04:02, Info                         [msoobe.exe] Beginning wait for service netprofm (initial state SERVICE_START_PENDING, desired state SERVICE_RUNNING)
+2021-09-27 11:04:03, Info                         [msoobe.exe] AppReadinessService QueueSystemTasks result [hr=0x00000000]
+2021-09-27 11:04:03, Info                         [msoobe.exe] TASK: End successfully running task QueueArsSystemTasksTask
+2021-09-27 11:04:03, Info                         [msoobe.exe] TASK: Begin running task ResetNotificationTimerTask...
+2021-09-27 11:04:03, Info                         [msoobe.exe] TASK: End successfully running task ResetNotificationTimerTask
+2021-09-27 11:04:03, Info                         [msoobe.exe] TASK: Begin running task RunSetupFinalTask...
+2021-09-27 11:04:03, Info                         [msoobe.exe] Running Setup Final Tasks
+2021-09-27 11:04:03, Info                         [msoobe.exe] RunUserProvidedScript: Found script at [C:\Windows\Setup\Scripts\SetupComplete.cmd]; executing with UI hidden...
+2021-09-27 11:04:03, Info                         [msoobe.exe] Service netprofm successfully reports in state SERVICE_RUNNING
+2021-09-27 11:04:03, Info                         [msoobe.exe] TASK: End successfully running task WaitForService
+2021-09-27 11:04:03, Info                         [msoobe.exe] Posted cache change notification for setting NETWORKSTATUS.
+2021-09-27 11:04:03, Info                         [msoobe.exe] Connectivity changed: No connection detected
+2021-09-27 11:04:03, Info                         [msoobe.exe] Successfully created internet listener
+2021-09-27 11:04:03, Info                         [msoobe.exe] Processing cache change notification for setting NETWORKSTATUS.
+2021-09-27 11:04:03, Info                         [msoobe.exe] Posted cache change notification for setting NETWORKSTATUS.
+2021-09-27 11:04:03, Info                         [msoobe.exe] Connectivity changed: Local network detected
+2021-09-27 11:04:03, Info                         [msoobe.exe] Processing cache change notification for setting NETWORKSTATUS.
+2021-09-27 11:04:06, Info                         [msoobe.exe] RunUserProvidedScript: Successfully executed script; (returned with exit code 0x0)
+2021-09-27 11:04:06, Info                         [msoobe.exe] TASK: End successfully running task RunSetupFinalTask
+2021-09-27 11:04:06, Info                         [msoobe.exe] Successfully executed final mandatory task for plugin Misc Plugin
+2021-09-27 11:04:06, Info                         [msoobe.exe] ExecuteFinalMandatoryTasks not implemented for plugin End Plugin
+2021-09-27 11:04:06, Info                         [msoobe.exe] Ensuring netprofm task is complete.
+2021-09-27 11:04:06, Info                         [msoobe.exe] Wrote End-of-OOBE Timestamp to Registry
+2021-09-27 11:04:06, Info                         [msoobe.exe] Host returned successfully
+2021-09-27 11:04:06, Info                         [msoobe.exe] Ending OOBE
+2021-09-27 11:04:06, Info                         [msoobe.exe] ----------------------------------------------------------
+2021-09-27 11:04:06, Info                         [oobeldr.exe] OrchestrateUpdateImageState: Updating image state from [IMAGE_STATE_UNDEPLOYABLE] --> [IMAGE_STATE_COMPLETE]
+2021-09-27 11:04:06, Info                         [oobeldr.exe] OOBELdr.exe exiting with code [0x0]...
+2021-09-27 11:04:06, Info                         [windeploy.exe] Process exited with exit code [0x0]
+2021-09-27 11:04:06, Info       [0x090008] PANTHR CBlackboard::Open: C:\Windows\Panther\SetupInfo succeeded.
+2021-09-27 11:04:06, Info       [0x090009] PANTHR CBlackboard::Close: c:\windows\panther\setupinfo.
+2021-09-27 11:04:06, Info                         [windeploy.exe] Failed to create Setup SQM task with error 0x800706b5
+2021-09-27 11:04:06, Info                         [windeploy.exe] Windeploy: Executing PostOOBE commands
+2021-09-27 11:04:06, Info                         [windeploy.exe] Publishing WNF notification to indicate OOBE completion
+2021-09-27 11:04:06, Info                         [windeploy.exe] OrchestrateWnfPublishOobeCompletion: Publishing WNF event for OOBE completion; OOBE completion flag = TRUE
+2021-09-27 11:04:06, Info                         [windeploy.exe] WinDeploy.exe exiting with code [0x0]
