@@ -35,11 +35,12 @@ function Water(){
    
    const getWater = async()=>{
       try {
-         setInterval(() => {
+         //setInterval(() => {
             axios.get('http://localhost:3001/waterLevel').then((response)=>{
                setwaterList(response.data);
                setLoading(true);
-         },1000).catch(function (error){console.log(error)})});
+         });
+         //,1000).catch(function (error){console.log(error)})});
       }catch(err){
          alert(err.message);
       }

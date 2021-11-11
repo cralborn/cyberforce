@@ -31,11 +31,12 @@ function Outflow(){
    const [loading, setLoading] = useState(false);
    const getGene = async()=>{
       try {
-         setInterval(() => {
+        // setInterval(() => {
             axios.get('http://localhost:3001/Generator_Outflow').then((response)=>{
                setgeneList(response.data);
                setLoading(true);
-         },1000).catch(function (error){console.log(error)})});
+            });
+       //  },1000).catch(function (error){console.log(error)})});
       }catch(err){
          alert(err.message);
       }
