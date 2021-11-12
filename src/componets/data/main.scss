@@ -18,20 +18,20 @@
         text-align: center;
         color: black;
         font-size: 5rem;
-        font-family: 'Lucida Grande', 'Arial Narrow', Arial, sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
         font-weight: 1000;
-        text-shadow: 0px 1px 3px rgba(0,0,0,0.6);
+        text-shadow: 0px 1px 3px rgba(0,0,0,0.65);
     }
 
     .info{
-        font-family:'Great Vibes',sans-serif;
+        font-family:Arial, Helvetica, sans-serif;
     }
 
     p{
-        font-family: 'Great Vibes',sans-serif;
+        font-family:Arial, Helvetica, sans-serif;
         margin-top: 0em;
         color:black;
-        text-align: center;
+        text-align: left;
         font-size: 3rem;
         font-weight: 1000;
         text-shadow: 0px 1px 3px rgba(0,0,0,0.6);
@@ -50,6 +50,7 @@
     -webkit-box-shadow: 0px 10px 33px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 10px 33px 0px rgba(0,0,0,0.75);
      box-shadow: 0px 10px 33px 0px rgba(0,0,0,0.75);
+     background-color: whitesmoke;
 
     .contact-info{
         background-color:#212E52;
@@ -127,7 +128,7 @@
 
     form{
         padding:40px;
-        width:100%;
+        width:60%;
 
         p{
             font-size:1em;
@@ -145,7 +146,7 @@
             justify-content: flex-start;
             flex-direction:column;
             flex: 0 1 100%;
-            padding-right:40px;
+            padding-right:20px;
 
             &.solo{padding:0;}
 
@@ -162,19 +163,19 @@
 
                 &:hover{
                     transition: .3s all ease-in-out;
-                    background-color: #05f7ff;
+                    background-color: #3f1ba1;
                 }
             }
 
             .attachment{
                 font-size:1rem;
                 margin-bottom:1rem;
-                text-shadow: 0px 1px 3px rgba(0,0,0,0.6);
+                text-shadow: 0px 1px 3px rgba(0,0,0);
             }   
 
             label{
                 font-size:.9rem;
-                color: rgba(255,255,255,.4);
+                color: rgba(0, 0, 0, 0.8);
                 margin-bottom:1rem;
 
             }
@@ -186,9 +187,9 @@
                 padding: 10x;
                 font-size:1.5rem;
                 font-weight: 300;
-                color:white;
+                color:black;
                 background: transparent;
-                border-bottom:2px solid rgba(255,255,255,.4);
+                border-bottom:2px solid rgba(80, 78, 78, 0.4);
                 transition: .3s all ease-in-out;
                 margin-bottom:2rem;
 
@@ -205,14 +206,15 @@
                 background:rgba(255,255,255,.6);
                 border: none;
                 cursor:pointer;
-                padding: 10x;
-                font-size:1.5rem;
-                font-weight: 300;
-                color:white;
+                padding: 1x;
+                font-size:1rem;
+                font-weight: 0;
+                color:rgb(44, 42, 42);
                 background: transparent;
-                border-bottom:2px solid rgba(255,255,255,.4);
+                border-bottom:2px solid rgba(80,78,78,.4);
                 transition: .3s all ease-in-out;
                 margin-bottom:2rem;
+                resize: none;
                 
                 &:focus{
                     border:none;

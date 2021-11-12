@@ -1,7 +1,7 @@
 
 import axios from 'axios';
-import React, {Fragement,useState, useEffect} from 'react';
-import styled, { css } from 'styled-components/macro';
+import React, {useState, useEffect} from 'react';
+import styled, { } from 'styled-components/macro';
 
 const Divstyle = styled.div`
 margin-left: 1em;

@@ -1,7 +1,5 @@
    import LakeOne from '../images/LakeOne.jpg';
    import LakeTwo from '../images/LakeTwo.jpg';
-   import LakeThree from '../images/LakeThree.jpg';
-   import LakeFour from '../images/LakeFour.jpg';
    import Water from '../images/Water.js';
    import Generator from '../images/Generator.js';
    import Outflow from '../images/Outflow.js';

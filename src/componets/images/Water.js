@@ -1,9 +1,7 @@
-import { render } from '@testing-library/react';
 import axios from 'axios';
-import React, {Fragement,useState, useEffect} from 'react';
-import { dataIndexOf } from 'react-widgets/cjs/Accessors';
+import React, {useState, useEffect} from 'react';
 import './data.css';
-import styled, { css } from 'styled-components/macro';
+import styled, { } from 'styled-components/macro';
 
 const Divstyle = styled.div`
 margin-left:1em;
@@ -20,8 +18,6 @@ sup{
    margin-left:1em;
 }
 `;
-
-var counter=0;
 
 function Water(){
      

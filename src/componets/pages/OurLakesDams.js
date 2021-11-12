@@ -1,9 +1,5 @@
 import React from 'react';
 import '../data/lakesdams.scss';
-import styled, { css } from 'styled-components/macro';
-import { SliderData } from '../data/SliderData';
-import Lakes from '../Lakes';
-import axios from 'axios';
 
 function OurLakesDams(){
 
@@ -15,7 +11,7 @@ function OurLakesDams(){
                <div className="container-row">
                 <div className="col-md-6 col-pad-right">
                     <h1 className="section-title">
-                        Our Lakes & Dams
+                        Our Lakes &#x26; Dams
                         </h1>
                     <div className="content">
                         <p>

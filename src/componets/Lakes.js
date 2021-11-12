@@ -1,11 +1,7 @@
 import React, {useEffect,useState,useRef} from 'react';
-import App from '../App';
 import styled, { css } from 'styled-components/macro';
 import { Button } from './Button';
-import {IoMdArrowRoundForward} from 'react-icons/io';
 import {IoArrowForward,IoArrowBack } from 'react-icons/io5';
-import Axios from 'axios';
-import Water from './images/Water.js';
 
 const LakesSection= styled.section`
 height: 100vh;
@@ -119,8 +115,6 @@ sup{
 }
 `;
 
-const Arrow = styled(IoMdArrowRoundForward)``;
-
 const arrowButtons= css`
 width: 50px;
 height: 50px;
@@ -183,7 +177,7 @@ const Lakes = ({slides}) => {
         }
         setCurrent(current === length -1 ? 0 : current + 1);
 
-        console.log(current);
+        //console.log(current);
     };
 
     const prevSlide = () =>{
@@ -192,7 +186,7 @@ const Lakes = ({slides}) => {
         }
         setCurrent(current === 0 ? length - 1: current - 1);
 
-        console.log(current);
+        //console.log(current);
     }
     
     if(!Array.isArray(slides) || slides.length <= 0){
