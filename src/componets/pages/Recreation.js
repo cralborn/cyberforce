@@ -1,5 +1,5 @@
 import * as React from 'react';
-import WidgetBot from '@widgetbot/react-embed';
+//import WidgetBot from '@widgetbot/react-embed';
 
 const embeds = () => (
     <div>

@@ -42,20 +42,7 @@ function Footer(){
                         </Link>
                     </div>
                     <small className="website-rights">NaturalPower © 2021</small>
-                    <div className="social-icons">
-                        <Link className="social-icon-link facebook" to='/' target='_blank' aria-label='Facebook'>
-                        <i class="fab fa-facebook"></i>
-                        </Link>
-                        <Link className="social-icon-link twitter" to='/' target='_blank' aria-label='Twitter'>
-                        <i class="fab fa-twitter-square"></i>
-                        </Link>
-                        <Link className="social-icon-link instagram" to='/' target='_blank' aria-label='Instagram'>
-                        <i class="fab fa-instagram"></i>
-                        </Link>
-                        <Link className="social-icon-link youtube" to='/' target='_blank' aria-label='Youtube'>
-                        <i class="fab fa-youtube"></i>
-                        </Link>
-                    </div>
+                   
                 </div>
             </section>
         </div>

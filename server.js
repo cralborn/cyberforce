@@ -15,7 +15,7 @@ const db = mysql.createConnection({
 });
 
 app.get('/waterLevel', (req, res)=>{
-    db.query("SELECT * from dam ORDER BY timestamp DESC LIMIT 1", (err,result)=>{
+    db.query("SELECT 1 as id, res_water_level from dam ORDER BY timestamp DESC LIMIT 1", (err,result)=>{
         if(err){
             console.log(err);
         }else{
@@ -26,7 +26,7 @@ app.get('/waterLevel', (req, res)=>{
 
 
 app.get('/Generator', (req, res)=>{
-    db.query("SELECT * from generators ORDER BY generator_number DESC LIMIT 1", (err,result)=>{
+    db.query("SELECT 1 as id, generator_number from generators ORDER BY generator_number DESC LIMIT 1", (err,result)=>{
         if(err){
             console.log(err);
         }else{
@@ -36,7 +36,7 @@ app.get('/Generator', (req, res)=>{
 });
 
 app.get('/Generator_Outflow', (req, res)=>{
-    db.query("SELECT sum(generator_power_output) as generation_outflow from generator_status", (err,result)=>{
+    db.query("SELECT 1 as id, sum(generator_power_output) as generation_outflow from generator_status", (err,result)=>{
         if(err){
             console.log(err);
         }else{

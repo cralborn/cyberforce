@@ -47,7 +47,7 @@ function Water(){
    }
       return (<>
          {loading && waterList.map((datas)=>(
-              <Divstyle key={datas.id}>{datas.river_water_level}<sup>FT IN</sup></Divstyle>
+              <Divstyle key={datas.id}>{datas.res_water_level}<sup>FT IN</sup></Divstyle>
          ))}
      </>);
 }
