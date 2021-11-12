@@ -36,7 +36,7 @@ function Water(){
    const getWater = async()=>{
       try {
          //setInterval(() => {
-            axios.get('http://localhost:3001/waterLevel').then((response)=>{
+            axios.get('http://10.0.82.8:3001/waterLevel').then((response)=>{
                setwaterList(response.data);
                setLoading(true);
          });

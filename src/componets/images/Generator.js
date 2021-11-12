@@ -32,7 +32,7 @@ function Generator(){
    const getGene = async()=>{
       try {
         // setInterval(() => {
-            axios.get('http://localhost:3001/Generator').then((response)=>{
+            axios.get('http://10.0.82.8:3001/Generator').then((response)=>{
                setgeneList(response.data);
                setLoading(true);
             });
